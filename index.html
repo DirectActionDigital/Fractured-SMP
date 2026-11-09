@@ -6,6 +6,13 @@
 <meta property="og:type" content="website"><meta property="og:site_name" content="Fractured SMP"><meta property="og:title" content="Fractured SMP · Season Two"><meta property="og:description" content="Season Two applications are open. Join the Discord to get in."><meta property="og:url" content="https://directactiondigital.github.io/fractured-smp/"><meta property="og:image" content="https://directactiondigital.github.io/fractured-smp/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://directactiondigital.github.io/fractured-smp/og.jpg"><style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}footer a{color:var(--ink-dim)}
 footer a:hover{color:var(--ink)}
+/* touch targets */
+.yt{min-height:44px;padding-inline:6px}
+.nav ul a{display:inline-flex;align-items:center;min-height:44px}
+.logo{min-height:44px}
+footer a{display:inline-flex;align-items:center;min-height:44px}
+@media (hover:none){.thumb .play{opacity:1}}
+@media (max-width:520px){.hero > .wrap{padding-block:40px 56px;gap:22px}.status{font-size:12px}.cta-row .btn{flex:1 1 auto;justify-content:center}}
 </style>
 <title>Fractured SMP</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -83,7 +90,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .hero > .wrap{position:relative;padding-block:72px 84px;display:grid;gap:28px;justify-items:start}
 .status{display:inline-flex;align-items:center;gap:10px;background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);padding:6px 12px;border-radius:999px;font-size:13px;font-weight:600}
 .status i{width:8px;height:8px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.2)}
-.title{font-size:clamp(40px,9.4vw,128px);letter-spacing:.01em;position:relative;line-height:.9;user-select:none}
+.title{font-size:clamp(30px,calc((100vw - 48px) / 7.6),128px);letter-spacing:.01em;position:relative;line-height:.9;user-select:none}
 .title .line{display:block}
 .title .frac{display:grid;position:relative}
 .frac span{grid-area:1/1;display:block}
@@ -93,7 +100,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
   .frac .bot{animation:split 1.1s cubic-bezier(.2,.8,.2,1) .2s both}
   @keyframes split{from{transform:translate(0,0);color:var(--ink)}to{transform:translate(6px,7px);color:var(--accent)}}
 }
-.title .smp{font-size:.4em;color:var(--ink-dim);letter-spacing:.32em;margin-top:.25em}
+.title .smp{font-size:.4em;color:var(--ink-dim);letter-spacing:.32em;margin-top:.7em}
 .lede{max-width:58ch;font-size:clamp(17px,2vw,20px);color:var(--ink-dim);margin:0}
 .lede strong{color:var(--ink)}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
@@ -268,7 +275,7 @@ body::before{background:var(--base)}
       <div>
         <div class="eyebrow">Hall of Fame</div>
         <h2>Legends of Fractured</h2>
-        <p>Players, wars and moments the server remembers. Hover to pause.</p>
+        <p>Players, wars and moments the server remembers.</p>
       </div>
     </div>
   </div>
