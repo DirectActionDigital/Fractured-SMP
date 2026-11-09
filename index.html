@@ -231,7 +231,7 @@ footer a:hover{color:var(--ink)}
 .nav ul a{display:inline-flex;align-items:center;min-height:44px}
 .logo{min-height:44px}
 footer a{display:inline-flex;align-items:center;min-height:44px}
-footer .credit{flex-basis:100%;border-top:1px solid var(--line);padding-top:10px;margin-top:6px;font-size:13px}footer .credit a{color:var(--ink);font-weight:600}footer .credit a:hover{color:var(--accent)}
+footer .credit{flex-basis:100%;display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:18px;padding-top:28px;border-top:1px solid var(--line);color:var(--ink-dim);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;min-height:0}footer .credit img{display:block;width:184px;height:auto;opacity:.92;transition:opacity .2s,transform .2s}footer .credit:hover img{opacity:1;transform:translateY(-1px)}footer .credit:hover{color:var(--ink)}
 @media (hover:none){.thumb .play{opacity:1}}
 @media (max-width:520px){.hero > .wrap{padding-block:40px 56px;gap:22px}.status{font-size:12px}.cta-row .btn{flex:1 1 auto;justify-content:center}}
 .nav .wrap{position:relative}
@@ -350,7 +350,7 @@ footer .credit{flex-basis:100%;border-top:1px solid var(--line);padding-top:10px
   <div class="wrap">
     <span>© 2026 Fractured SMP. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
     <span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a></span>
-    <span class="credit">Built and powered by <a href="https://directactiondigital.com" target="_blank" rel="noopener">DirectActionDigital.com</a></span>
+    <a class="credit" href="https://directactiondigital.com" target="_blank" rel="noopener" aria-label="Built and powered by Direct Action Digital"><span>Built &amp; powered by</span><img src="img/dad-logo.png" alt="Direct Action Digital" width="184" height="48" loading="lazy"></a>
   </div>
 </footer>
 
