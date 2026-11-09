@@ -215,7 +215,66 @@
    "published": "2026-11-06"
   }
  ],
- "members": 122,
- "online": 20,
- "updated": "2026-11-09T21:54Z"
+ "members": 123,
+ "online": 27,
+ "updated": "2026-11-09T22:48Z",
+ "live": {},
+ "skins": {
+  "@acehardware67": {
+   "name": "AceHardware67",
+   "model": "default"
+  },
+  "@prep4cringe": {
+   "name": "Prep4Cringe",
+   "model": "slim"
+  },
+  "@undercard594": {
+   "name": "UNDERcard594",
+   "model": "default"
+  },
+  "@vexan22": {
+   "name": "_Vexan_",
+   "model": "default"
+  },
+  "@fireblade-yt": {
+   "name": "Fireblade_1",
+   "model": "default"
+  },
+  "@h2ozero": {
+   "name": "h2ozer0",
+   "model": "slim"
+  }
+ },
+ "news": [
+  {
+   "title": "Marketplace Content: November 2026",
+   "url": "https://www.minecraft.net/en-us/article/marketplace-content-november-2026",
+   "published": "2026-11-04"
+  },
+  {
+   "title": "Creator Pages arrive on the Marketplace",
+   "url": "https://www.minecraft.net/en-us/article/creator-pages-arrive-on-the-marketplace",
+   "published": "2026-11-03"
+  },
+  {
+   "title": "Everything you can test from the upcoming game drop",
+   "url": "https://www.minecraft.net/en-us/article/drop-4-2026-testing",
+   "published": "2026-11-03"
+  },
+  {
+   "title": "Minecraft Preview 26.70.23 Changelog",
+   "url": "https://www.minecraft.net/en-us/article/minecraft-preview-26-70-23",
+   "published": "2026-11-03"
+  },
+  {
+   "title": "Minecraft 26.4 Snapshot 7",
+   "url": "https://www.minecraft.net/en-us/article/minecraft-26-4-snapshot-7",
+   "published": "2026-11-03"
+  },
+  {
+   "title": "Halloween on Realms: Creeping Suspicion",
+   "url": "https://www.minecraft.net/en-us/article/halloween-on-realms",
+   "published": "2026-10-30"
+  }
+ ]
 }

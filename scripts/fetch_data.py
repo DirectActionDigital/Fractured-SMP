@@ -5,11 +5,13 @@ playlist (public playlist page, falling back to RSS) and the Discord member
 count (public invite endpoint). Runs hourly from GitHub Actions. If a source
 fails, the previous value in data.json is kept so the site never goes blank.
 """
+import base64
 import json
 import os
 import re
 import urllib.request
 import xml.etree.ElementTree as ET
+from html import unescape
 from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,6 +26,16 @@ CHANNELS = {
     "@fireblade-yt": "UCpfQlWwMvzBjeDWhyLLTb4A",
     "@h2ozero": "UCN95epHVNMAwhwUedVrv9Ag",
 }
+# Minecraft account name for each creator (checked 2026-11-09: skins match their channel art)
+IGN = {
+    "@acehardware67": "AceHardware67",
+    "@prep4cringe": "Prep4Cringe",
+    "@undercard594": "UNDERcard594",
+    "@vexan22": "_Vexan_",
+    "@fireblade-yt": "Fireblade_1",
+    "@h2ozero": "h2ozer0",
+}
+NEWS_RSS = "https://www.minecraft.net/en-us/feeds/community-content/rss"
 PLAYLIST = "PLmzftq-PMGGLPC9Xkheqq36Jjy7xlGWXQ"
 INVITE = "RD2mYCt4y8"
 NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
@@ -104,6 +116,52 @@ def upload_date(vid):
         return None
 
 
+def live_now(cid):
+    """Return {id, title} if the channel is live right now, else None."""
+    html = get(f"https://www.youtube.com/channel/{cid}/live").decode("utf-8", "replace")
+    can = re.search(r'<link rel="canonical" href="https://www\.youtube\.com/watch\?v=([A-Za-z0-9_-]{11})"', html)
+    if not can or '"isLive":true' not in html or '"isUpcoming":true' in html:
+        return None
+    t = re.search(r'<meta name="title" content="([^"]*)"', html)
+    return {"id": can.group(1), "title": clean(unescape(t.group(1)) if t else "Live now")}
+
+
+def skin(name):
+    """Download the creator's current Minecraft skin; return 'slim' or 'default'."""
+    uid = json.loads(get(f"https://api.mojang.com/users/profiles/minecraft/{name}"))["id"]
+    prof = json.loads(get(f"https://sessionserver.mojang.com/session/minecraft/profile/{uid}"))
+    tex = json.loads(base64.b64decode(prof["properties"][0]["value"]))["textures"].get("SKIN")
+    if not tex or not tex.get("url", "").startswith(("http://textures.minecraft.net/", "https://textures.minecraft.net/")):
+        return None
+    png = get(tex["url"].replace("http://", "https://", 1))
+    if png[:8] != b"\x89PNG\r\n\x1a\n" or len(png) > 200_000:
+        return None
+    path = os.path.join(ROOT, "img", f"skin-{name.lower()}.png")
+    old = open(path, "rb").read() if os.path.exists(path) else None
+    if old != png:
+        with open(path, "wb") as f:
+            f.write(png)
+    return "slim" if tex.get("metadata", {}).get("model") == "slim" else "default"
+
+
+def news():
+    root = ET.fromstring(get(NEWS_RSS))
+    out = []
+    for it in root.findall("./channel/item"):
+        link = it.find("{http://www.w3.org/2005/Atom}link")
+        url = link.get("href", "") if link is not None else (it.findtext("link") or "")
+        title = clean(it.findtext("title") or "")
+        try:
+            date = datetime.strptime((it.findtext("pubDate") or "")[:16], "%a, %d %b %Y").strftime("%Y-%m-%d")
+        except ValueError:
+            date = None
+        if title and re.match(r"^https://www\.minecraft\.net/[A-Za-z0-9/_.-]+$", url):
+            out.append({"title": title, "url": url, "published": date})
+        if len(out) == 6:
+            break
+    return out
+
+
 def main():
     try:
         with open(OUT) as f:
@@ -153,10 +211,37 @@ def main():
     except Exception as e:
         print("discord failed", e)
 
+    live = {}
+    for handle, cid in CHANNELS.items():
+        try:
+            v = live_now(cid)
+            if v and ID_RE.match(v["id"]):
+                live[handle] = v
+        except Exception as e:
+            print("live check failed", handle, e)
+    data["live"] = live
+
+    skins = data.get("skins", {})
+    for handle, name in IGN.items():
+        try:
+            m = skin(name)
+            if m:
+                skins[handle] = {"name": name, "model": m}
+        except Exception as e:
+            print("skin failed", handle, e)
+    data["skins"] = skins
+
+    try:
+        n = news()
+        if n:
+            data["news"] = n
+    except Exception as e:
+        print("news failed", e)
+
     data["updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     with open(OUT, "w") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
-    print("episodes", len(data["episodes"]), "members", data["members"], "creators", {k: len(v) for k, v in data["creators"].items()})
+    print("episodes", len(data["episodes"]), "members", data["members"], "creators", {k: len(v) for k, v in data["creators"].items()}, "live", list(live), "skins", len(skins), "news", len(data.get("news", [])))
 
 
 if __name__ == "__main__":

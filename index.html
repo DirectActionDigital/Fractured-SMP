@@ -265,6 +265,40 @@ footer .credit{flex-basis:100%;display:flex;flex-direction:column;align-items:ce
   .card:hover{transform:translate(-3px,-3px);border-color:var(--accent);box-shadow:6px 6px 0 color-mix(in srgb,var(--accent) 45%,#000)}
   .card:hover .avatar{transform:rotate(-5deg) scale(1.05)}
 }
+
+/* ---------- ip hint ---------- */
+.ipwrap{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.iphint{margin:0;font-size:13px;color:var(--ink-dim)}.iphint b{color:var(--ink);font-weight:700}
+@media (max-width:520px){.ipwrap{align-items:stretch}}
+/* ---------- minecraft news strip ---------- */
+.news{border-block:1px solid var(--line);background:#0e0e12}
+.news .wrap{display:flex;align-items:center;gap:18px;padding-block:12px;min-width:0}
+.news-k{flex:none;display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.news-k i{width:10px;height:10px;background:#3ddc84;box-shadow:inset -2px -2px 0 #23a35f}
+.news-list{display:flex;gap:10px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none;min-width:0;-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent)}
+.news-list::-webkit-scrollbar{display:none}
+.news-list a{display:flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;white-space:nowrap;border:1px solid var(--line);border-radius:4px;background:var(--surface);color:var(--ink);text-decoration:none;font-size:14px;font-weight:600;transition:border-color .15s}
+.news-list a:hover{border-color:var(--accent)}
+.news-list time{font-family:var(--f-mono);font-size:12px;color:var(--ink-dim);font-weight:400}
+@media (max-width:640px){.news .wrap{flex-direction:column;align-items:stretch;gap:10px}.news-list{padding-right:24px}}
+/* ---------- live ---------- */
+.livebar{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 16px;background:#e0283a;color:#fff;font-weight:700;font-size:14px;text-decoration:none;text-align:center;position:relative;z-index:2}
+.livebar:hover{background:#c81f30}
+.livebar .dot,.livebadge .dot{width:9px;height:9px;border-radius:50%;background:#fff;flex:none}
+@media (prefers-reduced-motion:no-preference){.livebar .dot,.livebadge .dot{animation:blink 1.2s steps(2,start) infinite}}
+@keyframes blink{to{visibility:hidden}}
+.livebar u{text-underline-offset:3px}
+.card{position:relative}
+.livebadge{position:absolute;top:12px;right:12px;z-index:2;display:inline-flex;align-items:center;gap:7px;min-height:32px;padding:0 10px;border-radius:4px;background:#e0283a;color:#fff;font-family:var(--f-display);font-size:13px;letter-spacing:.08em;text-decoration:none}
+.card.is-live{border-color:#e0283a;box-shadow:0 0 0 1px #e0283a}
+/* ---------- 3d skins ---------- */
+.skin{width:100%;height:250px;display:grid;place-items:center;margin:-6px 0 -4px;position:relative;cursor:grab;touch-action:pan-y}
+.skin canvas{display:block;outline:none}
+.skin:active{cursor:grabbing}
+.card.has-skin .avatar{width:58px!important;height:58px!important;margin-top:-34px;position:relative;z-index:1;border-width:3px;box-shadow:0 0 0 4px var(--surface)}
+.skin-hint{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);font-size:11px;color:var(--ink-dim);letter-spacing:.06em;opacity:0;transition:opacity .2s;pointer-events:none;white-space:nowrap}
+.card:hover .skin-hint{opacity:1}
+@media (hover:none){.skin-hint{display:none}}
 .nav .wrap{position:relative}
 .nav-end{display:flex;gap:10px;align-items:center}
 .menu-btn{display:none;width:44px;height:44px;border-radius:6px;background:var(--surface);border:1px solid var(--line);padding:0;flex-direction:column;justify-content:center;align-items:center;gap:5px}
@@ -300,9 +334,16 @@ footer .credit{flex-basis:100%;display:flex;flex-direction:column;align-items:ce
       <a class="btn btn-primary" href="https://discord.gg/RD2mYCt4y8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.4A19.6 19.6 0 0 0 15.4 3l-.6 1.3a18 18 0 0 0-5.6 0L8.6 3a19.5 19.5 0 0 0-4.9 1.5C.6 9.1-.3 13.6.1 18.1A19.8 19.8 0 0 0 6.1 21l1.3-2.1c-.7-.3-1.4-.6-2-1l.5-.4a14 14 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2.1a19.7 19.7 0 0 0 6-3c.5-5.2-.9-9.7-3.6-13.6ZM8 15.3c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.4 8 10.4s2.2 1.1 2.2 2.5-1 2.4-2.2 2.4Zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.5 2.2-2.5 2.2 1.1 2.2 2.5-1 2.4-2.2 2.4Z"/></svg>Join the Discord</a>
       <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=V277dZ8neew&amp;list=PLmzftq-PMGGLPC9Xkheqq36Jjy7xlGWXQ" target="_blank" rel="noopener">Watch episode 1</a>
     </div>
-    <button type="button" class="ipchip " data-ip="fracturedsmp.datho.st" aria-label="Copy server address fracturedsmp.datho.st"><span class="ip-k">IP</span><span class="ip-v">fracturedsmp.datho.st</span><span class="ip-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 3h11v13h-3v3H5V6h3V3zm2 3h6v8h1V5h-7v1zM7 8v9h7V8H7z"/></svg><b>Copy</b></span></button>
+    <div class="ipwrap"><button type="button" class="ipchip " data-ip="fracturedsmp.datho.st" aria-label="Copy server address fracturedsmp.datho.st"><span class="ip-k">IP</span><span class="ip-v">fracturedsmp.datho.st</span><span class="ip-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 3h11v13h-3v3H5V6h3V3zm2 3h6v8h1V5h-7v1zM7 8v9h7V8H7z"/></svg><b>Copy</b></span></button><p class="iphint">Paste it in Minecraft Java: <b>Multiplayer → Add Server</b>. It isn't a website.</p></div>
   </div>
 </header>
+
+<section class="news" id="news" hidden aria-label="Latest Minecraft news">
+  <div class="wrap">
+    <span class="news-k"><i></i>Minecraft news</span>
+    <ul class="news-list" id="newsList"></ul>
+  </div>
+</section>
 
 <section class="block" id="creators">
   <div class="wrap">
@@ -428,9 +469,88 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const okId = id => typeof id === 'string' && /^[A-Za-z0-9_-]{11}$/.test(id);
+  const okName = n => typeof n === 'string' && /^[A-Za-z0-9_]{1,16}$/.test(n);
+  const M = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+  const whenCards = fn => { const go = () => { const cs = document.querySelectorAll('#creators .card'); if (cs.length) { fn(cs); return true; } return false; }; if (!go()) { const mo = new MutationObserver(() => { if (go()) mo.disconnect(); }); mo.observe(document.body, { childList: true, subtree: true }); } };
+  const cardFor = (cs, handle) => [...cs].find(c => (c.querySelector('.handle') || {}).textContent === handle);
+
+  fetch('data.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(d => {
+    if (!d || typeof d !== 'object') return;
+    /* --- minecraft news --- */
+    const news = Array.isArray(d.news) ? d.news.filter(n => n && typeof n.title === 'string' && /^https:\/\/www\.minecraft\.net\/[A-Za-z0-9\/_.-]+$/.test(n.url)).slice(0, 6) : [];
+    if (news.length) {
+      const ul = document.getElementById('newsList');
+      news.forEach(n => {
+        const li = el('li'), a = el('a'); a.href = n.url; a.target = '_blank'; a.rel = 'noopener';
+        a.appendChild(el('span', '', n.title.slice(0, 90)));
+        if (typeof n.published === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(n.published)) { const [y, m, dd] = n.published.split('-'); const t = el('time', '', `${M[+m - 1]} ${+dd}`); t.dateTime = n.published; a.appendChild(t); }
+        li.appendChild(a); ul.appendChild(li);
+      });
+      document.getElementById('news').hidden = false;
+    }
+    /* --- live now --- */
+    const live = d.live && typeof d.live === 'object' ? Object.entries(d.live).filter(([h, v]) => v && okId(v.id)) : [];
+    whenCards(cs => {
+      const names = [];
+      live.forEach(([h, v]) => {
+        const c = cardFor(cs, h); if (!c) return;
+        const nm = (c.querySelector('h3') || {}).textContent || h; names.push([nm, v]);
+        c.classList.add('is-live');
+        const b = el('a', 'livebadge'); b.href = `https://www.youtube.com/watch?v=${v.id}`; b.target = '_blank'; b.rel = 'noopener'; b.setAttribute('aria-label', `${nm} is live now, watch on YouTube`);
+        b.append(el('span', 'dot'), document.createTextNode('LIVE')); c.prepend(b);
+      });
+      if (names.length) {
+        const bar = el('a', 'livebar'); bar.href = `https://www.youtube.com/watch?v=${names[0][1].id}`; bar.target = '_blank'; bar.rel = 'noopener';
+        const who = names.length === 1 ? `${names[0][0]} is live now` : `${names.slice(0, -1).map(n => n[0]).join(', ')} and ${names[names.length - 1][0]} are live now`;
+        bar.append(el('span', 'dot'), el('span', '', who), el('u', '', 'Watch on YouTube'));
+        document.body.prepend(bar);
+      }
+      /* --- 3d skins --- */
+      const skins = d.skins && typeof d.skins === 'object' ? d.skins : {};
+      const todo = [...cs].map(c => { const h = (c.querySelector('.handle') || {}).textContent; const s = skins[h]; return s && okName(s.name) ? [c, s] : null; }).filter(Boolean);
+      if (!todo.length || !window.WebGLRenderingContext) return;
+      const sec = document.getElementById('creators');
+      const start = () => {
+        const sc = document.createElement('script'); sc.src = 'https://cdn.jsdelivr.net/npm/skinview3d@3.1.0/bundles/skinview3d.bundle.js'; sc.crossOrigin = 'anonymous';
+        sc.integrity = 'sha384-Iz8gC2Cz0FCn4hnc6vAmGMUiAileNrPeCwTzpxJu7v2R4KJJ9w5IPwdI6j5bHwPQ';
+        sc.onload = () => build(todo); document.head.appendChild(sc);
+      };
+      const io0 = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { io0.disconnect(); start(); } }, { rootMargin: '600px' });
+      io0.observe(sec);
+    });
+  }).catch(() => {});
+
+  function build(todo) {
+    if (!window.skinview3d) return;
+    const fine = matchMedia('(pointer: fine)').matches, reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const vis = new IntersectionObserver(es => es.forEach(e => { const v = e.target._viewer; if (v) v.renderPaused = !e.isIntersecting; }));
+    todo.forEach(([card, s], i) => {
+      try {
+        const box = el('div', 'skin'), cv = document.createElement('canvas');
+        box.appendChild(cv); if (fine) box.appendChild(el('span', 'skin-hint', 'drag to spin'));
+        box.setAttribute('role', 'img'); box.setAttribute('aria-label', `${s.name}'s Minecraft skin in 3D`);
+        const v = new skinview3d.SkinViewer({ canvas: cv, width: 210, height: 250, skin: `img/skin-${s.name.toLowerCase()}.png`, model: s.model === 'slim' ? 'slim' : 'default', zoom: 0.82, fov: 50 });
+        v.background = null; v.playerObject.rotation.y = -0.45 + (i % 3) * 0.3;
+        v.controls.enableZoom = false; v.controls.enablePan = false; v.controls.enableRotate = fine;
+        if (!reduce) { v.animation = new skinview3d.IdleAnimation(); }
+        card.addEventListener('mouseenter', () => { if (!reduce) { v.animation = new skinview3d.WalkingAnimation(); v.animation.speed = 0.7; } v.autoRotate = !reduce; v.autoRotateSpeed = 2.2; });
+        card.addEventListener('mouseleave', () => { v.autoRotate = false; if (!reduce) v.animation = new skinview3d.IdleAnimation(); });
+        const avatar = card.querySelector('.avatar'); card.insertBefore(box, avatar); card.classList.add('has-skin');
+        box._viewer = v; vis.observe(box);
+      } catch (e) {}
+    });
+  }
+});
+</script>
+
 <footer>
   <div class="wrap">
-    <span>© 2026 Fractured SMP. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
+    <span>© 2026 Fractured SMP. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
     <span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a></span>
     <a class="credit" href="https://directactiondigital.com" target="_blank" rel="noopener" aria-label="Built and powered by Direct Action Digital"><span>Built &amp; powered by</span><img src="img/dad-logo.png" alt="Direct Action Digital" width="184" height="48" loading="lazy"></a>
   </div>
