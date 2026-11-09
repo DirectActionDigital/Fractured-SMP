@@ -391,6 +391,30 @@ button.ipfield:hover{border-color:var(--accent)}
 .howlede{margin:-4px 0 14px;font-size:14px;color:var(--ink-dim);line-height:1.6}.howlede b{color:var(--ink)}
 .applinks{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .play-grid .howto{grid-template-columns:1fr}
+
+/* join layout v2: IP row, three equal cards, online strip */
+.play-grid{grid-template-columns:1fr;gap:16px}
+.play-grid .howto{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+.howto .hc-java{grid-column:1;grid-row:2}
+.howto .hc-bed{grid-column:1;grid-row:3}
+.howto .hc-con{grid-column:2;grid-row:2 / span 2}
+.howto .ipfields{grid-column:1/-1;grid-template-columns:repeat(2,minmax(0,1fr))}
+.howcard{display:flex;flex-direction:column}
+.howcard .applinks{margin-top:auto;padding-top:18px}
+.howcard .conflow{margin-top:22px}
+.howcard .howfoot{margin-top:18px}
+.howcard h3{min-height:30px}
+.online{position:static}
+.on-grid{grid-template-columns:repeat(auto-fit,minmax(96px,1fr));max-height:none}
+.hc-con h3{flex-wrap:nowrap}
+@media (max-width:900px){.play-grid .howto{grid-template-columns:1fr}.howto .howcard{grid-column:1!important;grid-row:auto!important}}
+@media (max-width:720px){.play-grid .howto{grid-template-columns:1fr}.howto .ipfields{grid-template-columns:1fr}}
+.conflow{margin-top:auto;display:flex;align-items:center;gap:10px;padding:18px;border:1px dashed var(--line);border-radius:8px;background:rgba(0,0,0,.18)}
+.conflow .cf{flex:none;width:52px;height:52px;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);border-radius:8px;color:var(--accent)}
+.conflow .cf svg{width:26px;height:26px}.conflow .cf.fs img{width:40px;height:40px;image-rendering:pixelated}
+.conflow i{flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--accent) 0 6px,transparent 6px 12px);opacity:.7}
+@media (prefers-reduced-motion:no-preference){.conflow i{background-size:24px 2px;animation:cfmove 1s linear infinite}@keyframes cfmove{to{background-position:24px 0}}}
+.howcard .conflow+.applinks{margin-top:0}
 /* ---------- live ---------- */
 .livebar{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 16px;background:#e0283a;color:#fff;font-weight:700;font-size:14px;text-decoration:none;text-align:center;position:relative;z-index:2}
 .livebar:hover{background:#c81f30}
@@ -487,7 +511,7 @@ button.ipfield:hover{border-color:var(--accent)}
           <button type="button" class="ipfield" data-copy="fracturedsmp.datho.st" aria-label="Copy server address fracturedsmp.datho.st"><span class="if-k">Server IP</span><span class="if-v">fracturedsmp.datho.st</span><span class="if-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 3h11v13h-3v3H5V6h3V3zm2 3h6v8h1V5h-7v1zM7 8v9h7V8H7z"/></svg><b>Copy</b></span></button>
           <button type="button" class="ipfield" data-copy="17055" aria-label="Copy Bedrock port 17055"><span class="if-k">Bedrock port</span><span class="if-v">17055</span><span class="if-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 3h11v13h-3v3H5V6h3V3zm2 3h6v8h1V5h-7v1zM7 8v9h7V8H7z"/></svg><b>Copy</b></span></button>
         </div>
-        <div class="howcard">
+        <div class="howcard hc-java">
           <h3><span class="ed-icon" aria-hidden="true"></span>Java Edition <span class="ed-sub">PC, Mac and Linux · <span id="playVer">Java 26.1.2</span></span></h3>
           <ol class="steps2">
             <li><span data-i18n="html:step1">Open Minecraft: Java Edition and click <b>Multiplayer</b>. If a warning pops up, click <b>Proceed</b>.</span></li>
@@ -497,7 +521,7 @@ button.ipfield:hover{border-color:var(--accent)}
           </ol>
           <p class="howfoot" data-i18n="html:howfoot">Rules, events and the crew live in the <a href="https://discord.gg/RD2mYCt4y8" target="_blank" rel="noopener">Discord</a>. Join it before you hop on.</p>
         </div>
-        <div class="howcard">
+        <div class="howcard hc-bed">
           <h3><span class="ed-icon br" aria-hidden="true"></span>Bedrock Edition <span class="ed-sub">Phone, tablet and Windows</span></h3>
           <ol class="steps2">
             <li><span data-i18n="html:bstep1">Open Minecraft and tap <b>Play</b>, then open the <b>Servers</b> tab.</span></li>
@@ -506,7 +530,7 @@ button.ipfield:hover{border-color:var(--accent)}
             <li><span data-i18n="html:bstep4">Tap <b>Save</b>, then tap the server to join.</span></li>
           </ol>
         </div>
-        <div class="howcard">
+        <div class="howcard hc-con">
           <h3><span class="ed-icon pad" aria-hidden="true"></span>Xbox, PlayStation and Switch</h3>
           <p class="howlede" data-i18n="html:clede">Consoles can't type in a server address, so use the free <b>BedrockTogether</b> app on a phone that's on the same Wi-Fi as your console.</p>
           <ol class="steps2">
@@ -515,6 +539,7 @@ button.ipfield:hover{border-color:var(--accent)}
             <li><span data-i18n="html:cstep3">On your console, open Minecraft, go to <b>Play</b> and open the <b>Friends</b> tab.</span></li>
             <li><span data-i18n="html:cstep4">Join the game under <b>LAN Games</b>. Keep the app open until you're in.</span></li>
           </ol>
+          <div class="conflow" aria-hidden="true"><span class="cf"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm4 14v1h2v-1h-2z"/></svg></span><i></i><span class="cf"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 18.5a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM4.2 10.9a11 11 0 0 1 15.6 0l-1.5 1.5a8.9 8.9 0 0 0-12.6 0l-1.5-1.5zm3.2 3.2a6.5 6.5 0 0 1 9.2 0l-1.5 1.5a4.4 4.4 0 0 0-6.2 0l-1.5-1.5zM1 7.7a15.6 15.6 0 0 1 22 0l-1.5 1.5a13.5 13.5 0 0 0-19 0L1 7.7z"/></svg></span><i></i><span class="cf"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 6h10a5 5 0 0 1 5 5v2.5a4.5 4.5 0 0 1-8 2.8l-.5-.6h-3l-.5.6a4.5 4.5 0 0 1-8-2.8V11a5 5 0 0 1 5-5zm-.5 3v1.5H5V12h1.5v1.5H8V12h1.5v-1.5H8V9H6.5zm9.75.25a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm2 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></span><i></i><span class="cf fs"><img src="icon-512.png" alt="" width="40" height="40"></span></div>
           <div class="applinks"><a class="btn btn-ghost btn-sm" href="https://apps.apple.com/app/bedrocktogether/id1534593376" target="_blank" rel="noopener">BedrockTogether for iPhone</a><a class="btn btn-ghost btn-sm" href="https://play.google.com/store/apps/details?id=pl.extollite.bedrocktogetherapp" target="_blank" rel="noopener">BedrockTogether for Android</a></div>
           <p class="howfoot">BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.</p>
         </div>
