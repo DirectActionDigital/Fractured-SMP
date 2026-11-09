@@ -35,10 +35,19 @@ def get(url):
         return r.read()
 
 
+ID_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
 def clean(title):
-    # drop trailing hashtag spam from Shorts titles
-    t = re.sub(r"(\s+#\S+)+\s*$", "", title or "").strip()
-    return t or (title or "").strip()
+    # drop trailing hashtag spam from Shorts titles, strip HTML-significant characters, cap length
+    t = re.sub(r"(\s+#\S+)+\s*$", "", title or "").strip() or (title or "").strip()
+    t = re.sub(r"[<>\"'`&]", "", t)
+    return t[:140]
+
+
+def valid(v):
+    return bool(v.get("id") and ID_RE.match(v["id"])) and (v.get("published") is None or DATE_RE.match(v["published"] or ""))
 
 
 def rss(url):
@@ -111,6 +120,7 @@ def main():
                 if v["title"] not in seen:
                     seen.add(v["title"])
                     uniq.append(v)
+            uniq = [v for v in uniq if valid(v)]
             if uniq:
                 data["creators"][handle] = uniq[:3]
         except Exception as e:
@@ -129,6 +139,7 @@ def main():
         old = {x["id"]: x.get("published") for x in data.get("episodes", [])}
         for v in eps:
             v["published"] = dates.get(v["id"]) or old.get(v["id"]) or upload_date(v["id"])
+        eps = [v for v in eps if valid(v)]
         if eps:
             data["episodes"] = eps
     except Exception as e:
@@ -136,8 +147,9 @@ def main():
 
     try:
         inv = json.loads(get(f"https://discord.com/api/v10/invites/{INVITE}?with_counts=true"))
-        data["members"] = inv.get("approximate_member_count") or data.get("members")
-        data["online"] = inv.get("approximate_presence_count") or data.get("online")
+        m, o = inv.get("approximate_member_count"), inv.get("approximate_presence_count")
+        data["members"] = m if isinstance(m, int) else data.get("members")
+        data["online"] = o if isinstance(o, int) else data.get("online")
     except Exception as e:
         print("discord failed", e)
 

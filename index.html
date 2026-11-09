@@ -475,11 +475,14 @@ footer a{display:inline-flex;align-items:center;min-height:44px}
 
   const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   const fmt = d => { if (!d) return ''; const [y,m,dd] = d.split('-'); return `${MONTHS[+m-1]} ${+dd}`; };
+  const esc = t => String(t == null ? '' : t).replace(/[&<>"'`]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;','`':'&#96;'}[ch]));
+  const okId = id => typeof id === 'string' && /^[A-Za-z0-9_-]{11}$/.test(id);
+  const okDate = d => typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : '';
   function applyData(d) {
-    if (!d) return;
-    creators.forEach(c => { const v = d.creators && d.creators[c.handle]; if (v && v.length) c.vids = v.map(x => [x.id, x.title]); });
-    if (d.episodes && d.episodes.length >= 5) eps = d.episodes.map(e => [e.id, fmt(e.published), e.title]);
-    if (d.members) {
+    if (!d || typeof d !== 'object') return;
+    creators.forEach(c => { const v = d.creators && d.creators[c.handle]; if (Array.isArray(v)) { const ok = v.filter(x => x && okId(x.id)).map(x => [x.id, esc(x.title)]); if (ok.length) c.vids = ok; } });
+    if (Array.isArray(d.episodes)) { const ok = d.episodes.filter(e => e && okId(e.id)).map(e => [e.id, fmt(okDate(e.published)), esc(e.title)]); if (ok.length >= 5) eps = ok; }
+    if (Number.isInteger(d.members) && d.members > 0 && d.members < 1e7) {
       const n = d.members;
       const st = document.getElementById('memberStatus'); if (st) st.textContent = `Season Two applications open · ${n} members on Discord`;
       hof[2].cards[0][1] = String(n);
