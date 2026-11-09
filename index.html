@@ -385,6 +385,12 @@ button.ipfield:hover{border-color:var(--accent)}
 .lang-grid button[aria-checked=true]{background:color-mix(in srgb,var(--accent) 35%,transparent);color:#e7d6ff}
 .lang-grid button[aria-checked=true]::after{content:"✓";color:var(--accent);font-size:17px}
 @media (max-width:720px){.lang-menu{position:fixed;left:16px;right:16px;top:76px;width:auto}}
+.ed-icon.br{background:linear-gradient(#8a8a8a 0 35%,#5a5a5a 35% 100%)}
+.ed-icon.pad{background:#3a3a44;border-radius:6px;position:relative}
+.ed-icon.pad::after{content:"";position:absolute;left:4px;right:4px;top:9px;height:4px;background:var(--accent)}
+.howlede{margin:-4px 0 14px;font-size:14px;color:var(--ink-dim);line-height:1.6}.howlede b{color:var(--ink)}
+.applinks{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.play-grid .howto{grid-template-columns:1fr}
 /* ---------- live ---------- */
 .livebar{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 16px;background:#e0283a;color:#fff;font-weight:700;font-size:14px;text-decoration:none;text-align:center;position:relative;z-index:2}
 .livebar:hover{background:#c81f30}
@@ -472,17 +478,17 @@ button.ipfield:hover{border-color:var(--accent)}
       <div>
         <div class="eyebrow">Server IP and how to join</div>
         <h2>Hop on Fractured</h2>
-        <p>Fractured runs on Minecraft: Java Edition. It takes about a minute to add the server.</p>
+        <p>Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.</p>
       </div>
     </div>
     <div class="play-grid">
       <div class="howto">
         <div class="ipfields">
           <button type="button" class="ipfield" data-copy="fracturedsmp.datho.st" aria-label="Copy server address fracturedsmp.datho.st"><span class="if-k">Server IP</span><span class="if-v">fracturedsmp.datho.st</span><span class="if-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 3h11v13h-3v3H5V6h3V3zm2 3h6v8h1V5h-7v1zM7 8v9h7V8H7z"/></svg><b>Copy</b></span></button>
-          <div class="ipfield static"><span class="if-k">Version</span><span class="if-v" id="playVer">Java Edition</span></div>
+          <button type="button" class="ipfield" data-copy="17055" aria-label="Copy Bedrock port 17055"><span class="if-k">Bedrock port</span><span class="if-v">17055</span><span class="if-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 3h11v13h-3v3H5V6h3V3zm2 3h6v8h1V5h-7v1zM7 8v9h7V8H7z"/></svg><b>Copy</b></span></button>
         </div>
         <div class="howcard">
-          <h3><span class="ed-icon" aria-hidden="true"></span>Java Edition <span class="ed-sub">PC, Mac and Linux</span></h3>
+          <h3><span class="ed-icon" aria-hidden="true"></span>Java Edition <span class="ed-sub">PC, Mac and Linux · <span id="playVer">Java 26.1.2</span></span></h3>
           <ol class="steps2">
             <li><span data-i18n="html:step1">Open Minecraft: Java Edition and click <b>Multiplayer</b>. If a warning pops up, click <b>Proceed</b>.</span></li>
             <li><span data-i18n="html:step2">Click <b>Add Server</b>.</span></li>
@@ -491,9 +497,26 @@ button.ipfield:hover{border-color:var(--accent)}
           </ol>
           <p class="howfoot" data-i18n="html:howfoot">Rules, events and the crew live in the <a href="https://discord.gg/RD2mYCt4y8" target="_blank" rel="noopener">Discord</a>. Join it before you hop on.</p>
         </div>
-        <div class="howcard muted">
-          <h3><span class="ed-icon no" aria-hidden="true"></span>Bedrock, phone, Xbox, PlayStation or Switch?</h3>
-          <p>Fractured is a Java Edition server, so those versions of Minecraft can't connect to it right now. You can still watch every POV on YouTube.</p>
+        <div class="howcard">
+          <h3><span class="ed-icon br" aria-hidden="true"></span>Bedrock Edition <span class="ed-sub">Phone, tablet and Windows</span></h3>
+          <ol class="steps2">
+            <li><span data-i18n="html:bstep1">Open Minecraft and tap <b>Play</b>, then open the <b>Servers</b> tab.</span></li>
+            <li><span data-i18n="html:bstep2">Scroll to the bottom and tap <b>Add Server</b>.</span></li>
+            <li><span data-i18n="html:bstep3">Type <b>Fractured SMP</b> as the name, <b>fracturedsmp.datho.st</b> as the <b>Server Address</b> and <b>17055</b> as the <b>Port</b>.</span></li>
+            <li><span data-i18n="html:bstep4">Tap <b>Save</b>, then tap the server to join.</span></li>
+          </ol>
+        </div>
+        <div class="howcard">
+          <h3><span class="ed-icon pad" aria-hidden="true"></span>Xbox, PlayStation and Switch</h3>
+          <p class="howlede" data-i18n="html:clede">Consoles can't type in a server address, so use the free <b>BedrockTogether</b> app on a phone that's on the same Wi-Fi as your console.</p>
+          <ol class="steps2">
+            <li><span data-i18n="html:cstep1">Download <b>BedrockTogether</b> on your phone and open it.</span></li>
+            <li><span data-i18n="html:cstep2">Type <b>fracturedsmp.datho.st</b> as the address and <b>17055</b> as the port, then start it.</span></li>
+            <li><span data-i18n="html:cstep3">On your console, open Minecraft, go to <b>Play</b> and open the <b>Friends</b> tab.</span></li>
+            <li><span data-i18n="html:cstep4">Join the game under <b>LAN Games</b>. Keep the app open until you're in.</span></li>
+          </ol>
+          <div class="applinks"><a class="btn btn-ghost btn-sm" href="https://apps.apple.com/app/bedrocktogether/id1534593376" target="_blank" rel="noopener">BedrockTogether for iPhone</a><a class="btn btn-ghost btn-sm" href="https://play.google.com/store/apps/details?id=pl.extollite.bedrocktogetherapp" target="_blank" rel="noopener">BedrockTogether for Android</a></div>
+          <p class="howfoot">BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.</p>
         </div>
       </div>
       <div class="online" id="onlinePanel" aria-live="polite">

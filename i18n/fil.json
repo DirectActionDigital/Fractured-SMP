@@ -102,13 +102,31 @@
   "Update": "Update",
   "Marketplace": "Marketplace",
   "Realms": "Realms",
-  "Language": "Wika"
+  "Language": "Wika",
+  "Bedrock port": "Bedrock port",
+  "Bedrock Edition": "Bedrock Edition",
+  "Phone, tablet and Windows": "Phone, tablet at Windows",
+  "Xbox, PlayStation and Switch": "Xbox, PlayStation at Switch",
+  "BedrockTogether for iPhone": "BedrockTogether para sa iPhone",
+  "BedrockTogether for Android": "BedrockTogether para sa Android",
+  "BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.": "Hindi gawa ng Minecraft o Fractured ang BedrockTogether. Minsan pumapalya ang suporta sa Switch.",
+  "PC, Mac and Linux ·": "PC, Mac at Linux ·",
+  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Sumali gamit ang Java o Bedrock, mula sa PC, phone, tablet o console. Mga isang minuto lang ang pagdagdag ng server."
  },
  "html": {
   "html:step1": "Buksan ang Minecraft: Java Edition at i-click ang <b>Multiplayer</b>. Kung may lumabas na babala, i-click ang <b>Magpatuloy</b>.",
   "html:step2": "I-click ang <b>Magdagdag ng Server</b>.",
   "html:step3": "I-type ang <b>fracturedsmp.datho.st</b> sa kahon ng <b>Address ng Server</b> at i-click ang <b>Tapos na</b>.",
   "html:step4": "I-click ang <b>Fractured SMP</b> sa server list mo, tapos i-click ang <b>Sumali sa Server</b>.",
-  "html:howfoot": "Nasa <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a> ang rules, events at ang crew. Sumali muna bago sumabak."
+  "html:howfoot": "Nasa <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a> ang rules, events at ang crew. Sumali muna bago sumabak.",
+  "html:bstep1": "Buksan ang Minecraft at i-tap ang <b>Maglaro</b>, tapos buksan ang tab na <b>Mga Server</b>.",
+  "html:bstep2": "Mag-scroll hanggang sa ibaba at i-tap ang <b>Magdagdag ng Server</b>.",
+  "html:bstep3": "I-type ang <b>Fractured SMP</b> bilang pangalan, <b>fracturedsmp.datho.st</b> bilang <b>Address ng Server</b> at <b>17055</b> bilang <b>Port</b>.",
+  "html:bstep4": "I-tap ang <b>I-save</b>, tapos i-tap ang server para sumali.",
+  "html:clede": "Hindi makapag-type ng server address sa mga console, kaya gamitin ang libreng <b>BedrockTogether</b> app sa phone na nasa parehong Wi-Fi ng console mo.",
+  "html:cstep1": "I-download ang <b>BedrockTogether</b> sa phone mo at buksan ito.",
+  "html:cstep2": "I-type ang <b>fracturedsmp.datho.st</b> bilang address at <b>17055</b> bilang port, tapos simulan ito.",
+  "html:cstep3": "Sa console mo, buksan ang Minecraft, pumunta sa <b>Maglaro</b> at buksan ang tab na <b>Mga Kaibigan</b>.",
+  "html:cstep4": "Sumali sa laro sa ilalim ng <b>Mga LAN Game</b>. Panatilihing bukas ang app hanggang makapasok ka."
  }
 }

@@ -102,13 +102,31 @@
   "Update": "Pembaruan",
   "Marketplace": "Marketplace",
   "Realms": "Realms",
-  "Language": "Bahasa"
+  "Language": "Bahasa",
+  "Bedrock port": "Port Bedrock",
+  "Bedrock Edition": "Bedrock Edition",
+  "Phone, tablet and Windows": "Ponsel, tablet, dan Windows",
+  "Xbox, PlayStation and Switch": "Xbox, PlayStation, dan Switch",
+  "BedrockTogether for iPhone": "BedrockTogether untuk iPhone",
+  "BedrockTogether for Android": "BedrockTogether untuk Android",
+  "BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.": "BedrockTogether bukan buatan Minecraft atau Fractured. Dukungan Switch kadang bisa berhasil, kadang tidak.",
+  "PC, Mac and Linux ·": "PC, Mac, dan Linux ·",
+  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Gabung lewat Java atau Bedrock, dari PC, ponsel, tablet, atau konsol. Menambahkan servernya cuma butuh sekitar semenit."
  },
  "html": {
   "html:step1": "Buka Minecraft: Java Edition dan klik <b>Multipemain</b>. Jika muncul peringatan, klik <b>Lanjutkan</b>.",
   "html:step2": "Klik <b>Tambahkan Server</b>.",
   "html:step3": "Ketik <b>fracturedsmp.datho.st</b> di kotak <b>Alamat Server</b> lalu klik <b>Selesai</b>.",
   "html:step4": "Klik <b>Fractured SMP</b> di daftar servermu, lalu klik <b>Gabung Server</b>.",
-  "html:howfoot": "Aturan, event, dan kru ada di <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>. Gabung dulu sebelum masuk."
+  "html:howfoot": "Aturan, event, dan kru ada di <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>. Gabung dulu sebelum masuk.",
+  "html:bstep1": "Buka Minecraft dan ketuk <b>Main</b>, lalu buka tab <b>Server</b>.",
+  "html:bstep2": "Gulir ke bawah dan ketuk <b>Tambahkan Server</b>.",
+  "html:bstep3": "Ketik <b>Fractured SMP</b> sebagai nama, <b>fracturedsmp.datho.st</b> sebagai <b>Alamat Server</b>, dan <b>17055</b> sebagai <b>Port</b>.",
+  "html:bstep4": "Ketuk <b>Simpan</b>, lalu ketuk servernya untuk bergabung.",
+  "html:clede": "Konsol tidak bisa mengetik alamat server, jadi pakai aplikasi gratis <b>BedrockTogether</b> di ponsel yang terhubung ke Wi-Fi yang sama dengan konsolmu.",
+  "html:cstep1": "Unduh <b>BedrockTogether</b> di ponselmu dan buka.",
+  "html:cstep2": "Ketik <b>fracturedsmp.datho.st</b> sebagai alamat dan <b>17055</b> sebagai port, lalu mulai.",
+  "html:cstep3": "Di konsolmu, buka Minecraft, masuk ke <b>Main</b>, lalu buka tab <b>Teman</b>.",
+  "html:cstep4": "Gabung ke game di bawah <b>Permainan LAN</b>. Biarkan aplikasi tetap terbuka sampai kamu masuk."
  }
 }

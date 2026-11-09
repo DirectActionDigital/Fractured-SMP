@@ -102,13 +102,31 @@
   "Update": "Cập nhật",
   "Marketplace": "Marketplace",
   "Realms": "Realms",
-  "Language": "Ngôn ngữ"
+  "Language": "Ngôn ngữ",
+  "Bedrock port": "Cổng Bedrock",
+  "Bedrock Edition": "Bedrock Edition",
+  "Phone, tablet and Windows": "Điện thoại, máy tính bảng và Windows",
+  "Xbox, PlayStation and Switch": "Xbox, PlayStation và Switch",
+  "BedrockTogether for iPhone": "BedrockTogether cho iPhone",
+  "BedrockTogether for Android": "BedrockTogether cho Android",
+  "BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.": "BedrockTogether không phải do Minecraft hay Fractured làm ra. Hỗ trợ Switch có lúc được lúc không.",
+  "PC, Mac and Linux ·": "PC, Mac và Linux ·",
+  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Vào bằng Java hoặc Bedrock, từ PC, điện thoại, máy tính bảng hay máy console. Thêm máy chủ chỉ mất khoảng một phút."
  },
  "html": {
   "html:step1": "Mở Minecraft: Java Edition và nhấn <b>Nhiều người chơi</b>. Nếu có cảnh báo hiện lên, nhấn <b>Tiếp tục</b>.",
   "html:step2": "Nhấn <b>Thêm máy chủ</b>.",
   "html:step3": "Gõ <b>fracturedsmp.datho.st</b> vào ô <b>Địa chỉ máy chủ</b> rồi nhấn <b>Xong</b>.",
   "html:step4": "Nhấn <b>Fractured SMP</b> trong danh sách máy chủ của bạn, rồi nhấn <b>Tham gia máy chủ</b>.",
-  "html:howfoot": "Luật, sự kiện và cả nhóm đều ở trong <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>. Hãy vào trước khi nhảy vào chơi."
+  "html:howfoot": "Luật, sự kiện và cả nhóm đều ở trong <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>. Hãy vào trước khi nhảy vào chơi.",
+  "html:bstep1": "Mở Minecraft và nhấn <b>Chơi</b>, rồi mở tab <b>Máy chủ</b>.",
+  "html:bstep2": "Cuộn xuống cuối và nhấn <b>Thêm máy chủ</b>.",
+  "html:bstep3": "Nhập <b>Fractured SMP</b> làm tên, <b>fracturedsmp.datho.st</b> vào <b>Địa chỉ máy chủ</b> và <b>17055</b> vào <b>Cổng</b>.",
+  "html:bstep4": "Nhấn <b>Lưu</b>, rồi nhấn vào máy chủ để tham gia.",
+  "html:clede": "Máy console không gõ được địa chỉ máy chủ, nên hãy dùng ứng dụng miễn phí <b>BedrockTogether</b> trên điện thoại cùng Wi-Fi với máy console của bạn.",
+  "html:cstep1": "Tải <b>BedrockTogether</b> về điện thoại và mở lên.",
+  "html:cstep2": "Nhập <b>fracturedsmp.datho.st</b> làm địa chỉ và <b>17055</b> làm cổng, rồi bắt đầu.",
+  "html:cstep3": "Trên máy console, mở Minecraft, vào <b>Chơi</b> và mở tab <b>Bạn bè</b>.",
+  "html:cstep4": "Tham gia trò chơi trong mục <b>Trò chơi LAN</b>. Giữ ứng dụng mở cho đến khi bạn vào được."
  }
 }

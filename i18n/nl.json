@@ -102,13 +102,31 @@
   "Update": "Update",
   "Marketplace": "Marketplace",
   "Realms": "Realms",
-  "Language": "Taal"
+  "Language": "Taal",
+  "Bedrock port": "Bedrock-poort",
+  "Bedrock Edition": "Bedrock Edition",
+  "Phone, tablet and Windows": "Telefoon, tablet en Windows",
+  "Xbox, PlayStation and Switch": "Xbox, PlayStation en Switch",
+  "BedrockTogether for iPhone": "BedrockTogether voor iPhone",
+  "BedrockTogether for Android": "BedrockTogether voor Android",
+  "BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.": "BedrockTogether is niet gemaakt door Minecraft of Fractured. Ondersteuning voor Switch werkt niet altijd.",
+  "PC, Mac and Linux ·": "PC, Mac en Linux ·",
+  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Doe mee met Java of Bedrock, vanaf een pc, telefoon, tablet of console. De server toevoegen duurt ongeveer een minuut."
  },
  "html": {
   "html:step1": "Open Minecraft: Java Edition en klik op <b>Multiplayer</b>. Als er een waarschuwing verschijnt, klik dan op <b>Doorgaan</b>.",
   "html:step2": "Klik op <b>Server toevoegen</b>.",
   "html:step3": "Typ <b>fracturedsmp.datho.st</b> in het vak <b>Serveradres</b> en klik op <b>Klaar</b>.",
   "html:step4": "Klik in je serverlijst op <b>Fractured SMP</b> en klik dan op <b>Server toetreden</b>.",
-  "html:howfoot": "Regels, events en de crew vind je in de <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>. Word lid voordat je erin springt."
+  "html:howfoot": "Regels, events en de crew vind je in de <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>. Word lid voordat je erin springt.",
+  "html:bstep1": "Open Minecraft en tik op <b>Spelen</b>, open dan het tabblad <b>Servers</b>.",
+  "html:bstep2": "Scroll helemaal naar beneden en tik op <b>Server toevoegen</b>.",
+  "html:bstep3": "Typ <b>Fractured SMP</b> als naam, <b>fracturedsmp.datho.st</b> als <b>Serveradres</b> en <b>17055</b> als <b>Poort</b>.",
+  "html:bstep4": "Tik op <b>Opslaan</b> en tik dan op de server om mee te doen.",
+  "html:clede": "Op consoles kun je geen serveradres typen, dus gebruik de gratis app <b>BedrockTogether</b> op een telefoon die op hetzelfde wifi zit als je console.",
+  "html:cstep1": "Download <b>BedrockTogether</b> op je telefoon en open de app.",
+  "html:cstep2": "Typ <b>fracturedsmp.datho.st</b> als adres en <b>17055</b> als poort en start het dan.",
+  "html:cstep3": "Open op je console Minecraft, ga naar <b>Spelen</b> en open het tabblad <b>Vrienden</b>.",
+  "html:cstep4": "Doe mee met het spel onder <b>LAN-games</b>. Houd de app open tot je binnen bent."
  }
 }

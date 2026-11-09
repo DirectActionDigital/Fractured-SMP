@@ -102,13 +102,31 @@
   "Update": "Aktualizacja",
   "Marketplace": "Marketplace",
   "Realms": "Realms",
-  "Language": "Język"
+  "Language": "Język",
+  "Bedrock port": "Port Bedrock",
+  "Bedrock Edition": "Bedrock Edition",
+  "Phone, tablet and Windows": "Telefon, tablet i Windows",
+  "Xbox, PlayStation and Switch": "Xbox, PlayStation i Switch",
+  "BedrockTogether for iPhone": "BedrockTogether na iPhone'a",
+  "BedrockTogether for Android": "BedrockTogether na Androida",
+  "BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.": "BedrockTogether nie jest stworzony przez Minecraft ani Fractured. Obsługa Switcha bywa różna.",
+  "PC, Mac and Linux ·": "PC, Mac i Linux ·",
+  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Dołącz na Java lub Bedrock, z komputera, telefonu, tabletu albo konsoli. Dodanie serwera zajmuje około minuty."
  },
  "html": {
   "html:step1": "Otwórz Minecraft: Java Edition i kliknij <b>Gra wieloosobowa</b>. Jeśli pojawi się ostrzeżenie, kliknij <b>Kontynuuj</b>.",
   "html:step2": "Kliknij <b>Dodaj serwer</b>.",
   "html:step3": "Wpisz <b>fracturedsmp.datho.st</b> w polu <b>Adres serwera</b> i kliknij <b>Gotowe</b>.",
   "html:step4": "Kliknij <b>Fractured SMP</b> na liście serwerów, a potem <b>Dołącz do serwera</b>.",
-  "html:howfoot": "Zasady, eventy i ekipa są na <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discordzie</a>. Dołącz do niego, zanim wskoczysz do gry."
+  "html:howfoot": "Zasady, eventy i ekipa są na <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discordzie</a>. Dołącz do niego, zanim wskoczysz do gry.",
+  "html:bstep1": "Otwórz Minecraft i stuknij <b>Graj</b>, a potem otwórz kartę <b>Serwery</b>.",
+  "html:bstep2": "Przewiń na sam dół i stuknij <b>Dodaj serwer</b>.",
+  "html:bstep3": "Wpisz <b>Fractured SMP</b> jako nazwę, <b>fracturedsmp.datho.st</b> w polu <b>Adres serwera</b> i <b>17055</b> w polu <b>Port</b>.",
+  "html:bstep4": "Stuknij <b>Zapisz</b>, a potem stuknij serwer, żeby dołączyć.",
+  "html:clede": "Na konsolach nie da się wpisać adresu serwera, więc użyj darmowej aplikacji <b>BedrockTogether</b> na telefonie połączonym z tym samym Wi-Fi co konsola.",
+  "html:cstep1": "Pobierz <b>BedrockTogether</b> na telefon i otwórz aplikację.",
+  "html:cstep2": "Wpisz <b>fracturedsmp.datho.st</b> jako adres i <b>17055</b> jako port, a potem uruchom.",
+  "html:cstep3": "Na konsoli otwórz Minecraft, wejdź w <b>Graj</b> i otwórz kartę <b>Znajomi</b>.",
+  "html:cstep4": "Dołącz do gry w sekcji <b>Gry LAN</b>. Nie zamykaj aplikacji, dopóki nie wejdziesz."
  }
 }

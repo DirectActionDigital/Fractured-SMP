@@ -102,13 +102,31 @@
   "Update": "Atualização",
   "Marketplace": "Mercado",
   "Realms": "Realms",
-  "Language": "Idioma"
+  "Language": "Idioma",
+  "Bedrock port": "Porta do Bedrock",
+  "Bedrock Edition": "Bedrock Edition",
+  "Phone, tablet and Windows": "Celular, tablet e Windows",
+  "Xbox, PlayStation and Switch": "Xbox, PlayStation e Switch",
+  "BedrockTogether for iPhone": "BedrockTogether para iPhone",
+  "BedrockTogether for Android": "BedrockTogether para Android",
+  "BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.": "O BedrockTogether não é feito pela Minecraft nem pela Fractured. O suporte ao Switch pode falhar às vezes.",
+  "PC, Mac and Linux ·": "PC, Mac e Linux ·",
+  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Entre pelo Java ou Bedrock, de um PC, celular, tablet ou console. Adicionar o servidor leva cerca de um minuto."
  },
  "html": {
   "html:step1": "Abra o Minecraft: Java Edition e clique em <b>Multijogador</b>. Se aparecer um aviso, clique em <b>Prosseguir</b>.",
   "html:step2": "Clique em <b>Adicionar servidor</b>.",
   "html:step3": "Digite <b>fracturedsmp.datho.st</b> na caixa <b>Endereço do servidor</b> e clique em <b>Concluído</b>.",
   "html:step4": "Clique em <b>Fractured SMP</b> na sua lista de servidores e depois em <b>Entrar no servidor</b>.",
-  "html:howfoot": "Regras, eventos e a equipe ficam no <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>. Entre nele antes de jogar."
+  "html:howfoot": "Regras, eventos e a equipe ficam no <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>. Entre nele antes de jogar.",
+  "html:bstep1": "Abra o Minecraft e toque em <b>Jogar</b>, depois abra a aba <b>Servidores</b>.",
+  "html:bstep2": "Role até o final e toque em <b>Adicionar servidor</b>.",
+  "html:bstep3": "Digite <b>Fractured SMP</b> como nome, <b>fracturedsmp.datho.st</b> em <b>Endereço do servidor</b> e <b>17055</b> em <b>Porta</b>.",
+  "html:bstep4": "Toque em <b>Salvar</b> e depois toque no servidor para entrar.",
+  "html:clede": "Os consoles não permitem digitar o endereço de um servidor, então use o app gratuito <b>BedrockTogether</b> em um celular no mesmo Wi-Fi do seu console.",
+  "html:cstep1": "Baixe o <b>BedrockTogether</b> no seu celular e abra.",
+  "html:cstep2": "Digite <b>fracturedsmp.datho.st</b> como endereço e <b>17055</b> como porta, e depois inicie.",
+  "html:cstep3": "No seu console, abra o Minecraft, vá em <b>Jogar</b> e abra a aba <b>Amigos</b>.",
+  "html:cstep4": "Entre no jogo em <b>Jogos LAN</b>. Deixe o app aberto até você entrar."
  }
 }

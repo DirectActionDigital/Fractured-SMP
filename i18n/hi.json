@@ -102,13 +102,31 @@
   "Update": "अपडेट",
   "Marketplace": "मार्केटप्लेस",
   "Realms": "Realms",
-  "Language": "भाषा"
+  "Language": "भाषा",
+  "Bedrock port": "Bedrock पोर्ट",
+  "Bedrock Edition": "Bedrock Edition",
+  "Phone, tablet and Windows": "फ़ोन, टैबलेट और Windows",
+  "Xbox, PlayStation and Switch": "Xbox, PlayStation और Switch",
+  "BedrockTogether for iPhone": "iPhone के लिए BedrockTogether",
+  "BedrockTogether for Android": "Android के लिए BedrockTogether",
+  "BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.": "BedrockTogether को Minecraft या Fractured ने नहीं बनाया है। Switch पर यह कभी चलता है, कभी नहीं।",
+  "PC, Mac and Linux ·": "PC, Mac और Linux ·",
+  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Java या Bedrock पर, PC, फ़ोन, टैबलेट या कंसोल से जुड़ें। सर्वर जोड़ने में करीब एक मिनट लगता है।"
  },
  "html": {
   "html:step1": "Minecraft: Java Edition खोलें और <b>मल्टीप्लेयर</b> पर क्लिक करें। अगर कोई चेतावनी आए, तो <b>आगे बढ़ें</b> पर क्लिक करें।",
   "html:step2": "<b>सर्वर जोड़ें</b> पर क्लिक करें।",
   "html:step3": "<b>सर्वर पता</b> बॉक्स में <b>fracturedsmp.datho.st</b> लिखें और <b>हो गया</b> पर क्लिक करें।",
   "html:step4": "अपनी सर्वर सूची में <b>Fractured SMP</b> पर क्लिक करें, फिर <b>सर्वर में शामिल हों</b> पर क्लिक करें।",
-  "html:howfoot": "नियम, इवेंट और क्रू <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a> पर हैं। खेलने आने से पहले इससे जुड़ जाएँ।"
+  "html:howfoot": "नियम, इवेंट और क्रू <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a> पर हैं। खेलने आने से पहले इससे जुड़ जाएँ।",
+  "html:bstep1": "Minecraft खोलें और <b>खेलें</b> पर टैप करें, फिर <b>सर्वर</b> टैब खोलें।",
+  "html:bstep2": "सबसे नीचे स्क्रॉल करें और <b>सर्वर जोड़ें</b> पर टैप करें।",
+  "html:bstep3": "नाम में <b>Fractured SMP</b>, <b>सर्वर पता</b> में <b>fracturedsmp.datho.st</b> और <b>पोर्ट</b> में <b>17055</b> लिखें।",
+  "html:bstep4": "<b>सहेजें</b> पर टैप करें, फिर जुड़ने के लिए सर्वर पर टैप करें।",
+  "html:clede": "कंसोल पर सर्वर पता टाइप नहीं हो सकता, इसलिए अपने कंसोल वाले Wi-Fi पर जुड़े फ़ोन में मुफ़्त <b>BedrockTogether</b> ऐप इस्तेमाल करें।",
+  "html:cstep1": "अपने फ़ोन में <b>BedrockTogether</b> डाउनलोड करें और खोलें।",
+  "html:cstep2": "पते में <b>fracturedsmp.datho.st</b> और पोर्ट में <b>17055</b> लिखें, फिर इसे शुरू करें।",
+  "html:cstep3": "अपने कंसोल पर Minecraft खोलें, <b>खेलें</b> में जाएँ और <b>मित्र</b> टैब खोलें।",
+  "html:cstep4": "<b>LAN गेम</b> के तहत गेम में शामिल हों। अंदर पहुँचने तक ऐप खुला रखें।"
  }
 }

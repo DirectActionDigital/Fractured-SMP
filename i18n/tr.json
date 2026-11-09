@@ -102,13 +102,31 @@
   "Update": "Güncelleme",
   "Marketplace": "Marketplace",
   "Realms": "Realms",
-  "Language": "Dil"
+  "Language": "Dil",
+  "Bedrock port": "Bedrock portu",
+  "Bedrock Edition": "Bedrock Edition",
+  "Phone, tablet and Windows": "Telefon, tablet ve Windows",
+  "Xbox, PlayStation and Switch": "Xbox, PlayStation ve Switch",
+  "BedrockTogether for iPhone": "iPhone için BedrockTogether",
+  "BedrockTogether for Android": "Android için BedrockTogether",
+  "BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.": "BedrockTogether, Minecraft veya Fractured tarafından yapılmadı. Switch desteği bazen çalışmayabilir.",
+  "PC, Mac and Linux ·": "PC, Mac ve Linux ·",
+  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Java veya Bedrock ile, bilgisayar, telefon, tablet ya da konsoldan katıl. Sunucuyu eklemek yaklaşık bir dakika sürer."
  },
  "html": {
   "html:step1": "Minecraft: Java Edition'ı aç ve <b>Çok Oyunculu</b>'ya tıkla. Bir uyarı çıkarsa <b>Devam Et</b>'e tıkla.",
   "html:step2": "<b>Sunucu Ekle</b>'ye tıkla.",
   "html:step3": "<b>Sunucu Adresi</b> kutusuna <b>fracturedsmp.datho.st</b> yaz ve <b>Bitti</b>'ye tıkla.",
   "html:step4": "Sunucu listende <b>Fractured SMP</b>'ye tıkla, sonra <b>Sunucuya Katıl</b>'a tıkla.",
-  "html:howfoot": "Kurallar, etkinlikler ve ekip <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>'da. Atlamadan önce ona katıl."
+  "html:howfoot": "Kurallar, etkinlikler ve ekip <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>'da. Atlamadan önce ona katıl.",
+  "html:bstep1": "Minecraft'ı aç ve <b>Oyna</b>'ya dokun, sonra <b>Sunucular</b> sekmesini aç.",
+  "html:bstep2": "En alta kaydır ve <b>Sunucu Ekle</b>'ye dokun.",
+  "html:bstep3": "Ad olarak <b>Fractured SMP</b>, <b>Sunucu Adresi</b> olarak <b>fracturedsmp.datho.st</b> ve <b>Port</b> olarak <b>17055</b> yaz.",
+  "html:bstep4": "<b>Kaydet</b>'e dokun, sonra katılmak için sunucuya dokun.",
+  "html:clede": "Konsollarda sunucu adresi yazılamaz, bu yüzden konsolunla aynı Wi-Fi'daki bir telefonda ücretsiz <b>BedrockTogether</b> uygulamasını kullan.",
+  "html:cstep1": "Telefonuna <b>BedrockTogether</b>'ı indir ve aç.",
+  "html:cstep2": "Adres olarak <b>fracturedsmp.datho.st</b>, port olarak <b>17055</b> yaz, sonra başlat.",
+  "html:cstep3": "Konsolunda Minecraft'ı aç, <b>Oyna</b>'ya git ve <b>Arkadaşlar</b> sekmesini aç.",
+  "html:cstep4": "<b>LAN Oyunları</b> altından oyuna katıl. İçeri girene kadar uygulamayı açık tut."
  }
 }
