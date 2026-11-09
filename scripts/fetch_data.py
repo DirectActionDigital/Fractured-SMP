@@ -144,7 +144,45 @@ def skin(name):
     return "slim" if tex.get("metadata", {}).get("model") == "slim" else "default"
 
 
-def news():
+IMG_RE = re.compile(r"^https://www\.minecraft\.net/content/[A-Za-z0-9/_.%-]+\.(jpe?g|png|webp)$", re.I)
+
+
+def article_image(url):
+    html = get(url).decode("utf-8", "replace")
+    m = re.search(r'<meta property="og:image" content="([^"]+)"', html)
+    img = m.group(1) if m else ""
+    return img if IMG_RE.match(img) else None
+
+
+def local_image(src):
+    """Copy a minecraft.net article image into img/news/ so it loads from this site."""
+    import hashlib
+    ext = src.rsplit(".", 1)[-1].lower().replace("jpeg", "jpg")
+    name = hashlib.sha1(src.encode()).hexdigest()[:16] + "." + ext
+    path = os.path.join(ROOT, "img", "news", name)
+    if not os.path.exists(path):
+        body = get(src)
+        if len(body) > 1_500_000 or not (body[:3] == b"\xff\xd8\xff" or body[:8] == b"\x89PNG\r\n\x1a\n" or body[8:12] == b"WEBP"):
+            return None
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "wb") as f:
+            f.write(body)
+    return "img/news/" + name
+
+
+def tag_for(title):
+    t = title.lower()
+    if any(k in t for k in ("snapshot", "preview", "changelog", "pre-release", "release candidate", "java edition", "update")):
+        return "update"
+    if "marketplace" in t:
+        return "marketplace"
+    if "realms" in t:
+        return "realms"
+    return "news"
+
+
+def news(old):
+    cache = {n["url"]: n.get("image") for n in old if isinstance(n, dict) and n.get("url") and str(n.get("image") or "").startswith("img/news/")}
     root = ET.fromstring(get(NEWS_RSS))
     out = []
     for it in root.findall("./channel/item"):
@@ -156,9 +194,24 @@ def news():
         except ValueError:
             date = None
         if title and re.match(r"^https://www\.minecraft\.net/[A-Za-z0-9/_.-]+$", url):
-            out.append({"title": title, "url": url, "published": date})
+            desc = re.sub(r"<[^>]+>", " ", unescape(it.findtext("description") or ""))
+            desc = clean(re.sub(r"\s+", " ", desc).strip())[:220]
+            img = cache.get(url)
+            if img is None:
+                try:
+                    src = article_image(url)
+                    img = local_image(src) if src else None
+                except Exception as e:
+                    print("news image failed", url, e)
+            out.append({"title": title, "url": url, "published": date, "desc": desc, "image": img, "tag": tag_for(title)})
         if len(out) == 6:
             break
+    keep = {os.path.basename(n["image"]) for n in out if n.get("image")}
+    d = os.path.join(ROOT, "img", "news")
+    if keep and os.path.isdir(d):
+        for f in os.listdir(d):
+            if f not in keep:
+                os.remove(os.path.join(d, f))
     return out
 
 
@@ -232,7 +285,7 @@ def main():
     data["skins"] = skins
 
     try:
-        n = news()
+        n = news(data.get("news", []))
         if n:
             data["news"] = n
     except Exception as e:

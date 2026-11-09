@@ -23,8 +23,8 @@ jobs:
           git config user.name "fractured-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # ignore the timestamp-only change so we don't commit every hour for nothing
-          git add -N img/skin-*.png 2>/dev/null || true
+          git add -N img/skin-*.png img/news 2>/dev/null || true
           if git diff --quiet -I '"updated"' -- data.json img/; then echo "no content change"; exit 0; fi
-          git add data.json img/skin-*.png
+          git add -A data.json img/skin-*.png img/news
           git commit -m "Refresh site data"
           git pull --rebase -q && git push

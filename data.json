@@ -216,8 +216,8 @@
   }
  ],
  "members": 123,
- "online": 27,
- "updated": "2026-11-09T22:48Z",
+ "online": 25,
+ "updated": "2026-11-09T22:56Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -249,32 +249,50 @@
   {
    "title": "Marketplace Content: November 2026",
    "url": "https://www.minecraft.net/en-us/article/marketplace-content-november-2026",
-   "published": "2026-11-04"
+   "published": "2026-11-04",
+   "desc": "Explore November 2026’s Minecraft Marketplace Pass and Realms Plus lineup, featuring SpongeBob Biomes, add-ons, texture packs, and creeper-t",
+   "image": "img/news/50f845d25f8edbb7.jpg",
+   "tag": "marketplace"
   },
   {
    "title": "Creator Pages arrive on the Marketplace",
    "url": "https://www.minecraft.net/en-us/article/creator-pages-arrive-on-the-marketplace",
-   "published": "2026-11-03"
+   "published": "2026-11-03",
+   "desc": "Creator Pages are a new Minecraft Marketplace feature that gives creators a place to showcase their offerings and gives players an easier wa",
+   "image": "img/news/89b337f2525c9a3e.jpg",
+   "tag": "marketplace"
   },
   {
    "title": "Everything you can test from the upcoming game drop",
    "url": "https://www.minecraft.net/en-us/article/drop-4-2026-testing",
-   "published": "2026-11-03"
+   "published": "2026-11-03",
+   "desc": "",
+   "image": null,
+   "tag": "news"
   },
   {
    "title": "Minecraft Preview 26.70.23 Changelog",
    "url": "https://www.minecraft.net/en-us/article/minecraft-preview-26-70-23",
-   "published": "2026-11-03"
+   "published": "2026-11-03",
+   "desc": "Minecraft Preview 26.70.23 Changelog",
+   "image": "img/news/b9919e4d0398a198.jpg",
+   "tag": "update"
   },
   {
    "title": "Minecraft 26.4 Snapshot 7",
    "url": "https://www.minecraft.net/en-us/article/minecraft-26-4-snapshot-7",
-   "published": "2026-11-03"
+   "published": "2026-11-03",
+   "desc": "Minecraft 26.4 Snapshot 7",
+   "image": "img/news/bf27dbaf598cc8bf.jpg",
+   "tag": "update"
   },
   {
    "title": "Halloween on Realms: Creeping Suspicion",
    "url": "https://www.minecraft.net/en-us/article/halloween-on-realms",
-   "published": "2026-10-30"
+   "published": "2026-10-30",
+   "desc": "Like every October, the map makers have treated us to a range of wonderful and scary maps. They are not always for the faint of heart, and y",
+   "image": "img/news/effe8603bccc42e1.jpg",
+   "tag": "realms"
   }
  ]
 }
