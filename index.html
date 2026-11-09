@@ -368,7 +368,7 @@ footer .credit{flex-basis:100%;display:flex;flex-direction:column;align-items:ce
   ];
   const yt = '<svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#ff0033"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>';
   const vidHTML = v => `<a class="vid" href="https://www.youtube.com/watch?v=${v[0]}" target="_blank" rel="noopener"><div class="thumb"><img src="${IMG[`v-${v[0]}`]}" alt="" loading="lazy"><div class="play"><i></i></div></div><span class="t">${v[1]}</span></a>`;
-  const latest = c => `<p class="latest">Latest: <b>${c.vids[0][1]}</b></p>`;
+  const latest = () => '';
   const ytBtn = c => `<a class="yt" href="https://www.youtube.com/${c.handle}" target="_blank" rel="noopener">${yt}YouTube channel</a>`;
 
   const layouts = {
@@ -426,7 +426,7 @@ footer .credit{flex-basis:100%;display:flex;flex-direction:column;align-items:ce
   }
   function renderAll() {
   carousel('ep', eps.map((e,i)=>`<figure class="clip"><a href="https://www.youtube.com/watch?v=${e[0]}&list=${PL}" target="_blank" rel="noopener"><div class="thumb"><img src="${IMG[`p-${e[0]}`]}" alt="" loading="lazy"><span class="ep">EP ${String(i+1).padStart(2,'0')}</span><div class="play"><i></i></div></div><figcaption><b>${e[2]}</b><span>${e[1]}</span></figcaption></a></figure>`).join(''), eps.length);
-  carousel('shot', clips.map((c,i)=>`<figure class="clip"><div class="thumb"><img src="${IMG[`${c[0]}`]}" alt="${c[1]}" loading="lazy"></div><figcaption><b>${c[1]}</b><span>${String(i+1).padStart(2,'0')} / ${String(clips.length).padStart(2,'0')}</span></figcaption></figure>`).join(''), clips.length);
+  carousel('shot', clips.map((c,i)=>`<figure class="clip"><div class="thumb"><img src="${IMG[`${c[0]}`]}" alt="${c[1]}" loading="lazy"></div></figure>`).join(''), clips.length);
 
   /* ---------- hall of fame ---------- */
   const yv = id => `https://www.youtube.com/watch?v=${id}`;
