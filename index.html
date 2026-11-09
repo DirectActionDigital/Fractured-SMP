@@ -3,10 +3,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="canonical" href="https://wearefractured.com/">
-<meta name="description" content="Fractured SMP Season Two. A Minecraft survival multiplayer server with rivalries, mace PvP and six creator POVs. Applications open on Discord.">
+<meta name="description" content="Fractured SMP Season Two. A Minecraft survival multiplayer server with rivalries, mace PvP and six creator POVs. Join us on Discord.">
 <meta name="theme-color" content="#0a0a0c">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="512x512" href="icon-512.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Fractured SMP"><meta property="og:title" content="Fractured SMP · Season Two"><meta property="og:description" content="Season Two applications are open. Join the Discord to get in."><meta property="og:url" content="https://wearefractured.com/"><meta property="og:image" content="https://wearefractured.com/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Fractured SMP"><meta property="og:title" content="Fractured SMP · Season Two"><meta property="og:description" content="Six creators, one world. Join us on Discord."><meta property="og:url" content="https://wearefractured.com/"><meta property="og:image" content="https://wearefractured.com/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://wearefractured.com/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://i.ytimg.com">
 <link rel="preload" as="image" href="img/shot-3.jpg">
@@ -101,9 +101,11 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .lede{max-width:58ch;font-size:clamp(17px,2vw,20px);color:var(--ink-dim);margin:0}
 .lede strong{color:var(--ink)}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.steps{display:flex;flex-wrap:wrap;gap:10px 28px;margin:6px 0 0;padding:0;list-style:none;font-size:14px;color:var(--ink-dim);counter-reset:s}
-.steps li{display:flex;gap:10px;align-items:center;counter-increment:s}
-.steps li::before{content:counter(s);font-family:var(--f-display);width:24px;height:24px;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);border-radius:3px;color:var(--accent);font-size:13px}
+.steps{display:grid;width:100%;grid-template-columns:repeat(3,minmax(0,1fr));max-width:720px;margin:34px 0 0;padding:0;list-style:none;counter-reset:s;background:rgba(18,18,24,.62);border:1px solid var(--line);border-radius:10px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.steps li{counter-increment:s;padding:16px 20px;font-size:15px;font-weight:600;line-height:1.35;color:var(--ink)}
+.steps li+li{border-left:1px solid var(--line)}
+.steps li::before{content:"STEP 0" counter(s);display:block;margin-bottom:6px;font-family:var(--f-display);font-size:12px;letter-spacing:.14em;color:var(--accent)}
+@media (max-width:600px){.steps{grid-template-columns:1fr;margin-top:28px}.steps li{padding:14px 18px}.steps li+li{border-left:0;border-top:1px solid var(--line)}}
 
 /* ---------- sections ---------- */
 section.block{padding-block:84px}
@@ -229,6 +231,7 @@ footer a:hover{color:var(--ink)}
 .nav ul a{display:inline-flex;align-items:center;min-height:44px}
 .logo{min-height:44px}
 footer a{display:inline-flex;align-items:center;min-height:44px}
+footer .credit{flex-basis:100%;border-top:1px solid var(--line);padding-top:10px;margin-top:6px;font-size:13px}footer .credit a{color:var(--ink);font-weight:600}footer .credit a:hover{color:var(--accent)}
 @media (hover:none){.thumb .play{opacity:1}}
 @media (max-width:520px){.hero > .wrap{padding-block:40px 56px;gap:22px}.status{font-size:12px}.cta-row .btn{flex:1 1 auto;justify-content:center}}
 .nav .wrap{position:relative}
@@ -256,7 +259,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px}
     </div>
   </nav>
   <div class="wrap">
-    <span class="status"><i></i><span id="memberStatus">Season Two applications open · 123 members on Discord</span></span>
+    <span class="status"><i></i><span id="memberStatus">Season Two · 123 members on Discord</span></span>
     <h1 class="title" aria-label="Fractured SMP Season Two">
       <span class="line frac" aria-hidden="true"><span class="top">FRACTURED&nbsp;SMP</span><span class="bot">FRACTURED&nbsp;SMP</span></span>
       <span class="line smp" aria-hidden="true">SEASON TWO</span>
@@ -347,6 +350,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px}
   <div class="wrap">
     <span>© 2026 Fractured SMP. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
     <span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a></span>
+    <span class="credit">Built and powered by <a href="https://directactiondigital.com" target="_blank" rel="noopener">DirectActionDigital.com</a></span>
   </div>
 </footer>
 
@@ -484,7 +488,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px}
     if (Array.isArray(d.episodes)) { const ok = d.episodes.filter(e => e && okId(e.id)).map(e => [e.id, fmt(okDate(e.published)), esc(e.title)]); if (ok.length >= 5) eps = ok; }
     if (Number.isInteger(d.members) && d.members > 0 && d.members < 1e7) {
       const n = d.members;
-      const st = document.getElementById('memberStatus'); if (st) st.textContent = `Season Two applications open · ${n} members on Discord`;
+      const st = document.getElementById('memberStatus'); if (st) st.textContent = `Season Two · ${n} members on Discord`;
       hof[2].cards[0][1] = String(n);
     }
     const tl = hof[2].cards.find(c => c[2] === 'Timeline episodes'); if (tl) tl[1] = String(eps.length);
