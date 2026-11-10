@@ -134,7 +134,21 @@
   "Share": "Chia sẻ",
   "Link copied!": "Đã sao chép liên kết!",
   "You caught {x}!": "Bạn câu được {x}!",
-  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Bảo lưu mọi quyền. Không phải sản phẩm chính thức của Minecraft. Không được Mojang hoặc Microsoft phê duyệt hay liên kết."
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Bảo lưu mọi quyền. Không phải sản phẩm chính thức của Minecraft. Không được Mojang hoặc Microsoft phê duyệt hay liên kết.",
+  "Season Two poll": "Bình chọn Mùa 2",
+  "Vote for your favorite POV": "Bình chọn POV yêu thích của bạn",
+  "Who has the best side of the story? Pick one. You get one vote a day, and the results update live.": "Ai có góc nhìn hay nhất? Chọn một người. Mỗi ngày bạn có một phiếu, và kết quả cập nhật trực tiếp.",
+  "Leading the vote": "Đang dẫn đầu",
+  "votes so far": "phiếu đến giờ",
+  "Vote": "Bình chọn",
+  "Voted ✓": "Đã bình chọn ✓",
+  "It’s a tie!": "Hòa!",
+  "No votes yet": "Chưa có phiếu nào",
+  "{n} votes": "{n} phiếu",
+  "Be the first to vote.": "Hãy là người bình chọn đầu tiên.",
+  "Thanks for voting! You can vote again tomorrow.": "Cảm ơn bạn đã bình chọn! Bạn có thể bình chọn lại vào ngày mai.",
+  "This network already voted today. Come back tomorrow!": "Mạng này đã bình chọn hôm nay. Quay lại vào ngày mai nhé!",
+  "Your vote didn’t go through. Try again in a minute.": "Phiếu của bạn chưa được ghi nhận. Thử lại sau một phút."
  },
  "html": {
   "html:step1": "Mở Minecraft: Java Edition và nhấn <b>Nhiều người chơi</b>. Nếu có cảnh báo hiện lên, nhấn <b>Tiếp tục</b>.",

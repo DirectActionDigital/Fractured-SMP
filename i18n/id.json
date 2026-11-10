@@ -134,7 +134,21 @@
   "Share": "Bagikan",
   "Link copied!": "Tautan disalin!",
   "You caught {x}!": "Kamu menangkap {x}!",
-  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Hak cipta dilindungi. Bukan produk resmi Minecraft. Tidak disetujui oleh atau terkait dengan Mojang atau Microsoft."
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Hak cipta dilindungi. Bukan produk resmi Minecraft. Tidak disetujui oleh atau terkait dengan Mojang atau Microsoft.",
+  "Season Two poll": "Polling Musim Kedua",
+  "Vote for your favorite POV": "Pilih POV favoritmu",
+  "Who has the best side of the story? Pick one. You get one vote a day, and the results update live.": "Siapa yang punya sisi cerita terbaik? Pilih satu. Kamu dapat satu suara per hari, dan hasilnya diperbarui langsung.",
+  "Leading the vote": "Memimpin voting",
+  "votes so far": "suara sejauh ini",
+  "Vote": "Pilih",
+  "Voted ✓": "Sudah memilih ✓",
+  "It’s a tie!": "Seri!",
+  "No votes yet": "Belum ada suara",
+  "{n} votes": "{n} suara",
+  "Be the first to vote.": "Jadilah yang pertama memilih.",
+  "Thanks for voting! You can vote again tomorrow.": "Terima kasih sudah memilih! Kamu bisa memilih lagi besok.",
+  "This network already voted today. Come back tomorrow!": "Jaringan ini sudah memilih hari ini. Kembali lagi besok!",
+  "Your vote didn’t go through. Try again in a minute.": "Suaramu tidak terkirim. Coba lagi sebentar lagi."
  },
  "html": {
   "html:step1": "Buka Minecraft: Java Edition dan klik <b>Multipemain</b>. Jika muncul peringatan, klik <b>Lanjutkan</b>.",

@@ -134,7 +134,21 @@
   "Share": "Condividi",
   "Link copied!": "Link copiato!",
   "You caught {x}!": "Hai pescato {x}!",
-  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Tutti i diritti riservati. Non è un prodotto ufficiale Minecraft. Non approvato da né associato a Mojang o Microsoft."
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Tutti i diritti riservati. Non è un prodotto ufficiale Minecraft. Non approvato da né associato a Mojang o Microsoft.",
+  "Season Two poll": "Sondaggio della Stagione 2",
+  "Vote for your favorite POV": "Vota il tuo POV preferito",
+  "Who has the best side of the story? Pick one. You get one vote a day, and the results update live.": "Chi ha il lato migliore della storia? Scegline uno. Hai un voto al giorno e i risultati si aggiornano in tempo reale.",
+  "Leading the vote": "In testa al voto",
+  "votes so far": "voti finora",
+  "Vote": "Vota",
+  "Voted ✓": "Votato ✓",
+  "It’s a tie!": "Pareggio!",
+  "No votes yet": "Ancora nessun voto",
+  "{n} votes": "{n} voti",
+  "Be the first to vote.": "Vota per primo.",
+  "Thanks for voting! You can vote again tomorrow.": "Grazie per aver votato! Puoi votare di nuovo domani.",
+  "This network already voted today. Come back tomorrow!": "Da questa rete si è già votato oggi. Torna domani!",
+  "Your vote didn’t go through. Try again in a minute.": "Il tuo voto non è stato registrato. Riprova tra un minuto."
  },
  "html": {
   "html:step1": "Apri Minecraft: Java Edition e clicca su <b>Multigiocatore</b>. Se compare un avviso, clicca su <b>Procedi</b>.",

@@ -134,7 +134,21 @@
   "Share": "Paylaş",
   "Link copied!": "Bağlantı kopyalandı!",
   "You caught {x}!": "{x} yakaladın!",
-  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Tüm hakları saklıdır. Resmi bir Minecraft ürünü değildir. Mojang veya Microsoft tarafından onaylanmamıştır ve onlarla bağlantılı değildir."
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Tüm hakları saklıdır. Resmi bir Minecraft ürünü değildir. Mojang veya Microsoft tarafından onaylanmamıştır ve onlarla bağlantılı değildir.",
+  "Season Two poll": "İkinci Sezon anketi",
+  "Vote for your favorite POV": "Favori POV'una oy ver",
+  "Who has the best side of the story? Pick one. You get one vote a day, and the results update live.": "Hikâyenin en iyi tarafı kimde? Birini seç. Günde bir oy hakkın var ve sonuçlar canlı güncellenir.",
+  "Leading the vote": "Oylamada önde",
+  "votes so far": "oy şu ana kadar",
+  "Vote": "Oy ver",
+  "Voted ✓": "Oy verildi ✓",
+  "It’s a tie!": "Berabere!",
+  "No votes yet": "Henüz oy yok",
+  "{n} votes": "{n} oy",
+  "Be the first to vote.": "İlk oyu sen ver.",
+  "Thanks for voting! You can vote again tomorrow.": "Oy verdiğin için teşekkürler! Yarın tekrar oy verebilirsin.",
+  "This network already voted today. Come back tomorrow!": "Bu ağdan bugün zaten oy verildi. Yarın tekrar gel!",
+  "Your vote didn’t go through. Try again in a minute.": "Oyun iletilemedi. Bir dakika sonra tekrar dene."
  },
  "html": {
   "html:step1": "Minecraft: Java Edition'ı aç ve <b>Çok Oyunculu</b>'ya tıkla. Bir uyarı çıkarsa <b>Devam Et</b>'e tıkla.",

@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob: https://i.ytimg.com https://mc-heads.net https://cdn.discordapp.com; connect-src 'self' https://api.mcstatus.io https://api.mcsrvstat.us https://discord.com; media-src 'self' blob: data:; worker-src 'self' blob:; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="canonical" href="https://wearefractured.com/">
 <meta name="description" content="Fractured SMP Season Two. A scripted Minecraft series and server with rivalries, mace PvP and six creator POVs. Join us on Discord.">
@@ -483,6 +485,46 @@ button.ipfield:hover{border-color:var(--accent)}
 .egg-toast .catch{display:flex;align-items:center;gap:14px}
 .egg-toast .catch canvas{width:44px;height:44px;image-rendering:pixelated;box-shadow:0 3px 0 rgba(0,0,0,.4)}
 .title .frac .tm{position:absolute;left:100%;top:.05em;margin-left:.08em;font-size:.2em;line-height:1;color:var(--ink-dim);font-family:var(--f-body);font-weight:800}
+
+/* ---------- POV vote ---------- */
+.vote-grid{display:grid;grid-template-columns:minmax(260px,360px) 1fr;gap:24px;align-items:stretch}
+.vlead{position:relative;overflow:hidden;background:linear-gradient(160deg,#1d1530,#121216 70%);border:1px solid color-mix(in srgb,var(--accent) 45%,var(--line));border-radius:10px;padding:26px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px}
+.vlead::before{content:"";position:absolute;inset:auto -30% -40% -30%;height:70%;background:radial-gradient(closest-side,rgba(166,107,255,.35),transparent);pointer-events:none}
+.vlead-top{align-self:stretch;text-align:left}
+.vlead-face{position:relative;margin:26px 0 14px;width:128px;height:128px}
+.vlead-face canvas{width:128px;height:128px;image-rendering:pixelated;box-shadow:0 0 0 4px #0a0a0c,0 0 0 6px var(--accent),0 18px 40px rgba(0,0,0,.6)}
+.vlead-face .crown{position:absolute;left:50%;top:-34px;width:70px;height:40px;transform:translateX(-50%) rotate(-6deg);filter:drop-shadow(0 3px 0 rgba(0,0,0,.5))}
+@media (prefers-reduced-motion:no-preference){.vlead-face .crown{animation:crownb 2.4s ease-in-out infinite}}
+@keyframes crownb{50%{transform:translateX(-50%) translateY(-4px) rotate(4deg)}}
+.vlead-name{font-family:var(--f-display);font-size:30px;line-height:1.1;word-break:break-word}
+.vlead-sub{color:var(--ink-dim);font-size:14px;min-height:1.4em}
+.vtotal{margin-top:auto;padding-top:22px;display:flex;flex-direction:column;align-items:center}
+.vtotal b{font-family:var(--f-display);font-size:48px;line-height:1;color:var(--accent)}
+.vtotal span{color:var(--ink-dim);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;margin-top:6px}
+.vlist{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.vrow{display:grid;grid-template-columns:34px 48px minmax(0,1fr) auto;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;transition:border-color .2s,transform .2s}
+.vrow.top{border-color:color-mix(in srgb,#ffcf3f 55%,var(--line))}
+.vrow.mine{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.vrank{font-family:var(--f-display);font-size:22px;color:var(--ink-dim);text-align:center}
+.vrow.top .vrank{color:#ffcf3f}
+.vrow canvas{width:48px;height:48px;image-rendering:pixelated;box-shadow:0 3px 0 rgba(0,0,0,.45)}
+.vmid{min-width:0}
+.vname{display:flex;justify-content:space-between;gap:10px;font-weight:800;font-size:16px}
+.vname span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vname .vnum{font-family:var(--f-mono);font-weight:600;font-size:13px;color:var(--ink-dim);white-space:nowrap}
+.vbar{margin-top:8px;height:12px;background:#0a0a0c;border:1px solid var(--line);position:relative;overflow:hidden}
+.vbar i{position:absolute;inset:0 auto 0 0;width:0;background:repeating-linear-gradient(90deg,var(--accent) 0 10px,#8a4dff 10px 12px);transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.vrow.top .vbar i{background:repeating-linear-gradient(90deg,#ffcf3f 0 10px,#e0a91c 10px 12px)}
+.vbtn{min-height:44px;min-width:92px;padding:0 16px;border:1px solid var(--accent);border-radius:6px;background:var(--accent);color:#fff;font:inherit;font-weight:800;font-size:14px;cursor:pointer;box-shadow:0 4px 0 #5a2bb0;transition:transform .1s,box-shadow .1s,opacity .2s}
+.vbtn:hover{filter:brightness(1.08)}
+.vbtn:active{transform:translateY(3px);box-shadow:0 1px 0 #5a2bb0}
+.vbtn:disabled{cursor:default;background:transparent;color:var(--ink-dim);border-color:var(--line);box-shadow:none;transform:none;filter:none}
+.vrow.mine .vbtn:disabled{color:#3ddc84;border-color:rgba(61,220,132,.55)}
+.vnote{margin:18px 0 0;color:var(--ink-dim);font-size:14px;min-height:1.5em}
+.vnote.err{color:#ff8a8a}
+.vpop{position:fixed;z-index:999;pointer-events:none;font-family:var(--f-display);color:var(--accent);font-size:22px;text-shadow:0 2px 0 #000}
+@media (max-width:900px){.vote-grid{grid-template-columns:1fr}.vlead{flex-direction:row;flex-wrap:wrap;justify-content:center;text-align:left;gap:6px 18px}.vlead-top{flex-basis:100%}.vlead-face{margin:22px 0 6px;width:88px;height:88px;flex:none}.vlead-txt{min-width:0}.vlead-face canvas{width:88px;height:88px}.vlead-face .crown{width:52px;height:30px;top:-26px}.vtotal{margin:0;padding:0;flex-basis:100%}}
+@media (max-width:480px){.vrow{grid-template-columns:18px 40px minmax(0,1fr) auto;gap:10px;padding:10px 12px}.vrank{font-size:18px}.vrow canvas{width:40px;height:40px}.vname{flex-wrap:wrap;gap:0 8px;font-size:15px}.vbtn{min-width:68px;padding:0 12px}}
 /* ---------- live ---------- */
 .livebar{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 16px;background:#e0283a;color:#fff;font-weight:700;font-size:14px;text-decoration:none;text-align:center;position:relative;z-index:2}
 .livebar:hover{background:#c81f30}
@@ -521,7 +563,7 @@ button.ipfield:hover{border-color:var(--accent)}
   <nav class="nav" aria-label="Main">
     <div class="wrap">
       <a class="logo" href="#top" aria-label="Fractured SMP home"><img src="wordmark.png" alt="Fractured SMP" width="1245" height="164"></a>
-      <ul id="navLinks"><li><a href="#creators">Creators</a></li><li><a href="#play">How to join</a></li><li><a href="#hall">Hall of Fame</a></li><li><a href="#clips">Episodes</a></li><li><a href="#shots">Screenshots</a></li><li><a href="#news">News</a></li></ul>
+      <ul id="navLinks"><li><a href="#creators">Creators</a></li><li id="navVote" hidden><a href="#vote">Vote</a></li><li><a href="#play">How to join</a></li><li><a href="#hall">Hall of Fame</a></li><li><a href="#clips">Episodes</a></li><li><a href="#shots">Screenshots</a></li><li><a href="#news">News</a></li></ul>
       <div class="nav-end"><button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><span></span><span></span><span></span></button><button type="button" class="sound-btn" id="soundBtn" aria-pressed="false" aria-label="Turn on click sounds" title="Click sounds"><svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 9h4l5-4v14l-5-4H3V9zm13.6 1.4L18 9l2 2 2-2 1.4 1.4-2 2 2 2L22 16l-2-2-2 2-1.4-1.4 2-2-2-2z"/></svg><svg class="on" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 9h4l5-4v14l-5-4H3V9zm13 .5a4 4 0 0 1 0 5l-1.4-1.4a2 2 0 0 0 0-2.2L16 9.5zm2.8-2.8a8 8 0 0 1 0 10.6l-1.4-1.4a6 6 0 0 0 0-7.8l1.4-1.4z"/></svg></button><div class="lang" id="langWrap"><button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" aria-label="Language"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-2.95a15.7 15.7 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.9 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14a8.2 8.2 0 0 1 0-4h3.38a16.5 16.5 0 0 0 0 4H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.08 16zm2.95-8H5.08a7.99 7.99 0 0 1 4.33-3.56A15.7 15.7 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66a14.7 14.7 0 0 1 0-4h4.68a14.7 14.7 0 0 1 0 4zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.5 16.5 0 0 0 0-4h3.38a8.2 8.2 0 0 1 0 4h-3.38z"/></svg><b id="langCode">EN</b><i class="caret" aria-hidden="true"></i></button><div class="lang-menu" id="langMenu" hidden><div class="lang-title" data-noi18n>Language</div><div class="lang-grid" id="langGrid"></div></div></div><a class="btn btn-primary btn-sm" href="https://discord.gg/RD2mYCt4y8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.4A19.6 19.6 0 0 0 15.4 3l-.6 1.3a18 18 0 0 0-5.6 0L8.6 3a19.5 19.5 0 0 0-4.9 1.5C.6 9.1-.3 13.6.1 18.1A19.8 19.8 0 0 0 6.1 21l1.3-2.1c-.7-.3-1.4-.6-2-1l.5-.4a14 14 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2.1a19.7 19.7 0 0 0 6-3c.5-5.2-.9-9.7-3.6-13.6ZM8 15.3c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.4 8 10.4s2.2 1.1 2.2 2.5-1 2.4-2.2 2.4Zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.5 2.2-2.5 2.2 1.1 2.2 2.5-1 2.4-2.2 2.4Z"/></svg><span class="lbl">Discord</span></a></div>
     </div>
   </nav>
@@ -565,6 +607,28 @@ button.ipfield:hover{border-color:var(--accent)}
       
     </div>
     <div id="creatorMount"></div>
+  </div>
+</section>
+
+<section class="block alt votesec" id="vote" hidden>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Season Two poll</div>
+        <h2>Vote for your favorite POV</h2>
+        <p>Who has the best side of the story? Pick one. You get one vote a day, and the results update live.</p>
+      </div>
+    </div>
+    <div class="vote-grid">
+      <aside class="vlead" aria-live="polite">
+        <div class="vlead-top"><span class="eyebrow">Leading the vote</span></div>
+        <div class="vlead-face"><svg class="crown" viewBox="0 0 14 8" aria-hidden="true" shape-rendering="crispEdges"><path fill="#ffcf3f" d="M0 2h2v1h1v1h1V1h2v1h2V1h2v3h1V3h1V2h2v6H0z"/><path fill="#c98a12" d="M0 7h14v1H0z"/><path fill="#ff4d6d" d="M6 4h2v2H6z"/></svg><canvas id="vLeadFace" width="8" height="8"></canvas></div>
+        <div class="vlead-txt"><div class="vlead-name" id="vLeadName">—</div><div class="vlead-sub" id="vLeadSub"></div></div>
+        <div class="vtotal"><b id="vTotal">0</b><span>votes so far</span></div>
+      </aside>
+      <ol class="vlist" id="vList"></ol>
+    </div>
+    <p class="vnote" id="vNote" role="status"></p>
   </div>
 </section>
 
@@ -1179,6 +1243,61 @@ document.addEventListener('click', async e => {
   new IntersectionObserver(es => { vis = es[0].isIntersecting; go(); }).observe(wrap);
   document.addEventListener('visibilitychange', go);
   go();
+})();
+</script>
+
+
+<script>
+/* POV vote: live tally from the Fractured vote counter (separate Google Cloud project) */
+(() => {
+  const API = 'VOTE_API_URL';
+  const sec = document.getElementById('vote'); if (!sec || !/^https:\/\/[a-z0-9.-]+\.run\.app$/.test(API)) return;
+  const POVS = [['acehardware67','AceHardware67','acehardware67'],['prep4cringe','Prep4Cringe','prep4cringe'],['undercard594','UNDERcard594','undercard594'],['vexan22','_Vexan_','_vexan_'],['fireblade-yt','Fireblade_1','fireblade_1'],['h2ozero','h2ozer0','h2ozer0']];
+  const T = k => k; /* the page translator rewrites these English strings */
+  const today = () => new Date().toISOString().slice(0, 10);
+  const store = { get() { try { const v = JSON.parse(localStorage.getItem('fs-vote') || 'null'); return v && v.day === today() ? v.pov : null; } catch (_) { return null; } }, set(p) { try { localStorage.setItem('fs-vote', JSON.stringify({ day: today(), pov: p })); } catch (_) {} } };
+  const faces = {};
+  const face = (cv, ign) => { const x = cv.getContext('2d'); const draw = im => { x.clearRect(0, 0, 8, 8); x.drawImage(im, 8, 8, 8, 8, 0, 0, 8, 8); x.drawImage(im, 40, 8, 8, 8, 0, 0, 8, 8); };
+    if (faces[ign] && faces[ign].complete) return draw(faces[ign]); const im = faces[ign] || (faces[ign] = new Image()); im.addEventListener('load', () => draw(im), { once: true }); if (!im.src) im.src = `img/skin-${ign}.png`; };
+  const list = document.getElementById('vList'), note = document.getElementById('vNote');
+  const fmt = n => new Intl.NumberFormat(document.documentElement.lang || 'en').format(n);
+  let counts = Object.fromEntries(POVS.map(p => [p[0], 0])), mine = store.get(), busy = false;
+  list.innerHTML = POVS.map(([slug, name]) => `<li class="vrow" data-pov="${slug}"><span class="vrank">–</span><canvas width="8" height="8" aria-hidden="true"></canvas><div class="vmid"><div class="vname"><span data-noi18n>${name}</span><span class="vnum"><span class="vc">0</span> · <span class="vp">0</span>%</span></div><div class="vbar" aria-hidden="true"><i></i></div></div><button type="button" class="vbtn" aria-label="Vote for ${name}">Vote</button></li>`).join('');
+  list.querySelectorAll('.vrow').forEach((li, i) => face(li.querySelector('canvas'), POVS[i][2]));
+  function render() {
+    const total = Object.values(counts).reduce((a, b) => a + b, 0);
+    const order = POVS.map(p => p[0]).sort((a, b) => counts[b] - counts[a]);
+    const max = Math.max(1, ...Object.values(counts));
+    order.forEach((slug, i) => { const li = list.querySelector(`[data-pov="${slug}"]`); li.style.order = i; const rank = order.filter(s => counts[s] > counts[slug]).length + 1;
+      li.querySelector('.vrank').textContent = total ? rank : '–'; li.classList.toggle('top', total > 0 && counts[slug] === counts[order[0]]); li.classList.toggle('mine', mine === slug);
+      li.querySelector('.vc').textContent = fmt(counts[slug]); li.querySelector('.vp').textContent = total ? Math.round(counts[slug] * 100 / total) : 0;
+      li.querySelector('.vbar i').style.width = (counts[slug] / max * 100) + '%';
+      const b = li.querySelector('button'); b.disabled = !!mine || busy; b.textContent = mine === slug ? T('Voted ✓') : T('Vote'); });
+    list.style.display = 'flex'; list.style.flexDirection = 'column';
+    document.getElementById('vTotal').textContent = fmt(total);
+    const lead = POVS.find(p => p[0] === order[0]), tied = total && order.filter(s => counts[s] === counts[order[0]]).length > 1;
+    document.getElementById('vLeadName').textContent = total ? (tied ? T('It’s a tie!') : lead[1]) : T('No votes yet');
+    document.getElementById('vLeadSub').textContent = total && !tied ? T('{n} votes').replace('{n}', fmt(counts[order[0]])) : (total ? '' : T('Be the first to vote.'));
+    face(document.getElementById('vLeadFace'), total && !tied ? lead[2] : (tied ? POVS.find(p => p[0] === order[0])[2] : 'undercard594'));
+    if (mine && !note.classList.contains('err')) note.textContent = T('Thanks for voting! You can vote again tomorrow.');
+  }
+  const ok = d => d && d.counts && typeof d.counts === 'object' && POVS.every(p => Number.isInteger(d.counts[p[0]]) && d.counts[p[0]] >= 0);
+  async function load() { try { const r = await fetch(`${API}/v1/tally`, { cache: 'no-cache' }); const d = await r.json(); if (ok(d)) { counts = d.counts; sec.hidden = false; const nv = document.getElementById('navVote'); if (nv) nv.hidden = false; render(); } } catch (_) {} }
+  list.addEventListener('click', async e => {
+    const b = e.target.closest('.vbtn'); if (!b || b.disabled || busy) return;
+    const pov = b.closest('.vrow').dataset.pov; busy = true; render(); note.classList.remove('err'); note.textContent = '';
+    try {
+      const r = await fetch(`${API}/v1/vote`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pov }) });
+      const d = await r.json().catch(() => null);
+      if (ok(d)) counts = d.counts;
+      if (r.ok) { mine = pov; store.set(pov); const rc = b.getBoundingClientRect(), pop = document.createElement('div'); pop.className = 'vpop'; pop.textContent = '+1'; pop.style.left = (rc.left + rc.width / 2 - 12) + 'px'; pop.style.top = (rc.top - 6) + 'px'; document.body.appendChild(pop);
+        pop.animate([{ transform: 'translateY(0)', opacity: 1 }, { transform: 'translateY(-40px)', opacity: 0 }], { duration: 900, easing: 'ease-out' }).onfinish = () => pop.remove(); }
+      else if (r.status === 409) { mine = mine || 'x'; store.set(mine); note.textContent = T('This network already voted today. Come back tomorrow!'); }
+      else { note.classList.add('err'); note.textContent = T('Your vote didn’t go through. Try again in a minute.'); }
+    } catch (_) { note.classList.add('err'); note.textContent = T('Your vote didn’t go through. Try again in a minute.'); }
+    busy = false; render();
+  });
+  load(); setInterval(() => { if (!document.hidden && !sec.hidden) load(); }, 30000);
 })();
 </script>
 

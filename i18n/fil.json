@@ -134,7 +134,21 @@
   "Share": "I-share",
   "Link copied!": "Nakopya ang link!",
   "You caught {x}!": "Nahuli mo si {x}!",
-  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Lahat ng karapatan ay nakalaan. Hindi opisyal na produkto ng Minecraft. Hindi aprubado ng o konektado sa Mojang o Microsoft."
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Lahat ng karapatan ay nakalaan. Hindi opisyal na produkto ng Minecraft. Hindi aprubado ng o konektado sa Mojang o Microsoft.",
+  "Season Two poll": "Botohan sa Season Two",
+  "Vote for your favorite POV": "Iboto ang paborito mong POV",
+  "Who has the best side of the story? Pick one. You get one vote a day, and the results update live.": "Sino ang may pinakamagandang bahagi ng kuwento? Pumili ng isa. May isang boto ka bawat araw, at live na nag-a-update ang resulta.",
+  "Leading the vote": "Nangunguna sa botohan",
+  "votes so far": "boto sa ngayon",
+  "Vote": "Bumoto",
+  "Voted ✓": "Nakaboto na ✓",
+  "It’s a tie!": "Tabla!",
+  "No votes yet": "Wala pang boto",
+  "{n} votes": "{n} boto",
+  "Be the first to vote.": "Maging una sa pagboto.",
+  "Thanks for voting! You can vote again tomorrow.": "Salamat sa pagboto! Puwede kang bumoto ulit bukas.",
+  "This network already voted today. Come back tomorrow!": "Nakaboto na ang network na ito ngayong araw. Bumalik bukas!",
+  "Your vote didn’t go through. Try again in a minute.": "Hindi pumasok ang boto mo. Subukan ulit pagkalipas ng isang minuto."
  },
  "html": {
   "html:step1": "Buksan ang Minecraft: Java Edition at i-click ang <b>Multiplayer</b>. Kung may lumabas na babala, i-click ang <b>Magpatuloy</b>.",

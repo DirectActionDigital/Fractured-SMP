@@ -134,7 +134,21 @@
   "Share": "Delen",
   "Link copied!": "Link gekopieerd!",
   "You caught {x}!": "Je hebt {x} gevangen!",
-  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Alle rechten voorbehouden. Geen officieel Minecraft-product. Niet goedgekeurd door of verbonden met Mojang of Microsoft."
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Alle rechten voorbehouden. Geen officieel Minecraft-product. Niet goedgekeurd door of verbonden met Mojang of Microsoft.",
+  "Season Two poll": "Poll seizoen 2",
+  "Vote for your favorite POV": "Stem op je favoriete POV",
+  "Who has the best side of the story? Pick one. You get one vote a day, and the results update live.": "Wie heeft de beste kant van het verhaal? Kies er één. Je hebt één stem per dag en de uitslag wordt live bijgewerkt.",
+  "Leading the vote": "Leidt de stemming",
+  "votes so far": "stemmen tot nu toe",
+  "Vote": "Stem",
+  "Voted ✓": "Gestemd ✓",
+  "It’s a tie!": "Gelijkspel!",
+  "No votes yet": "Nog geen stemmen",
+  "{n} votes": "{n} stemmen",
+  "Be the first to vote.": "Stem als eerste.",
+  "Thanks for voting! You can vote again tomorrow.": "Bedankt voor je stem! Je kunt morgen weer stemmen.",
+  "This network already voted today. Come back tomorrow!": "Vanaf dit netwerk is vandaag al gestemd. Kom morgen terug!",
+  "Your vote didn’t go through. Try again in a minute.": "Je stem is niet doorgekomen. Probeer het over een minuut opnieuw."
  },
  "html": {
   "html:step1": "Open Minecraft: Java Edition en klik op <b>Multiplayer</b>. Als er een waarschuwing verschijnt, klik dan op <b>Doorgaan</b>.",
