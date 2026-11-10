@@ -134,7 +134,8 @@
   "Your progress is saved on this device only.": "Tiến độ của bạn chỉ được lưu trên thiết bị này.",
   "Episode guide →": "Hướng dẫn tập phim →",
   "Share": "Chia sẻ",
-  "Link copied!": "Đã sao chép liên kết!"
+  "Link copied!": "Đã sao chép liên kết!",
+  "You caught {x}!": "Bạn câu được {x}!"
  },
  "html": {
   "html:step1": "Mở Minecraft: Java Edition và nhấn <b>Nhiều người chơi</b>. Nếu có cảnh báo hiện lên, nhấn <b>Tiếp tục</b>.",

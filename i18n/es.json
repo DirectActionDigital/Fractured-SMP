@@ -134,7 +134,8 @@
   "Your progress is saved on this device only.": "Tu progreso se guarda solo en este dispositivo.",
   "Episode guide →": "Guía de episodios →",
   "Share": "Compartir",
-  "Link copied!": "¡Enlace copiado!"
+  "Link copied!": "¡Enlace copiado!",
+  "You caught {x}!": "¡Pescaste a {x}!"
  },
  "html": {
   "html:step1": "Abre Minecraft: Java Edition y haz clic en <b>Multijugador</b>. Si aparece una advertencia, haz clic en <b>Continuar</b>.",

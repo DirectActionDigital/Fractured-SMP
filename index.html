@@ -459,6 +459,33 @@ button.ipfield:hover{border-color:var(--accent)}
 .share{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:0 12px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--ink-dim);font:inherit;font-size:14px;font-weight:800;cursor:pointer}
 .share:hover{color:var(--ink);border-color:var(--accent)}.share svg{width:16px;height:16px}
 .share.done{color:#3ddc84;border-color:rgba(61,220,132,.5)}
+
+/* ---------- title particles + fishing rod ---------- */
+.title-wrap{position:relative;display:inline-grid;max-width:100%}
+.title-wrap .title{position:relative;z-index:1}
+.tparts{position:absolute;left:-40px;top:-40px;width:calc(100% + 80px);height:calc(100% + 80px);pointer-events:none;z-index:2}
+.rod{position:absolute;left:calc(100% + 14px);top:-.1em;z-index:3;width:clamp(64px,8.5vw,136px);height:clamp(64px,8.5vw,136px);padding:6px;border:0;background:none;cursor:pointer;transform-origin:20% 85%;filter:drop-shadow(0 6px 0 rgba(0,0,0,.45));transition:transform .2s}
+.rod canvas{width:100%;height:100%;image-rendering:pixelated;display:block}
+.rod:hover{transform:rotate(-8deg) scale(1.06)}
+.rod:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+@media (prefers-reduced-motion:no-preference){.rod{animation:rodbob 2.6s ease-in-out infinite}.rod:hover{animation:none}}
+@keyframes rodbob{50%{transform:translateY(-6px) rotate(-3deg)}}
+.rod.cast{animation:rodcast .5s cubic-bezier(.3,1.6,.5,1) forwards!important}
+.rod.yank{animation:rodyank .35s ease-out forwards!important}
+@keyframes rodcast{0%{transform:rotate(0)}35%{transform:rotate(-38deg)}100%{transform:rotate(22deg)}}
+@keyframes rodyank{0%{transform:rotate(22deg)}60%{transform:rotate(-30deg)}100%{transform:rotate(-12deg)}}
+@media (max-width:900px){.rod{left:auto;right:0;top:auto;bottom:-20px;width:50px;height:50px;padding:3px}}
+.fish-line{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:998}
+.fish-line path{fill:none;stroke:#e9e6f2;stroke-width:2;stroke-dasharray:2 2}
+.bobber{position:fixed;z-index:998;width:18px;height:22px;margin:-11px 0 0 -9px;pointer-events:none;background:linear-gradient(#e33 0 50%,#fff 50% 100%);box-shadow:inset -3px 0 0 rgba(0,0,0,.25),0 3px 0 rgba(0,0,0,.4)}
+.bobber.bob{animation:bobb .45s ease-in-out 3}
+.bobber.bite{animation:bite .25s ease-in 2}
+@keyframes bobb{50%{translate:0 5px}}
+@keyframes bite{50%{translate:0 14px;scale:.8}}
+.ripple{position:fixed;z-index:997;width:60px;height:16px;margin:-8px 0 0 -30px;border:2px solid rgba(255,255,255,.55);border-radius:50%;pointer-events:none;animation:ripple 1s ease-out forwards}
+@keyframes ripple{from{opacity:1;transform:scale(.3)}to{opacity:0;transform:scale(2.2)}}
+.egg-toast .catch{display:flex;align-items:center;gap:14px}
+.egg-toast .catch canvas{width:44px;height:44px;image-rendering:pixelated;box-shadow:0 3px 0 rgba(0,0,0,.4)}
 /* ---------- live ---------- */
 .livebar{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 16px;background:#e0283a;color:#fff;font-weight:700;font-size:14px;text-decoration:none;text-align:center;position:relative;z-index:2}
 .livebar:hover{background:#c81f30}
@@ -503,10 +530,14 @@ button.ipfield:hover{border-color:var(--accent)}
   </nav>
   <div class="wrap">
     <div class="status-row"><span class="status"><i></i><span id="memberStatus">Season Two · 123 members on Discord</span></span><span class="status srv" id="srvStatus" data-state="loading"><i></i><span id="srvText">Checking server…</span><span class="heads" id="srvHeads"></span></span></div>
+    <div class="title-wrap" id="titleWrap">
+    <canvas class="tparts" id="tParts" aria-hidden="true"></canvas>
     <h1 class="title" aria-label="Fractured SMP Season Two">
       <span class="line frac" aria-hidden="true"><span class="top">FRACTURED&nbsp;SMP</span><span class="bot">FRACTURED&nbsp;SMP</span></span>
       <span class="line smp" aria-hidden="true">SEASON TWO</span>
     </h1>
+    <button type="button" class="rod" id="rodBtn" aria-label="Cast the fishing rod" title="Cast"><canvas id="rodCv" width="16" height="16"></canvas></button>
+    </div>
     <p class="lede"><strong>A scripted Minecraft series and server, with rivalries, mace PvP, a black market and builds worth the trip.</strong> Six creators stream and post from inside the world. Join the Discord to get in.</p>
     <div class="hero-actions">
     <div class="cta-row">
@@ -1031,17 +1062,9 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <script>
-/* Easter egg: type "fractured", enter the Konami code, or tap the logo 5 times */
+/* Easter egg: tap the logo 5 times (creeper). Fishing rod next to the title reuses the explosion. */
 (() => {
-  let buf = '', ko = 0, taps = 0, tapT = 0, running = false;
-  const KONAMI = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
-  document.addEventListener('keydown', e => {
-    if (e.target.closest && e.target.closest('input,textarea,[contenteditable]')) return;
-    const k = e.key.length === 1 ? e.key.toLowerCase() : e.key;
-    ko = (k === KONAMI[ko]) ? ko + 1 : (k === KONAMI[0] ? 1 : 0);
-    if (ko === KONAMI.length) { ko = 0; boom(); }
-    if (k.length === 1) { buf = (buf + k).slice(-9); if (buf === 'fractured') { buf = ''; boom(); } }
-  });
+  let taps = 0, tapT = 0, running = false;
   const logo = document.querySelector('.nav .logo');
   if (logo) logo.addEventListener('click', e => { const n = Date.now(); taps = n - tapT < 600 ? taps + 1 : 1; tapT = n; if (taps >= 5) { e.preventDefault(); taps = 0; boom(); } });
   const soundOn = () => { try { return localStorage.getItem('fs-sound') === '1'; } catch (e) { return false; } };
@@ -1090,17 +1113,54 @@ document.addEventListener('DOMContentLoaded', () => {
     const stopX = innerWidth / 2 - 24;
     cr.animate([{ transform: 'translateX(-80px)' }, { transform: `translateX(${stopX}px)` }], { duration: 2400, easing: 'linear', fill: 'forwards' });
     setTimeout(() => { cr.classList.add('fuse'); noise(1.4, 0.18, true); }, 2400);
-    setTimeout(() => {
-      const r = cr.getBoundingClientRect(), cx = r.left + r.width / 2, cy = r.top + r.height / 2;
-      cr.remove(); noise(0.9, 0.9, false);
-      const fl = document.createElement('div'); fl.className = 'egg-flash'; layer.appendChild(fl);
-      layer.appendChild(cracks(cx, cy)); document.documentElement.classList.add('egg-shake');
-      for (let i = 0; i < 26; i++) { const p = document.createElement('i'); p.className = 'egg-p'; p.style.left = cx + 'px'; p.style.top = cy + 'px'; const a = Math.random() * Math.PI * 2, v = 120 + Math.random() * 260;
-        p.animate([{ transform: 'translate(0,0) scale(1)', opacity: 1 }, { transform: `translate(${Math.cos(a) * v}px,${Math.sin(a) * v - 120}px) scale(.4)`, opacity: 0 }], { duration: 900 + Math.random() * 500, easing: 'cubic-bezier(.2,.7,.3,1)', fill: 'forwards' }); layer.appendChild(p); }
-      setTimeout(() => layer.appendChild(toast()), 500);
-      setTimeout(end, 4200);
-    }, 3800);
+    setTimeout(() => { const r = cr.getBoundingClientRect(); cr.remove(); explode(layer, r.left + r.width / 2, r.top + r.height / 2, toast(), end); }, 3800);
   }
+  function explode(layer, cx, cy, toastNode, end) {
+    noise(0.9, 0.9, false);
+    const fl = document.createElement('div'); fl.className = 'egg-flash'; layer.appendChild(fl);
+    layer.appendChild(cracks(cx, cy)); document.documentElement.classList.add('egg-shake');
+    for (let i = 0; i < 26; i++) { const p = document.createElement('i'); p.className = 'egg-p'; p.style.left = cx + 'px'; p.style.top = cy + 'px'; const a = Math.random() * Math.PI * 2, v = 120 + Math.random() * 260;
+      p.animate([{ transform: 'translate(0,0) scale(1)', opacity: 1 }, { transform: `translate(${Math.cos(a) * v}px,${Math.sin(a) * v - 120}px) scale(.4)`, opacity: 0 }], { duration: 900 + Math.random() * 500, easing: 'cubic-bezier(.2,.7,.3,1)', fill: 'forwards' }); layer.appendChild(p); }
+    setTimeout(() => layer.appendChild(toastNode), 500);
+    setTimeout(end, 4200);
+  }
+  /* fishing rod: cast, bite, yank, boom, and you catch a creator */
+  const CREW = [['AceHardware67','acehardware67'],['Prep4Cringe','prep4cringe'],['UNDERcard594','undercard594'],['_Vexan_','_vexan_'],['Fireblade_1','fireblade_1'],['h2ozer0','h2ozer0']];
+  const face = file => { const c = document.createElement('canvas'); c.width = c.height = 8; const im = new Image(); im.onload = () => { const x = c.getContext('2d'); x.drawImage(im, 8, 8, 8, 8, 0, 0, 8, 8); x.drawImage(im, 40, 8, 8, 8, 0, 0, 8, 8); }; im.src = file; return c; };
+  const rodBtn = document.getElementById('rodBtn'), rodCv = document.getElementById('rodCv');
+  if (rodCv) {
+    const x = rodCv.getContext('2d'), P = { s: '#6b4423', h: '#9a6a3a', l: '#d9d4c8', g: '#8c8c96', k: '#3a3a44' };
+    [[2,13,'s'],[3,12,'h'],[4,11,'s'],[5,10,'h'],[6,9,'s'],[7,8,'h'],[8,7,'s'],[9,6,'h'],[10,5,'s'],[11,4,'h'],[12,3,'s'],[13,2,'h'],[3,13,'k'],[2,12,'k'],[4,12,'g'],[5,12,'g'],[4,13,'g'],
+     [13,3,'l'],[13,4,'l'],[13,5,'l'],[13,6,'l'],[13,7,'l'],[13,8,'l'],[13,9,'l'],[13,10,'l'],[12,11,'g'],[13,11,'g'],[12,12,'g'],[11,11,'g']].forEach(([a, b, c]) => { x.fillStyle = P[c]; x.fillRect(a, b, 1, 1); });
+  }
+  if (rodBtn) rodBtn.addEventListener('click', () => {
+    if (running) return; running = true;
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const pick = CREW[Math.floor(Math.random() * CREW.length)];
+    const caught = () => { const t = toast(); t.textContent = ''; const row = document.createElement('div'); row.className = 'catch'; const b = document.createElement('b'); b.textContent = `You caught ${pick[0]}!`; row.append(face(`img/skin-${pick[1]}.png`), b); t.appendChild(row); return t; };
+    const layer = document.createElement('div'); layer.className = 'egg'; document.body.appendChild(layer);
+    const end = () => { layer.classList.add('out'); rodBtn.classList.remove('cast', 'yank'); setTimeout(() => { layer.remove(); document.documentElement.classList.remove('egg-shake'); running = false; }, 700); };
+    if (reduce) { layer.appendChild(caught()); setTimeout(end, 3000); return; }
+    const rb = rodBtn.getBoundingClientRect(), tipX = rb.right - rb.width * 0.12, tipY = rb.top + rb.height * 0.12;
+    const tx = innerWidth * (0.3 + Math.random() * 0.4), ty = innerHeight * (0.45 + Math.random() * 0.2);
+    rodBtn.classList.add('cast'); noise(0.35, 0.25, true);
+    const ns = 'http://www.w3.org/2000/svg', svg = document.createElementNS(ns, 'svg'); svg.setAttribute('class', 'fish-line'); svg.setAttribute('viewBox', `0 0 ${innerWidth} ${innerHeight}`);
+    const path = document.createElementNS(ns, 'path'); svg.appendChild(path); layer.appendChild(svg);
+    const bob = document.createElement('div'); bob.className = 'bobber'; layer.appendChild(bob);
+    const t0 = performance.now(), dur = 650;
+    const fly = now => { const k = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - k, 2);
+      const bx = tipX + (tx - tipX) * e, by = tipY + (ty - tipY) * e - Math.sin(k * Math.PI) * 160;
+      bob.style.left = bx + 'px'; bob.style.top = by + 'px';
+      const mx = (tipX + bx) / 2, my = Math.max(tipY, by) + 60 * k; path.setAttribute('d', `M${tipX} ${tipY} Q${mx} ${my} ${bx} ${by}`);
+      if (k < 1) requestAnimationFrame(fly); else land(); };
+    requestAnimationFrame(fly);
+    function land() {
+      const rp = document.createElement('div'); rp.className = 'ripple'; rp.style.left = tx + 'px'; rp.style.top = ty + 'px'; layer.appendChild(rp);
+      bob.classList.add('bob');
+      setTimeout(() => { bob.classList.remove('bob'); bob.classList.add('bite'); noise(0.15, 0.3, true); }, 1400);
+      setTimeout(() => { rodBtn.classList.remove('cast'); rodBtn.classList.add('yank'); bob.remove(); svg.remove(); explode(layer, tx, ty, caught(), end); }, 1950);
+    }
+  });
 })();
 </script>
 
@@ -1115,6 +1175,39 @@ document.addEventListener('click', async e => {
   try { await navigator.clipboard.writeText(url); } catch (err) { const ta = document.createElement('textarea'); ta.value = url; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (_) {} ta.remove(); }
   b.classList.add('done'); lab.textContent = 'Link copied!'; clearTimeout(b._t); b._t = setTimeout(() => { b.classList.remove('done'); lab.textContent = 'Share'; }, 2000);
 });
+</script>
+
+
+<script>
+/* enchant-style pixel particles around the title */
+(() => {
+  const cv = document.getElementById('tParts'), wrap = document.getElementById('titleWrap'); if (!cv || !wrap) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const x = cv.getContext('2d'), C = ['#a66bff', '#c9a2ff', '#ffffff', '#7a3cff', '#e3d0ff'];
+  let W = 0, H = 0, dpr = 1, parts = [], vis = true, raf = 0;
+  const size = () => { const r = cv.getBoundingClientRect(); dpr = Math.min(2, devicePixelRatio || 1); W = r.width; H = r.height; cv.width = W * dpr; cv.height = H * dpr; x.setTransform(dpr, 0, 0, dpr, 0, 0); };
+  const spawn = () => ({ x: 40 + Math.random() * (W - 80), y: 40 + Math.random() * (H - 80), vx: (Math.random() - .5) * .25, vy: -.15 - Math.random() * .45, s: [2, 3, 3, 4, 5][Math.floor(Math.random() * 5)], c: C[Math.floor(Math.random() * C.length)], life: 0, max: 120 + Math.random() * 160, tw: Math.random() * 6 });
+  const N = () => Math.round(Math.min(70, Math.max(24, W / 18)));
+  function tick() {
+    x.clearRect(0, 0, W, H);
+    while (parts.length < N()) parts.push(spawn());
+    parts.forEach((p, i) => {
+      p.life++; p.x += p.vx + Math.sin((p.life + p.tw * 20) / 30) * .15; p.y += p.vy;
+      const k = p.life / p.max, a = k < .15 ? k / .15 : k > .7 ? (1 - k) / .3 : 1;
+      x.globalAlpha = Math.max(0, a) * (0.55 + 0.45 * Math.abs(Math.sin(p.life / 9 + p.tw)));
+      x.fillStyle = p.c; x.fillRect(Math.round(p.x), Math.round(p.y), p.s, p.s);
+      if (p.s >= 4 && p.c !== '#ffffff') { x.fillStyle = '#fff'; x.fillRect(Math.round(p.x) + 1, Math.round(p.y) + 1, 1, 1); }
+      if (p.life >= p.max) parts[i] = spawn();
+    });
+    x.globalAlpha = 1;
+    raf = vis && !document.hidden ? requestAnimationFrame(tick) : 0;
+  }
+  const go = () => { if (!raf && vis && !document.hidden) raf = requestAnimationFrame(tick); };
+  size(); addEventListener('resize', () => { size(); });
+  new IntersectionObserver(es => { vis = es[0].isIntersecting; go(); }).observe(wrap);
+  document.addEventListener('visibilitychange', go);
+  go();
+})();
 </script>
 
 <footer>

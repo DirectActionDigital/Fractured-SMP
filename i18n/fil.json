@@ -134,7 +134,8 @@
   "Your progress is saved on this device only.": "Sa device na ito lang naka-save ang progress mo.",
   "Episode guide →": "Gabay sa episode →",
   "Share": "I-share",
-  "Link copied!": "Nakopya ang link!"
+  "Link copied!": "Nakopya ang link!",
+  "You caught {x}!": "Nahuli mo si {x}!"
  },
  "html": {
   "html:step1": "Buksan ang Minecraft: Java Edition at i-click ang <b>Multiplayer</b>. Kung may lumabas na babala, i-click ang <b>Magpatuloy</b>.",

@@ -134,7 +134,8 @@
   "Your progress is saved on this device only.": "तुम्हारी प्रोग्रेस सिर्फ़ इसी डिवाइस पर सेव रहती है।",
   "Episode guide →": "एपिसोड गाइड →",
   "Share": "शेयर करें",
-  "Link copied!": "लिंक कॉपी हो गया!"
+  "Link copied!": "लिंक कॉपी हो गया!",
+  "You caught {x}!": "तुमने {x} को पकड़ लिया!"
  },
  "html": {
   "html:step1": "Minecraft: Java Edition खोलें और <b>मल्टीप्लेयर</b> पर क्लिक करें। अगर कोई चेतावनी आए, तो <b>आगे बढ़ें</b> पर क्लिक करें।",

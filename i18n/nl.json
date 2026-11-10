@@ -134,7 +134,8 @@
   "Your progress is saved on this device only.": "Je voortgang wordt alleen op dit apparaat opgeslagen.",
   "Episode guide →": "Afleveringsgids →",
   "Share": "Delen",
-  "Link copied!": "Link gekopieerd!"
+  "Link copied!": "Link gekopieerd!",
+  "You caught {x}!": "Je hebt {x} gevangen!"
  },
  "html": {
   "html:step1": "Open Minecraft: Java Edition en klik op <b>Multiplayer</b>. Als er een waarschuwing verschijnt, klik dan op <b>Doorgaan</b>.",

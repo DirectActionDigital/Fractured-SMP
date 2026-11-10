@@ -134,7 +134,8 @@
   "Your progress is saved on this device only.": "İlerlemen sadece bu cihazda saklanır.",
   "Episode guide →": "Bölüm rehberi →",
   "Share": "Paylaş",
-  "Link copied!": "Bağlantı kopyalandı!"
+  "Link copied!": "Bağlantı kopyalandı!",
+  "You caught {x}!": "{x} yakaladın!"
  },
  "html": {
   "html:step1": "Minecraft: Java Edition'ı aç ve <b>Çok Oyunculu</b>'ya tıkla. Bir uyarı çıkarsa <b>Devam Et</b>'e tıkla.",
