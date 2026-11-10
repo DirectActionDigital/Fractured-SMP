@@ -111,7 +111,9 @@
   "BedrockTogether for Android": "BedrockTogether cho Android",
   "BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.": "BedrockTogether không phải do Minecraft hay Fractured làm ra. Hỗ trợ Switch có lúc được lúc không.",
   "PC, Mac and Linux ·": "PC, Mac và Linux ·",
-  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Vào bằng Java hoặc Bedrock, từ PC, điện thoại, máy tính bảng hay máy console. Thêm máy chủ chỉ mất khoảng một phút."
+  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Vào bằng Java hoặc Bedrock, từ PC, điện thoại, máy tính bảng hay máy console. Thêm máy chủ chỉ mất khoảng một phút.",
+  "{n} online now": "{n} đang online",
+  "{n} members": "{n} thành viên"
  },
  "html": {
   "html:step1": "Mở Minecraft: Java Edition và nhấn <b>Nhiều người chơi</b>. Nếu có cảnh báo hiện lên, nhấn <b>Tiếp tục</b>.",

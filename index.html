@@ -415,6 +415,16 @@ button.ipfield:hover{border-color:var(--accent)}
 .conflow i{flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--accent) 0 6px,transparent 6px 12px);opacity:.7}
 @media (prefers-reduced-motion:no-preference){.conflow i{background-size:24px 2px;animation:cfmove 1s linear infinite}@keyframes cfmove{to{background-position:24px 0}}}
 .howcard .conflow+.applinks{margin-top:0}
+.dside{display:grid;gap:14px;justify-items:start}
+.dlive{display:flex;align-items:center;gap:12px;padding:10px 14px 10px 10px;background:rgba(10,8,16,.55);border:1px solid rgba(255,255,255,.18);border-radius:999px;backdrop-filter:blur(6px)}
+.dav{display:flex}.dav:empty{display:none}
+.dav img,.dav span{width:30px;height:30px;border-radius:50%;border:2px solid #1b1424;margin-left:-9px;background:#2a2a33;object-fit:cover;display:block}
+.dav img:first-child{margin-left:0}
+.dav span{display:grid;place-items:center;font-size:11px;font-weight:800;color:#fff;background:#5865f2}
+.dtxt{display:grid;grid-template-columns:auto 1fr;column-gap:8px;align-items:center;line-height:1.25}
+.ddot{width:9px;height:9px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 3px rgba(61,220,132,.25)}
+.dtxt b{font-size:15px;white-space:nowrap}
+@media (max-width:420px){.dav img:nth-child(n+5){display:none}}.dtxt small{grid-column:2;font-size:12px;opacity:.75}
 /* ---------- live ---------- */
 .livebar{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 16px;background:#e0283a;color:#fff;font-weight:700;font-size:14px;text-decoration:none;text-align:center;position:relative;z-index:2}
 .livebar:hover{background:#c81f30}
@@ -618,7 +628,13 @@ button.ipfield:hover{border-color:var(--accent)}
         <p>Events, rules and the crew all live in the Discord. Come pick a side.</p>
         <button type="button" class="ipchip ipchip-light" data-ip="fracturedsmp.datho.st" aria-label="Copy server address fracturedsmp.datho.st"><span class="ip-k">IP</span><span class="ip-v">fracturedsmp.datho.st</span><span class="ip-c"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 3h11v13h-3v3H5V6h3V3zm2 3h6v8h1V5h-7v1zM7 8v9h7V8H7z"/></svg><b>Copy</b></span></button>
       </div>
-      <a class="btn" href="https://discord.gg/RD2mYCt4y8" target="_blank" rel="noopener">Join the Discord</a>
+      <div class="dside">
+        <div class="dlive" id="dLive" hidden>
+          <div class="dav" id="dAv" aria-hidden="true"></div>
+          <div class="dtxt"><span class="ddot"></span><b id="dOn"></b><small id="dMem"></small></div>
+        </div>
+        <a class="btn" href="https://discord.gg/RD2mYCt4y8" target="_blank" rel="noopener">Join the Discord</a>
+      </div>
     </div>
   </div>
 </section>
@@ -908,6 +924,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   const go = () => { if (start !== 'en') setLang(start, false); };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', go); else go();
+})();
+</script>
+
+
+<script>
+(() => {
+  const box = document.getElementById('dLive'); if (!box) return;
+  const on = document.getElementById('dOn'), mem = document.getElementById('dMem'), av = document.getElementById('dAv');
+  const okN = n => Number.isInteger(n) && n >= 0 && n < 1e7;
+  let members = null;
+  const show = (o, m) => { if (okN(m)) members = m; if (okN(o)) { on.textContent = `${o} online now`; mem.textContent = okN(m) ? `${m} members` : ''; box.hidden = false; } };
+  fetch('data.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(d => { if (!d) return; if (av.childElementCount === 0) show(d.online, d.members); else if (okN(d.members)) { members = d.members; mem.textContent = `${d.members} members`; } }).catch(() => {});
+  /* live avatars once "Server Widget" is switched on in Discord server settings */
+  fetch('https://discord.com/api/guilds/1466612916974391445/widget.json').then(r => r.ok ? r.json() : null).then(w => {
+    if (!w || !Array.isArray(w.members)) return;
+    const ok = w.members.filter(m => m && typeof m.avatar_url === 'string' && /^https:\/\/cdn\.discordapp\.com\/widget-avatars\/[A-Za-z0-9_\/.-]+$/.test(m.avatar_url));
+    av.textContent = '';
+    ok.slice(0, 7).forEach(m => { const i = document.createElement('img'); i.src = m.avatar_url; i.alt = ''; i.width = 30; i.height = 30; i.onerror = () => i.remove(); av.appendChild(i); });
+    const n = okN(w.presence_count) ? w.presence_count : w.members.length;
+    if (n > 7) { const sp = document.createElement('span'); sp.textContent = `+${n - 7 > 99 ? 99 : n - 7}`; av.appendChild(sp); }
+    show(n, members);
+  }).catch(() => {});
 })();
 </script>
 

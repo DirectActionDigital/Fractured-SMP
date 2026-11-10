@@ -111,7 +111,9 @@
   "BedrockTogether for Android": "BedrockTogether para Android",
   "BedrockTogether isn't made by Minecraft or Fractured. Switch support can be hit or miss.": "BedrockTogether no es de Minecraft ni de Fractured. La compatibilidad con Switch puede fallar a veces.",
   "PC, Mac and Linux ·": "PC, Mac y Linux ·",
-  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Únete desde Java o Bedrock, en PC, móvil, tablet o consola. Añadir el servidor lleva como un minuto."
+  "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Únete desde Java o Bedrock, en PC, móvil, tablet o consola. Añadir el servidor lleva como un minuto.",
+  "{n} online now": "{n} conectados ahora",
+  "{n} members": "{n} miembros"
  },
  "html": {
   "html:step1": "Abre Minecraft: Java Edition y haz clic en <b>Multijugador</b>. Si aparece una advertencia, haz clic en <b>Continuar</b>.",
