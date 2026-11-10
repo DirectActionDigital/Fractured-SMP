@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob: https://i.ytimg.com https://mc-heads.net https://cdn.discordapp.com; connect-src 'self' https://api.mcstatus.io https://api.mcsrvstat.us https://discord.com; media-src 'self' blob: data:; worker-src 'self' blob:; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob: https://i.ytimg.com https://mc-heads.net https://cdn.discordapp.com; connect-src 'self' https://api.mcstatus.io https://api.mcsrvstat.us https://discord.com https://votes-1049401762733.us-east1.run.app; media-src 'self' blob: data:; worker-src 'self' blob:; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="canonical" href="https://wearefractured.com/">
@@ -1252,7 +1252,7 @@ document.addEventListener('click', async e => {
 <script>
 /* POV vote: live tally from the Fractured vote counter (separate Google Cloud project) */
 (() => {
-  const API = 'VOTE_API_URL';
+  const API = 'https://votes-1049401762733.us-east1.run.app';
   const sec = document.getElementById('vote'); if (!sec || !/^https:\/\/[a-z0-9.-]+\.run\.app$/.test(API)) return;
   const POVS = [['acehardware67','AceHardware67','acehardware67'],['prep4cringe','Prep4Cringe','prep4cringe'],['undercard594','UNDERcard594','undercard594'],['vexan22','_Vexan_','_vexan_'],['fireblade-yt','Fireblade_1','fireblade_1'],['h2ozero','h2ozer0','h2ozer0']];
   const T = k => k; /* the page translator rewrites these English strings */
