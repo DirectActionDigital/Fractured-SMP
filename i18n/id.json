@@ -113,7 +113,8 @@
   "PC, Mac and Linux ·": "PC, Mac, dan Linux ·",
   "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Gabung lewat Java atau Bedrock, dari PC, ponsel, tablet, atau konsol. Menambahkan servernya cuma butuh sekitar semenit.",
   "{n} online now": "{n} online sekarang",
-  "{n} members": "{n} anggota"
+  "{n} members": "{n} anggota",
+  "Last seen": "Terakhir"
  },
  "html": {
   "html:step1": "Buka Minecraft: Java Edition dan klik <b>Multipemain</b>. Jika muncul peringatan, klik <b>Lanjutkan</b>.",

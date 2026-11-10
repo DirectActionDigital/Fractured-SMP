@@ -215,6 +215,36 @@ def news(old):
     return out
 
 
+def episode_thumbs(ids):
+    """Keep a local copy of each episode thumbnail (some phones block i.ytimg.com)."""
+    d = os.path.join(ROOT, "img", "ep")
+    os.makedirs(d, exist_ok=True)
+    for vid in ids:
+        path = os.path.join(d, vid + ".jpg")
+        if os.path.exists(path):
+            continue
+        try:
+            body = get(f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg")
+            if body[:3] == b"\xff\xd8\xff" and len(body) < 600_000:
+                with open(path, "wb") as f:
+                    f.write(body)
+        except Exception as e:
+            print("thumb failed", vid, e)
+    keep = {v + ".jpg" for v in ids}
+    for f in os.listdir(d):
+        if f not in keep:
+            os.remove(os.path.join(d, f))
+
+
+def crew_online():
+    """Names of creators on the Minecraft server right now (mcstatus.io, 60s cache)."""
+    d = json.loads(get("https://api.mcstatus.io/v2/status/java/fracturedsmp.datho.st"))
+    if not d.get("online"):
+        return set()
+    names = {str(p.get("name_clean", "")).lower() for p in (d.get("players") or {}).get("list") or []}
+    return {h for h, ign in IGN.items() if ign.lower() in names}
+
+
 def main():
     try:
         with open(OUT) as f:
@@ -290,6 +320,22 @@ def main():
             data["news"] = n
     except Exception as e:
         print("news failed", e)
+
+    try:
+        ids = [e["id"] for e in data.get("episodes", []) if ID_RE.match(e.get("id", ""))]
+        if ids:
+            episode_thumbs(ids)
+    except Exception as e:
+        print("thumbs failed", e)
+
+    seen = data.get("last_seen", {})
+    try:
+        stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        for h in crew_online():
+            seen[h] = stamp
+    except Exception as e:
+        print("crew check failed", e)
+    data["last_seen"] = {h: t for h, t in seen.items() if h in IGN}
 
     data["updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     with open(OUT, "w") as f:

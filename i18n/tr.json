@@ -113,7 +113,8 @@
   "PC, Mac and Linux ·": "PC, Mac ve Linux ·",
   "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Java veya Bedrock ile, bilgisayar, telefon, tablet ya da konsoldan katıl. Sunucuyu eklemek yaklaşık bir dakika sürer.",
   "{n} online now": "Şu an {n} çevrimiçi",
-  "{n} members": "{n} üye"
+  "{n} members": "{n} üye",
+  "Last seen": "Son görülme"
  },
  "html": {
   "html:step1": "Minecraft: Java Edition'ı aç ve <b>Çok Oyunculu</b>'ya tıkla. Bir uyarı çıkarsa <b>Devam Et</b>'e tıkla.",

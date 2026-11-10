@@ -215,9 +215,9 @@
    "published": "2026-11-06"
   }
  ],
- "members": 123,
- "online": 26,
- "updated": "2026-11-09T22:59Z",
+ "members": 124,
+ "online": 33,
+ "updated": "2026-11-10T00:30Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -246,6 +246,14 @@
   }
  },
  "news": [
+  {
+   "title": "LET’S PLAY: DECOCRAFT: SEASONS AND UGLY SWEATER",
+   "url": "https://www.minecraft.net/en-us/article/lets-play-decocraft",
+   "published": "2026-11-09",
+   "desc": "Celebrate every season in Minecraft with Decocraft: Seasons by Razzleberries and Ugly Sweater by Pixel Smile Studios, both available in the ",
+   "image": "img/news/77f4ddd1e5365f30.jpg",
+   "tag": "news"
+  },
   {
    "title": "Marketplace Content: November 2026",
    "url": "https://www.minecraft.net/en-us/article/marketplace-content-november-2026",
@@ -285,14 +293,10 @@
    "desc": "Minecraft 26.4 Snapshot 7",
    "image": "img/news/bf27dbaf598cc8bf.jpg",
    "tag": "update"
-  },
-  {
-   "title": "Halloween on Realms: Creeping Suspicion",
-   "url": "https://www.minecraft.net/en-us/article/halloween-on-realms",
-   "published": "2026-10-30",
-   "desc": "Like every October, the map makers have treated us to a range of wonderful and scary maps. They are not always for the faint of heart, and y",
-   "image": "img/news/effe8603bccc42e1.jpg",
-   "tag": "realms"
   }
- ]
+ ],
+ "last_seen": {
+  "@acehardware67": "2026-11-10T00:27Z",
+  "@prep4cringe": "2026-11-10T00:27Z"
+ }
 }

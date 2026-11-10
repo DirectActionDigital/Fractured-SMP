@@ -113,7 +113,8 @@
   "PC, Mac and Linux ·": "PC, Mac और Linux ·",
   "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Java या Bedrock पर, PC, फ़ोन, टैबलेट या कंसोल से जुड़ें। सर्वर जोड़ने में करीब एक मिनट लगता है।",
   "{n} online now": "{n} अभी ऑनलाइन",
-  "{n} members": "{n} सदस्य"
+  "{n} members": "{n} सदस्य",
+  "Last seen": "आख़िरी बार"
  },
  "html": {
   "html:step1": "Minecraft: Java Edition खोलें और <b>मल्टीप्लेयर</b> पर क्लिक करें। अगर कोई चेतावनी आए, तो <b>आगे बढ़ें</b> पर क्लिक करें।",

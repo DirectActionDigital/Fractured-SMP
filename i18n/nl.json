@@ -113,7 +113,8 @@
   "PC, Mac and Linux ·": "PC, Mac en Linux ·",
   "Join on Java or Bedrock, from a PC, phone, tablet or console. It takes about a minute to add the server.": "Doe mee met Java of Bedrock, vanaf een pc, telefoon, tablet of console. De server toevoegen duurt ongeveer een minuut.",
   "{n} online now": "{n} nu online",
-  "{n} members": "{n} leden"
+  "{n} members": "{n} leden",
+  "Last seen": "Laatst gezien"
  },
  "html": {
   "html:step1": "Open Minecraft: Java Edition en klik op <b>Multiplayer</b>. Als er een waarschuwing verschijnt, klik dan op <b>Doorgaan</b>.",
