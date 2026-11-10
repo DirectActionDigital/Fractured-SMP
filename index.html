@@ -42,7 +42,7 @@
 }
 *{box-sizing:border-box}
 body{background:var(--base);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;transition:background .3s,color .3s}
-.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1520px;margin:0 auto;padding-left:max(clamp(16px,4vw,40px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,4vw,40px),env(safe-area-inset-right,0px))}
 h1,h2,h3{font-family:var(--f-display);font-weight:700;line-height:1.05;text-wrap:balance;margin:0}
 a{color:inherit}
 button{font:inherit;cursor:pointer}
