@@ -137,7 +137,6 @@
   "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. सर्वाधिकार सुरक्षित। यह Minecraft का आधिकारिक प्रोडक्ट नहीं है। Mojang या Microsoft द्वारा स्वीकृत या उनसे संबद्ध नहीं है।",
   "Season Two poll": "सीज़न टू पोल",
   "Vote for your favorite POV": "अपने पसंदीदा POV को वोट दें",
-  "Who has the best side of the story? Pick one. You get one vote a day, and the results update live.": "कहानी का सबसे अच्छा पक्ष किसके पास है? एक चुनें। आपको रोज़ एक वोट मिलता है, और नतीजे लाइव अपडेट होते हैं।",
   "Leading the vote": "वोट में आगे",
   "votes so far": "वोट अब तक",
   "Vote": "वोट",
@@ -146,9 +145,10 @@
   "No votes yet": "अभी कोई वोट नहीं",
   "{n} votes": "{n} वोट",
   "Be the first to vote.": "सबसे पहले वोट करें।",
-  "Thanks for voting! You can vote again tomorrow.": "वोट करने के लिए धन्यवाद! आप कल फिर से वोट कर सकते हैं।",
-  "This network already voted today. Come back tomorrow!": "इस नेटवर्क से आज वोट हो चुका है। कल फिर आएं!",
-  "Your vote didn’t go through. Try again in a minute.": "आपका वोट नहीं गया। एक मिनट में फिर से कोशिश करें।"
+  "Your vote didn’t go through. Try again in a minute.": "आपका वोट नहीं गया। एक मिनट में फिर से कोशिश करें।",
+  "Who has the best side of the story? Pick one. You get one vote, it’s final, and the results update live.": "कहानी का सबसे अच्छा पक्ष किसके पास है? एक चुनें। आपको एक ही वोट मिलता है, वह अंतिम है, और नतीजे लाइव अपडेट होते हैं।",
+  "Thanks for voting! Your vote is locked in.": "वोट करने के लिए धन्यवाद! आपका वोट पक्का हो गया है।",
+  "This Wi-Fi network has already used its votes.": "इस वाई-फ़ाई नेटवर्क के वोट पहले ही इस्तेमाल हो चुके हैं।"
  },
  "html": {
   "html:step1": "Minecraft: Java Edition खोलें और <b>मल्टीप्लेयर</b> पर क्लिक करें। अगर कोई चेतावनी आए, तो <b>आगे बढ़ें</b> पर क्लिक करें।",

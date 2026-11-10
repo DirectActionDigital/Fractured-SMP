@@ -137,7 +137,6 @@
   "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Tous droits réservés. Ce n'est pas un produit Minecraft officiel. Non approuvé par Mojang ou Microsoft et non associé à eux.",
   "Season Two poll": "Sondage de la saison 2",
   "Vote for your favorite POV": "Vote pour ton POV préféré",
-  "Who has the best side of the story? Pick one. You get one vote a day, and the results update live.": "Qui a le meilleur point de vue sur l'histoire ? Choisis-en un. Tu as un vote par jour, et les résultats se mettent à jour en direct.",
   "Leading the vote": "En tête du vote",
   "votes so far": "votes pour l'instant",
   "Vote": "Voter",
@@ -146,9 +145,10 @@
   "No votes yet": "Pas encore de votes",
   "{n} votes": "{n} votes",
   "Be the first to vote.": "Sois le premier à voter.",
-  "Thanks for voting! You can vote again tomorrow.": "Merci d'avoir voté ! Tu pourras revoter demain.",
-  "This network already voted today. Come back tomorrow!": "Ce réseau a déjà voté aujourd'hui. Reviens demain !",
-  "Your vote didn’t go through. Try again in a minute.": "Ton vote n'est pas passé. Réessaie dans une minute."
+  "Your vote didn’t go through. Try again in a minute.": "Ton vote n'est pas passé. Réessaie dans une minute.",
+  "Who has the best side of the story? Pick one. You get one vote, it’s final, and the results update live.": "Qui a le meilleur point de vue sur l'histoire ? Choisis-en un. Tu as un seul vote, il est définitif, et les résultats se mettent à jour en direct.",
+  "Thanks for voting! Your vote is locked in.": "Merci d'avoir voté ! Ton vote est enregistré pour de bon.",
+  "This Wi-Fi network has already used its votes.": "Ce réseau Wi-Fi a déjà utilisé ses votes."
  },
  "html": {
   "html:step1": "Ouvre Minecraft: Java Edition et clique sur <b>Multijoueur</b>. Si un avertissement s'affiche, clique sur <b>Continuer</b>.",

@@ -137,7 +137,6 @@
   "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Все права защищены. Не является официальным продуктом Minecraft. Не одобрено Mojang или Microsoft и не связано с ними.",
   "Season Two poll": "Опрос второго сезона",
   "Vote for your favorite POV": "Голосуй за любимый POV",
-  "Who has the best side of the story? Pick one. You get one vote a day, and the results update live.": "У кого лучшая сторона истории? Выбери одного. У тебя один голос в день, а результаты обновляются в реальном времени.",
   "Leading the vote": "Лидер голосования",
   "votes so far": "голосов на сейчас",
   "Vote": "Голосовать",
@@ -146,9 +145,10 @@
   "No votes yet": "Голосов пока нет",
   "{n} votes": "Голосов: {n}",
   "Be the first to vote.": "Проголосуй первым.",
-  "Thanks for voting! You can vote again tomorrow.": "Спасибо за голос! Завтра можно проголосовать снова.",
-  "This network already voted today. Come back tomorrow!": "С этой сети сегодня уже голосовали. Возвращайся завтра!",
-  "Your vote didn’t go through. Try again in a minute.": "Голос не засчитан. Попробуй через минуту."
+  "Your vote didn’t go through. Try again in a minute.": "Голос не засчитан. Попробуй через минуту.",
+  "Who has the best side of the story? Pick one. You get one vote, it’s final, and the results update live.": "У кого лучшая сторона истории? Выбери одного. У тебя один голос, его нельзя изменить, а результаты обновляются в реальном времени.",
+  "Thanks for voting! Your vote is locked in.": "Спасибо за голос! Твой голос засчитан окончательно.",
+  "This Wi-Fi network has already used its votes.": "С этой сети Wi-Fi голоса уже использованы."
  },
  "html": {
   "html:step1": "Открой Minecraft: Java Edition и нажми <b>Сетевая игра</b>. Если появится предупреждение, нажми <b>Продолжить</b>.",

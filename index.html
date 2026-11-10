@@ -618,7 +618,7 @@ button.ipfield:hover{border-color:var(--accent)}
       <div>
         <div class="eyebrow">Season Two poll</div>
         <h2>Vote for your favorite POV</h2>
-        <p>Who has the best side of the story? Pick one. You get one vote a day, and the results update live.</p>
+        <p>Who has the best side of the story? Pick one. You get one vote, it’s final, and the results update live.</p>
       </div>
     </div>
     <div class="vote-grid">
@@ -1256,8 +1256,7 @@ document.addEventListener('click', async e => {
   const sec = document.getElementById('vote'); if (!sec || !/^https:\/\/[a-z0-9.-]+\.run\.app$/.test(API)) return;
   const POVS = [['acehardware67','AceHardware67','acehardware67'],['prep4cringe','Prep4Cringe','prep4cringe'],['undercard594','UNDERcard594','undercard594'],['vexan22','_Vexan_','_vexan_'],['fireblade-yt','Fireblade_1','fireblade_1'],['h2ozero','h2ozer0','h2ozer0']];
   const T = k => k; /* the page translator rewrites these English strings */
-  const today = () => new Date().toISOString().slice(0, 10);
-  const store = { get() { try { const v = JSON.parse(localStorage.getItem('fs-vote') || 'null'); return v && v.day === today() ? v.pov : null; } catch (_) { return null; } }, set(p) { try { localStorage.setItem('fs-vote', JSON.stringify({ day: today(), pov: p })); } catch (_) {} } };
+  const store = { get() { try { const v = JSON.parse(localStorage.getItem('fs-vote') || 'null'); return v && typeof v.pov === 'string' ? v.pov : null; } catch (_) { return null; } }, set(p) { try { localStorage.setItem('fs-vote', JSON.stringify({ pov: p })); } catch (_) {} } };
   const faces = {};
   const face = (cv, ign) => { const x = cv.getContext('2d'); const draw = im => { x.clearRect(0, 0, 8, 8); x.drawImage(im, 8, 8, 8, 8, 0, 0, 8, 8); x.drawImage(im, 40, 8, 8, 8, 0, 0, 8, 8); };
     if (faces[ign] && faces[ign].complete) return draw(faces[ign]); const im = faces[ign] || (faces[ign] = new Image()); im.addEventListener('load', () => draw(im), { once: true }); if (!im.src) im.src = `img/skin-${ign}.png`; };
@@ -1281,7 +1280,7 @@ document.addEventListener('click', async e => {
     document.getElementById('vLeadName').textContent = total ? (tied ? T('It’s a tie!') : lead[1]) : T('No votes yet');
     document.getElementById('vLeadSub').textContent = total && !tied ? T('{n} votes').replace('{n}', fmt(counts[order[0]])) : (total ? '' : T('Be the first to vote.'));
     face(document.getElementById('vLeadFace'), total && !tied ? lead[2] : (tied ? POVS.find(p => p[0] === order[0])[2] : 'undercard594'));
-    if (mine && !note.classList.contains('err')) note.textContent = T('Thanks for voting! You can vote again tomorrow.');
+    if (mine && !note.classList.contains('err')) note.textContent = T('Thanks for voting! Your vote is locked in.');
   }
   const ok = d => d && d.counts && typeof d.counts === 'object' && POVS.every(p => Number.isInteger(d.counts[p[0]]) && d.counts[p[0]] >= 0);
   async function load() { try { const r = await fetch(`${API}/v1/tally`, { cache: 'no-cache' }); const d = await r.json(); if (ok(d)) { counts = d.counts; sec.hidden = false; const nv = document.getElementById('navVote'); if (nv) nv.hidden = false; render(); } } catch (_) {} }
@@ -1294,7 +1293,7 @@ document.addEventListener('click', async e => {
       if (ok(d)) counts = d.counts;
       if (r.ok) { mine = pov; store.set(pov); const rc = b.getBoundingClientRect(), pop = document.createElement('div'); pop.className = 'vpop'; pop.textContent = '+1'; pop.style.left = (rc.left + rc.width / 2 - 12) + 'px'; pop.style.top = (rc.top - 6) + 'px'; document.body.appendChild(pop);
         pop.animate([{ transform: 'translateY(0)', opacity: 1 }, { transform: 'translateY(-40px)', opacity: 0 }], { duration: 900, easing: 'ease-out' }).onfinish = () => pop.remove(); }
-      else if (r.status === 409) { mine = mine || 'x'; store.set(mine); note.textContent = T('This network already voted today. Come back tomorrow!'); }
+      else if (r.status === 409) { mine = mine || 'x'; store.set(mine); note.textContent = T('This Wi-Fi network has already used its votes.'); }
       else { note.classList.add('err'); note.textContent = T('Your vote didn’t go through. Try again in a minute.'); }
     } catch (_) { note.classList.add('err'); note.textContent = T('Your vote didn’t go through. Try again in a minute.'); }
     busy = false; render();
