@@ -437,10 +437,6 @@ button.ipfield:hover{border-color:var(--accent)}
 /* ---------- easter egg ---------- */
 .egg{position:fixed;inset:0;z-index:999;pointer-events:none;transition:opacity .6s}
 .egg.out{opacity:0}
-.egg-creeper{position:absolute;left:0;bottom:24px;width:48px;height:78px;image-rendering:pixelated;filter:drop-shadow(0 6px 0 rgba(0,0,0,.35));animation:eggbob .3s steps(2) infinite}
-.egg-creeper.fuse{animation:eggfuse .18s steps(2) infinite}
-@keyframes eggbob{50%{translate:0 -3px}}
-@keyframes eggfuse{50%{filter:brightness(3) saturate(0)}}
 .egg-flash{position:absolute;inset:0;background:#fff;animation:eggflash .5s ease-out forwards}
 @keyframes eggflash{from{opacity:.85}to{opacity:0}}
 .egg-cracks{position:absolute;inset:0;width:100%;height:100%}
@@ -1063,33 +1059,20 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <script>
-/* Easter egg: tap the logo 5 times (creeper). Fishing rod next to the title reuses the explosion. */
+/* Fishing rod next to the title: cast, bite, yank, explosion, catch a creator */
 (() => {
-  let taps = 0, tapT = 0, running = false;
-  const logo = document.querySelector('.nav .logo');
-  if (logo) logo.addEventListener('click', e => { const n = Date.now(); taps = n - tapT < 600 ? taps + 1 : 1; tapT = n; if (taps >= 5) { e.preventDefault(); taps = 0; boom(); } });
+  let running = false;
   const soundOn = () => { try { return localStorage.getItem('fs-sound') === '1'; } catch (e) { return false; } };
   function noise(dur, vol, hiss) {
     if (!soundOn()) return;
     try {
-      const A = window.AudioContext || window.webkitAudioContext; const ac = boom.ac || (boom.ac = new A());
+      const A = window.AudioContext || window.webkitAudioContext; const ac = noise.ac || (noise.ac = new A());
       const len = Math.floor(ac.sampleRate * dur), b = ac.createBuffer(1, len, ac.sampleRate), d = b.getChannelData(0);
       for (let i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, hiss ? 0.5 : 2.5);
       const s = ac.createBufferSource(), g = ac.createGain(), f = ac.createBiquadFilter();
       f.type = hiss ? 'highpass' : 'lowpass'; f.frequency.value = hiss ? 3000 : 900; g.gain.value = vol;
       s.buffer = b; s.connect(f); f.connect(g); g.connect(ac.destination); s.start();
     } catch (e) {}
-  }
-  function creeper() {
-    const c = document.createElement('canvas'); c.width = 16; c.height = 26; const x = c.getContext('2d');
-    const G = ['#4caf50','#3e9142','#5fc463','#2e7d32','#66bb6a'];
-    for (let yy = 0; yy < 26; yy++) for (let xx = 0; xx < 16; xx++) {
-      const body = (yy < 8 && xx >= 4 && xx < 12) || (yy >= 8 && yy < 20 && xx >= 4 && xx < 12) || (yy >= 20 && ((xx >= 2 && xx < 7) || (xx >= 9 && xx < 14)));
-      if (!body) continue; x.fillStyle = G[(xx * 7 + yy * 13) % G.length]; x.fillRect(xx, yy, 1, 1);
-    }
-    x.fillStyle = '#111';
-    [[5,2],[6,2],[5,3],[6,3],[9,2],[10,2],[9,3],[10,3],[7,4],[8,4],[6,5],[7,5],[8,5],[9,5],[6,6],[9,6]].forEach(([a, b]) => x.fillRect(a, b, 1, 1));
-    return c;
   }
   function cracks(cx, cy) {
     const W = innerWidth, H = innerHeight, ns = 'http://www.w3.org/2000/svg';
@@ -1104,18 +1087,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return svg;
   }
   function toast() { const t = document.createElement('div'); t.className = 'egg-toast'; t.setAttribute('role', 'status'); const b = document.createElement('b'); b.textContent = 'You found the fracture.'; t.appendChild(b); return t; }
-  function boom() {
-    if (running) return; running = true;
-    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const layer = document.createElement('div'); layer.className = 'egg'; document.body.appendChild(layer);
-    const end = () => { layer.classList.add('out'); setTimeout(() => { layer.remove(); document.documentElement.classList.remove('egg-shake'); running = false; }, 700); };
-    if (reduce) { layer.appendChild(cracks(innerWidth / 2, innerHeight / 2)); layer.appendChild(toast()); setTimeout(end, 3200); return; }
-    const cr = creeper(); cr.className = 'egg-creeper'; layer.appendChild(cr);
-    const stopX = innerWidth / 2 - 24;
-    cr.animate([{ transform: 'translateX(-80px)' }, { transform: `translateX(${stopX}px)` }], { duration: 2400, easing: 'linear', fill: 'forwards' });
-    setTimeout(() => { cr.classList.add('fuse'); noise(1.4, 0.18, true); }, 2400);
-    setTimeout(() => { const r = cr.getBoundingClientRect(); cr.remove(); explode(layer, r.left + r.width / 2, r.top + r.height / 2, toast(), end); }, 3800);
-  }
   function explode(layer, cx, cy, toastNode, end) {
     noise(0.9, 0.9, false);
     const fl = document.createElement('div'); fl.className = 'egg-flash'; layer.appendChild(fl);
@@ -1125,7 +1096,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => layer.appendChild(toastNode), 500);
     setTimeout(end, 4200);
   }
-  /* fishing rod: cast, bite, yank, boom, and you catch a creator */
+  /* fishing rod: cast, bite, yank, explosion, and you catch a creator */
   const CREW = [['AceHardware67','acehardware67'],['Prep4Cringe','prep4cringe'],['UNDERcard594','undercard594'],['_Vexan_','_vexan_'],['Fireblade_1','fireblade_1'],['h2ozer0','h2ozer0']];
   const face = file => { const c = document.createElement('canvas'); c.width = c.height = 8; const im = new Image(); im.onload = () => { const x = c.getContext('2d'); x.drawImage(im, 8, 8, 8, 8, 0, 0, 8, 8); x.drawImage(im, 40, 8, 8, 8, 0, 0, 8, 8); }; im.src = file; return c; };
   const rodBtn = document.getElementById('rodBtn'), rodCv = document.getElementById('rodCv');
