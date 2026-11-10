@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Episode guide · Fractured SMP</title>
+<link rel="canonical" href="https://wearefractured.com/episodes.html">
+<meta name="description" content="Every Fractured SMP episode in order. Track what you've watched and pick up where you left off.">
+<meta name="theme-color" content="#0a0a0c">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Fractured SMP"><meta property="og:title" content="Episode guide · Fractured SMP"><meta property="og:description" content="Every episode in order. Pick up where you left off."><meta property="og:url" content="https://wearefractured.com/episodes.html"><meta property="og:image" content="https://wearefractured.com/og.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+:root{--base:#0a0a0c;--base-2:#111116;--surface:#18181e;--line:#2a2a33;--ink:#fff;--ink-dim:#a9a8b6;--accent:#a66bff;--accent-ink:#fff;
+  --f-display:"Pixelify Sans","Courier New",monospace;--f-body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;--f-mono:"JetBrains Mono",ui-monospace,monospace;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--base);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
+img{max-width:100%}[hidden]{display:none!important}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(clamp(16px,4vw,40px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,4vw,40px),env(safe-area-inset-right,0px))}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;background:rgba(10,10,12,.88);backdrop-filter:blur(10px)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:14px}
+header img{height:22px;width:auto;display:block}
+.home{display:inline-flex;align-items:center;min-height:44px;color:var(--ink-dim);text-decoration:none;font-weight:700;font-size:15px}.home:hover{color:var(--ink)}
+.hero{padding-block:56px 28px;background:radial-gradient(90% 120% at 100% 0%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 60%)}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--f-display);font-size:clamp(40px,7vw,72px);line-height:1;margin:10px 0 12px}
+.lede{color:var(--ink-dim);max-width:58ch;margin:0}
+.panel{margin-top:28px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px 24px;align-items:center;padding:20px 22px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.prog-top{display:flex;justify-content:space-between;gap:12px;font-weight:800;margin-bottom:10px}
+.prog-top small{font-family:var(--f-mono);color:var(--ink-dim);font-weight:500}
+.bar{height:14px;background:#0d0d11;border:1px solid var(--line);border-radius:3px;overflow:hidden;display:flex}
+.bar i{display:block;height:100%;background:repeating-linear-gradient(90deg,var(--accent) 0 12px,color-mix(in srgb,var(--accent) 80%,#000) 12px 14px);transition:width .4s}
+.acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+.btn{display:inline-flex;align-items:center;gap:10px;font:inherit;font-weight:800;text-decoration:none;border-radius:4px;padding:12px 18px;border:2px solid transparent;cursor:pointer;color:var(--ink);background:transparent;transition:transform .15s,box-shadow .15s,border-color .15s}
+.btn-primary{background:var(--accent);color:var(--accent-ink);box-shadow:0 4px 0 color-mix(in srgb,var(--accent) 55%,#000)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 0 color-mix(in srgb,var(--accent) 55%,#000)}
+.btn-ghost{border-color:var(--line)}.btn-ghost:hover{border-color:var(--accent)}
+.btn-sm{padding:8px 12px;font-size:13px}
+.newbar{margin-top:16px;display:flex;align-items:center;gap:12px;padding:12px 16px;border:1px solid color-mix(in srgb,#3ddc84 50%,transparent);background:rgba(61,220,132,.08);border-radius:8px;font-weight:800;color:#bff3d4}
+.newbar b{background:#3ddc84;color:#0a0a0c;font-family:var(--f-display);font-size:12px;padding:3px 7px;border-radius:2px;letter-spacing:.08em}
+@media (max-width:760px){.panel{grid-template-columns:1fr}.acts{justify-content:flex-start}}
+main{padding-block:12px 64px}
+.tools{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:center;margin:24px 0 14px;color:var(--ink-dim);font-size:13px}
+.list{display:grid;gap:12px;list-style:none;margin:0;padding:0}
+.ep{display:grid;grid-template-columns:56px 220px minmax(0,1fr) auto;gap:18px;align-items:center;padding:12px 16px 12px 12px;background:var(--surface);border:1px solid var(--line);border-radius:8px;transition:border-color .15s,background .15s;scroll-margin-top:90px}
+.ep:hover{border-color:color-mix(in srgb,var(--accent) 60%,var(--line))}
+.ep.next{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.num{font-family:var(--f-display);font-size:26px;color:var(--ink-dim);text-align:center}
+.ep.done .num{color:#3ddc84}
+.thumb{position:relative;display:block;aspect-ratio:16/9;border-radius:5px;overflow:hidden;background:#0d0d11;border:1px solid var(--line)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.ep:hover .thumb img{transform:scale(1.04)}
+.thumb .pl{position:absolute;inset:0;display:grid;place-items:center}
+.thumb .pl i{width:44px;height:44px;border-radius:50%;background:var(--accent);display:grid;place-items:center;opacity:.92;box-shadow:0 4px 0 rgba(0,0,0,.35)}
+.thumb .pl i::after{content:"";border-left:13px solid #fff;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
+.ep.done .thumb img{filter:saturate(.35) brightness(.6)}
+.tag{position:absolute;left:8px;top:8px;font-family:var(--f-display);font-size:11px;letter-spacing:.08em;padding:3px 7px;border-radius:2px}
+.tag.new{background:#3ddc84;color:#0a0a0c}
+.tag.w{background:rgba(0,0,0,.75);color:#3ddc84;border:1px solid rgba(61,220,132,.5)}
+.meta{min-width:0}
+.meta a{color:var(--ink);text-decoration:none;font-weight:800;font-size:17px;line-height:1.3;display:block}
+.meta a:hover{color:#d9c2ff}
+.meta time{display:block;margin-top:6px;font-family:var(--f-mono);font-size:12px;color:var(--ink-dim)}
+.chk{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--ink-dim);font:inherit;font-size:13px;font-weight:800;cursor:pointer;white-space:nowrap}
+.chk:hover{border-color:var(--accent);color:var(--ink)}
+.chk .box{width:20px;height:20px;border:2px solid currentColor;border-radius:3px;display:grid;place-items:center}
+.ep.done .chk{color:#3ddc84;border-color:rgba(61,220,132,.45)}
+.ep.done .chk .box{background:#3ddc84;border-color:#3ddc84}
+.ep.done .chk .box::after{content:"";width:9px;height:5px;border-left:3px solid #0a0a0c;border-bottom:3px solid #0a0a0c;transform:rotate(-45deg) translate(1px,-1px)}
+@media (max-width:760px){.ep{grid-template-columns:120px minmax(0,1fr);gap:12px;padding:10px}.num{display:none}.chk{grid-column:1/-1;justify-content:center}.meta a{font-size:15px}}
+.empty{padding:40px;text-align:center;color:var(--ink-dim)}
+footer{border-top:1px solid var(--line);padding-block:28px;color:var(--ink-dim);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
+footer a{color:var(--ink-dim);display:inline-flex;align-items:center;min-height:44px}
+footer .credit{flex-basis:100%;display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:18px;padding-top:28px;border-top:1px solid var(--line);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;min-height:0}
+footer .credit img{display:block;width:184px;height:auto;opacity:.92}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+<header><div class="wrap"><a href="./" aria-label="Fractured SMP home"><img src="wordmark.png" alt="Fractured SMP" width="1245" height="164"></a><a class="home" href="./" data-t="Back to home">Back to home</a></div></header>
+<section class="hero"><div class="wrap">
+  <div class="eyebrow" data-t="Season timeline">Season timeline</div>
+  <h1 data-t="Episode guide">Episode guide</h1>
+  <p class="lede" data-t="Every episode of Fractured SMP in order. Tick them off as you watch and we'll remember where you left off.">Every episode of Fractured SMP in order. Tick them off as you watch and we'll remember where you left off.</p>
+  <div class="panel">
+    <div>
+      <div class="prog-top"><span id="progTxt"></span><small id="progPct"></small></div>
+      <div class="bar" role="progressbar" aria-valuemin="0" id="bar"><i id="barFill" style="width:0"></i></div>
+    </div>
+    <div class="acts"><a class="btn btn-primary" id="cont" href="#" target="_blank" rel="noopener"></a><a class="btn btn-ghost" href="https://www.youtube.com/playlist?list=PLmzftq-PMGGLPC9Xkheqq36Jjy7xlGWXQ" target="_blank" rel="noopener" data-t="Full playlist on YouTube">Full playlist on YouTube</a></div>
+  </div>
+  <div class="newbar" id="newbar" hidden><b data-t="NEW">NEW</b><span id="newTxt"></span></div>
+</div></section>
+<main><div class="wrap">
+  <div class="tools"><span data-t="Your progress is saved on this device only.">Your progress is saved on this device only.</span><span><button type="button" class="btn btn-ghost btn-sm" id="allBtn" data-t="Mark all as watched">Mark all as watched</button> <button type="button" class="btn btn-ghost btn-sm" id="resetBtn" data-t="Reset progress">Reset progress</button></span></div>
+  <ol class="list" id="list"></ol>
+</div></main>
+<footer><div class="wrap"><span>© 2026 Fractured SMP. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span><span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a></span><a class="credit" href="https://directactiondigital.com" target="_blank" rel="noopener" aria-label="Built and powered by Direct Action Digital"><span>Built &amp; powered by</span><img src="img/dad-logo.png" alt="Direct Action Digital" width="184" height="48" loading="lazy"></a></div></footer>
+<script>
+(() => {
+  const PL = 'PLmzftq-PMGGLPC9Xkheqq36Jjy7xlGWXQ', KEY = 'fs-watched', SEEN = 'fs-eps-known';
+  const ls = { get(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+  let dict = {}, lang = 'en';
+  const T = (k, vars) => { let s = Object.prototype.hasOwnProperty.call(dict, k) ? dict[k] : k; if (vars) for (const v in vars) s = s.split('{' + v + '}').join(String(vars[v])); return s; };
+  const okId = id => typeof id === 'string' && /^[A-Za-z0-9_-]{11}$/.test(id);
+  const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+  let eps = [], watched = new Set(ls.get(KEY, []).filter(okId)), fresh = new Set();
+  const yt = id => `https://www.youtube.com/watch?v=${id}&list=${PL}`;
+  const fmt = d => { if (!/^\d{4}-\d{2}-\d{2}$/.test(d || '')) return ''; const t = new Date(d + 'T12:00:00Z'); try { return t.toLocaleDateString(lang, { month: 'short', day: 'numeric', year: 'numeric' }); } catch (e) { return d; } };
+  const save = () => ls.set(KEY, [...watched]);
+  function mark(id, v) { if (v) watched.add(id); else watched.delete(id); save(); paint(); }
+  function render() {
+    const list = document.getElementById('list'); list.textContent = '';
+    if (!eps.length) { list.appendChild(el('li', 'empty', '…')); return; }
+    eps.forEach((e, i) => {
+      const li = el('li', 'ep'); li.id = 'ep-' + (i + 1); li.dataset.id = e.id;
+      li.appendChild(el('div', 'num', String(i + 1).padStart(2, '0')));
+      const th = el('a', 'thumb'); th.href = yt(e.id); th.target = '_blank'; th.rel = 'noopener'; th.setAttribute('aria-label', e.title);
+      const im = el('img'); im.src = `img/ep/${e.id}.jpg`; im.alt = ''; im.loading = 'lazy'; im.onerror = () => { im.onerror = null; im.src = `https://i.ytimg.com/vi/${e.id}/mqdefault.jpg`; };
+      const pl = el('span', 'pl'); pl.appendChild(el('i'));
+      th.append(im, pl);
+      if (fresh.has(e.id)) th.appendChild(el('span', 'tag new', T('NEW')));
+      const meta = el('div', 'meta'); const a = el('a', '', e.title); a.href = yt(e.id); a.target = '_blank'; a.rel = 'noopener';
+      const tm = el('time', '', fmt(e.published)); if (e.published) tm.dateTime = e.published; meta.append(a, tm);
+      const ck = el('button', 'chk'); ck.type = 'button'; ck.append(el('span', 'box'), el('span', 'lab'));
+      ck.addEventListener('click', () => mark(e.id, !watched.has(e.id)));
+      [th, a].forEach(x => x.addEventListener('click', () => mark(e.id, true)));
+      li.append(th, meta, ck); list.appendChild(li);
+    });
+    paint();
+  }
+  function paint() {
+    const n = eps.filter(e => watched.has(e.id)).length, tot = eps.length, next = eps.findIndex(e => !watched.has(e.id));
+    document.querySelectorAll('.ep').forEach((li, i) => {
+      const done = watched.has(li.dataset.id); li.classList.toggle('done', done); li.classList.toggle('next', i === next && n > 0);
+      li.querySelector('.lab').textContent = done ? T('Watched') : T('Mark as watched'); li.querySelector('.chk').setAttribute('aria-pressed', String(done));
+      const th = li.querySelector('.thumb'); let w = th.querySelector('.tag.w'); if (done && !w) { w = el('span', 'tag w', T('Watched')); th.appendChild(w); } if (!done && w) w.remove();
+      if (done) { const nw = th.querySelector('.tag.new'); if (nw) nw.remove(); }
+    });
+    document.getElementById('progTxt').textContent = T('{n} of {t} watched', { n, t: tot });
+    const pct = tot ? Math.round(n / tot * 100) : 0;
+    document.getElementById('progPct').textContent = pct + '%'; document.getElementById('barFill').style.width = pct + '%';
+    const bar = document.getElementById('bar'); bar.setAttribute('aria-valuemax', String(tot)); bar.setAttribute('aria-valuenow', String(n));
+    const c = document.getElementById('cont');
+    if (next === -1) { c.textContent = T("You're all caught up"); c.href = tot ? yt(eps[tot - 1].id) : '#'; }
+    else { c.textContent = n === 0 ? T('Start at episode 1') : T('Continue with episode {n}', { n: next + 1 }); c.href = yt(eps[next].id); }
+    c.onclick = () => { if (next !== -1) mark(eps[next].id, true); };
+  }
+  document.getElementById('allBtn').addEventListener('click', () => { eps.forEach(e => watched.add(e.id)); save(); paint(); });
+  document.getElementById('resetBtn').addEventListener('click', () => { watched.clear(); save(); paint(); });
+  async function boot() {
+    lang = (() => { try { return localStorage.getItem('fs-lang') || ''; } catch (e) { return ''; } })();
+    const CODES = ['es','pt','pl','id','hi','ru','de','fr','nl','tr','fil','it','vi'];
+    if (!CODES.includes(lang)) { lang = 'en'; for (const l of (navigator.languages || [])) { const b = String(l).toLowerCase().split('-')[0]; const cc = b === 'tl' ? 'fil' : b; if (CODES.includes(cc)) { lang = cc; break; } } try { if (localStorage.getItem('fs-lang') === 'en') lang = 'en'; } catch (e) {} }
+    if (lang !== 'en') { try { const r = await fetch(`i18n/${lang}.json`); const d = await r.json(); if (d && typeof d.text === 'object') dict = d.text; } catch (e) { lang = 'en'; } }
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-t]').forEach(n => { n.textContent = T(n.dataset.t); });
+    try { const r = await fetch('data.json', { cache: 'no-cache' }); const d = await r.json();
+      eps = (Array.isArray(d.episodes) ? d.episodes : []).filter(e => e && okId(e.id) && typeof e.title === 'string').map(e => ({ id: e.id, title: e.title.slice(0, 140), published: typeof e.published === 'string' ? e.published : '' }));
+    } catch (e) {}
+    const known = ls.get(SEEN, null);
+    if (Array.isArray(known)) { fresh = new Set(eps.map(e => e.id).filter(id => !known.includes(id) && !watched.has(id))); }
+    if (fresh.size) { document.getElementById('newbar').hidden = false; document.getElementById('newTxt').textContent = T('{n} new since your last visit', { n: fresh.size }); }
+    if (eps.length) ls.set(SEEN, eps.map(e => e.id));
+    render();
+    if (location.hash && /^#ep-\d+$/.test(location.hash)) { const t = document.querySelector(location.hash); if (t) t.scrollIntoView(); }
+  }
+  boot();
+})();
+</script>
+</body></html>
