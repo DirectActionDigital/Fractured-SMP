@@ -361,7 +361,7 @@ button.ipfield:hover{border-color:var(--accent)}
 .online[data-state=offline] .on-dot{background:#ff5d5d}
 .on-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:16px;max-height:420px;overflow-y:auto}
 .on-p{display:grid;justify-items:center;gap:8px;padding:12px 6px;border-radius:6px;text-align:center;min-width:0}
-.on-p canvas,.on-p img{width:48px;height:48px;image-rendering:pixelated;display:block;box-shadow:0 4px 0 rgba(0,0,0,.35)}
+.on-p canvas,.on-p img{background:#2a2a33;width:48px;height:48px;image-rendering:pixelated;display:block;box-shadow:0 4px 0 rgba(0,0,0,.35)}
 .on-p span{font-size:13px;font-weight:700;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .on-p small{font-size:11px;color:var(--ink-dim);font-family:var(--f-mono)}
 .on-p.off canvas{filter:grayscale(1) brightness(.85);opacity:.6}
@@ -806,7 +806,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const d = document.createElement('div'); d.className = 'on-p ' + (on ? 'on' : 'off');
     let pic;
     if (crew) pic = face(`img/skin-${crew}.png`);
-    else { pic = document.createElement('img'); pic.src = `https://mc-heads.net/avatar/${uuid.replace(/-/g, '')}/48`; pic.onerror = () => { pic.onerror = null; pic.src = 'https://mc-heads.net/avatar/MHF_Steve/48'; }; pic.alt = ''; pic.loading = 'lazy'; }
+    else { pic = document.createElement('img'); pic.src = `https://mc-heads.net/avatar/${uuid.replace(/-/g, '')}/48`; pic.onerror = () => { pic.onerror = null; pic.src = 'https://mc-heads.net/avatar/MHF_Steve/48'; }; pic.alt = ''; }
     const nm = document.createElement('span'); nm.textContent = name;
     const st = document.createElement('small'); st.textContent = on ? 'online' : 'offline';
     d.append(pic, nm, st); return d;
