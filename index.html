@@ -1086,7 +1086,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     return svg;
   }
-  function toast() { const t = document.createElement('div'); t.className = 'egg-toast'; t.setAttribute('role', 'status'); const b = document.createElement('b'); b.textContent = 'You found the fracture.'; t.appendChild(b); return t; }
+  function toast() { const t = document.createElement('div'); t.className = 'egg-toast'; t.setAttribute('role', 'status'); return t; }
   function explode(layer, cx, cy, toastNode, end) {
     noise(0.9, 0.9, false);
     const fl = document.createElement('div'); fl.className = 'egg-flash'; layer.appendChild(fl);
