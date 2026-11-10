@@ -79,7 +79,6 @@
   "All news on minecraft.net": "Semua berita di minecraft.net",
   "We are Fractured.": "Kami adalah Fractured.",
   "Events, rules and the crew all live in the Discord. Come pick a side.": "Event, aturan, dan kru ada di Discord. Ayo pilih kubumu.",
-  "© 2026 Fractured SMP. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP. Hak cipta dilindungi. Bukan produk resmi Minecraft. Tidak disetujui oleh atau terkait dengan Mojang atau Microsoft.",
   "Privacy Policy": "Kebijakan Privasi",
   "Terms": "Ketentuan",
   "Built & powered by": "Dibuat & didukung oleh",
@@ -135,7 +134,8 @@
   "Episode guide →": "Panduan episode →",
   "Share": "Bagikan",
   "Link copied!": "Tautan disalin!",
-  "You caught {x}!": "Kamu menangkap {x}!"
+  "You caught {x}!": "Kamu menangkap {x}!",
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Hak cipta dilindungi. Bukan produk resmi Minecraft. Tidak disetujui oleh atau terkait dengan Mojang atau Microsoft."
  },
  "html": {
   "html:step1": "Buka Minecraft: Java Edition dan klik <b>Multipemain</b>. Jika muncul peringatan, klik <b>Lanjutkan</b>.",

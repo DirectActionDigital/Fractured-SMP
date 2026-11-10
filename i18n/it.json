@@ -79,7 +79,6 @@
   "All news on minecraft.net": "Tutte le novità su minecraft.net",
   "We are Fractured.": "Noi siamo Fractured.",
   "Events, rules and the crew all live in the Discord. Come pick a side.": "Eventi, regole e la crew sono tutti nel Discord. Vieni a scegliere da che parte stare.",
-  "© 2026 Fractured SMP. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP. Tutti i diritti riservati. Non è un prodotto ufficiale Minecraft. Non approvato da né associato a Mojang o Microsoft.",
   "Privacy Policy": "Informativa sulla privacy",
   "Terms": "Termini",
   "Built & powered by": "Realizzato e gestito da",
@@ -135,7 +134,8 @@
   "Episode guide →": "Guida agli episodi →",
   "Share": "Condividi",
   "Link copied!": "Link copiato!",
-  "You caught {x}!": "Hai pescato {x}!"
+  "You caught {x}!": "Hai pescato {x}!",
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Tutti i diritti riservati. Non è un prodotto ufficiale Minecraft. Non approvato da né associato a Mojang o Microsoft."
  },
  "html": {
   "html:step1": "Apri Minecraft: Java Edition e clicca su <b>Multigiocatore</b>. Se compare un avviso, clicca su <b>Procedi</b>.",

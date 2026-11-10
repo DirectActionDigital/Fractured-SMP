@@ -79,7 +79,6 @@
   "All news on minecraft.net": "Все новости на minecraft.net",
   "We are Fractured.": "Мы Fractured.",
   "Events, rules and the crew all live in the Discord. Come pick a side.": "События, правила и команда живут в Discord. Приходи выбрать сторону.",
-  "© 2026 Fractured SMP. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP. Все права защищены. Не является официальным продуктом Minecraft. Не одобрено Mojang или Microsoft и не связано с ними.",
   "Privacy Policy": "Политика конфиденциальности",
   "Terms": "Условия",
   "Built & powered by": "Создано и работает на",
@@ -135,7 +134,8 @@
   "Episode guide →": "Гид по эпизодам →",
   "Share": "Поделиться",
   "Link copied!": "Ссылка скопирована!",
-  "You caught {x}!": "Ты поймал {x}!"
+  "You caught {x}!": "Ты поймал {x}!",
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Все права защищены. Не является официальным продуктом Minecraft. Не одобрено Mojang или Microsoft и не связано с ними."
  },
  "html": {
   "html:step1": "Открой Minecraft: Java Edition и нажми <b>Сетевая игра</b>. Если появится предупреждение, нажми <b>Продолжить</b>.",

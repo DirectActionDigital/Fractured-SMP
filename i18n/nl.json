@@ -79,7 +79,6 @@
   "All news on minecraft.net": "Al het nieuws op minecraft.net",
   "We are Fractured.": "Wij zijn Fractured.",
   "Events, rules and the crew all live in the Discord. Come pick a side.": "Events, regels en de crew vind je allemaal in de Discord. Kom een kant kiezen.",
-  "© 2026 Fractured SMP. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP. Alle rechten voorbehouden. Geen officieel Minecraft-product. Niet goedgekeurd door of verbonden met Mojang of Microsoft.",
   "Privacy Policy": "Privacybeleid",
   "Terms": "Voorwaarden",
   "Built & powered by": "Gebouwd en mogelijk gemaakt door",
@@ -135,7 +134,8 @@
   "Episode guide →": "Afleveringsgids →",
   "Share": "Delen",
   "Link copied!": "Link gekopieerd!",
-  "You caught {x}!": "Je hebt {x} gevangen!"
+  "You caught {x}!": "Je hebt {x} gevangen!",
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Alle rechten voorbehouden. Geen officieel Minecraft-product. Niet goedgekeurd door of verbonden met Mojang of Microsoft."
  },
  "html": {
   "html:step1": "Open Minecraft: Java Edition en klik op <b>Multiplayer</b>. Als er een waarschuwing verschijnt, klik dan op <b>Doorgaan</b>.",

@@ -79,7 +79,6 @@
   "All news on minecraft.net": "Wszystkie newsy na minecraft.net",
   "We are Fractured.": "Jesteśmy Fractured.",
   "Events, rules and the crew all live in the Discord. Come pick a side.": "Eventy, zasady i ekipa są na Discordzie. Chodź wybrać stronę.",
-  "© 2026 Fractured SMP. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP. Wszelkie prawa zastrzeżone. To nie jest oficjalny produkt Minecraft. Nie jest zatwierdzony przez Mojang ani Microsoft ani z nimi powiązany.",
   "Privacy Policy": "Polityka prywatności",
   "Terms": "Regulamin",
   "Built & powered by": "Stworzone i zasilane przez",
@@ -135,7 +134,8 @@
   "Episode guide →": "Przewodnik po odcinkach →",
   "Share": "Udostępnij",
   "Link copied!": "Skopiowano link!",
-  "You caught {x}!": "Złowiłeś {x}!"
+  "You caught {x}!": "Złowiłeś {x}!",
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Wszelkie prawa zastrzeżone. To nie jest oficjalny produkt Minecraft. Nie jest zatwierdzony przez Mojang ani Microsoft ani z nimi powiązany."
  },
  "html": {
   "html:step1": "Otwórz Minecraft: Java Edition i kliknij <b>Gra wieloosobowa</b>. Jeśli pojawi się ostrzeżenie, kliknij <b>Kontynuuj</b>.",

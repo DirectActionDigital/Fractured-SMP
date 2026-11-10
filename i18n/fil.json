@@ -79,7 +79,6 @@
   "All news on minecraft.net": "Lahat ng balita sa minecraft.net",
   "We are Fractured.": "Kami ang Fractured.",
   "Events, rules and the crew all live in the Discord. Come pick a side.": "Nasa Discord ang mga event, rules at ang crew. Halika at pumili ng panig.",
-  "© 2026 Fractured SMP. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP. Lahat ng karapatan ay nakalaan. Hindi opisyal na produkto ng Minecraft. Hindi aprubado ng o konektado sa Mojang o Microsoft.",
   "Privacy Policy": "Patakaran sa Privacy",
   "Terms": "Mga Tuntunin",
   "Built & powered by": "Ginawa at pinapagana ng",
@@ -135,7 +134,8 @@
   "Episode guide →": "Gabay sa episode →",
   "Share": "I-share",
   "Link copied!": "Nakopya ang link!",
-  "You caught {x}!": "Nahuli mo si {x}!"
+  "You caught {x}!": "Nahuli mo si {x}!",
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Lahat ng karapatan ay nakalaan. Hindi opisyal na produkto ng Minecraft. Hindi aprubado ng o konektado sa Mojang o Microsoft."
  },
  "html": {
   "html:step1": "Buksan ang Minecraft: Java Edition at i-click ang <b>Multiplayer</b>. Kung may lumabas na babala, i-click ang <b>Magpatuloy</b>.",

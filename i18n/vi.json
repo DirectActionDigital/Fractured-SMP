@@ -79,7 +79,6 @@
   "All news on minecraft.net": "Tất cả tin tức trên minecraft.net",
   "We are Fractured.": "Chúng tôi là Fractured.",
   "Events, rules and the crew all live in the Discord. Come pick a side.": "Sự kiện, luật và cả nhóm đều ở trong Discord. Vào chọn phe đi.",
-  "© 2026 Fractured SMP. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP. Bảo lưu mọi quyền. Không phải sản phẩm chính thức của Minecraft. Không được Mojang hoặc Microsoft phê duyệt hay liên kết.",
   "Privacy Policy": "Chính sách quyền riêng tư",
   "Terms": "Điều khoản",
   "Built & powered by": "Xây dựng & vận hành bởi",
@@ -135,7 +134,8 @@
   "Episode guide →": "Hướng dẫn tập phim →",
   "Share": "Chia sẻ",
   "Link copied!": "Đã sao chép liên kết!",
-  "You caught {x}!": "Bạn câu được {x}!"
+  "You caught {x}!": "Bạn câu được {x}!",
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. Bảo lưu mọi quyền. Không phải sản phẩm chính thức của Minecraft. Không được Mojang hoặc Microsoft phê duyệt hay liên kết."
  },
  "html": {
   "html:step1": "Mở Minecraft: Java Edition và nhấn <b>Nhiều người chơi</b>. Nếu có cảnh báo hiện lên, nhấn <b>Tiếp tục</b>.",

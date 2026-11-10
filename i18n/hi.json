@@ -79,7 +79,6 @@
   "All news on minecraft.net": "minecraft.net पर सभी खबरें",
   "We are Fractured.": "हम हैं Fractured।",
   "Events, rules and the crew all live in the Discord. Come pick a side.": "इवेंट, नियम और क्रू सब Discord पर हैं। आइए, अपना पक्ष चुनिए।",
-  "© 2026 Fractured SMP. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP. सर्वाधिकार सुरक्षित। यह Minecraft का आधिकारिक प्रोडक्ट नहीं है। Mojang या Microsoft द्वारा स्वीकृत या उनसे संबद्ध नहीं है।",
   "Privacy Policy": "गोपनीयता नीति",
   "Terms": "शर्तें",
   "Built & powered by": "निर्मित और संचालित",
@@ -135,7 +134,8 @@
   "Episode guide →": "एपिसोड गाइड →",
   "Share": "शेयर करें",
   "Link copied!": "लिंक कॉपी हो गया!",
-  "You caught {x}!": "तुमने {x} को पकड़ लिया!"
+  "You caught {x}!": "तुमने {x} को पकड़ लिया!",
+  "© 2026 Fractured SMP™. All rights reserved. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.": "© 2026 Fractured SMP™. सर्वाधिकार सुरक्षित। यह Minecraft का आधिकारिक प्रोडक्ट नहीं है। Mojang या Microsoft द्वारा स्वीकृत या उनसे संबद्ध नहीं है।"
  },
  "html": {
   "html:step1": "Minecraft: Java Edition खोलें और <b>मल्टीप्लेयर</b> पर क्लिक करें। अगर कोई चेतावनी आए, तो <b>आगे बढ़ें</b> पर क्लिक करें।",
