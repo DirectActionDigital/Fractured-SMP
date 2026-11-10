@@ -129,6 +129,7 @@
   "html:cstep1": "Tải <b>BedrockTogether</b> về điện thoại và mở lên.",
   "html:cstep2": "Nhập <b>fracturedsmp.datho.st</b> làm địa chỉ và <b>17055</b> làm cổng, rồi bắt đầu.",
   "html:cstep3": "Trên máy console, mở Minecraft, vào <b>Chơi</b> và mở tab <b>Bạn bè</b>.",
-  "html:cstep4": "Tham gia trò chơi trong mục <b>Trò chơi LAN</b>. Giữ ứng dụng mở cho đến khi bạn vào được."
+  "html:cstep4": "Tham gia trò chơi trong mục <b>Trò chơi LAN</b>. Giữ ứng dụng mở cho đến khi bạn vào được.",
+  "html:whitelist": "<b>Whitelist khi đang quay:</b> trong lúc tụi mình quay tập phim, chỉ người chơi có trong whitelist mới vào được. Hỏi trên <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a> để được thêm vào."
  }
 }

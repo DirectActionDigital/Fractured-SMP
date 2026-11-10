@@ -129,6 +129,7 @@
   "html:cstep1": "Lade <b>BedrockTogether</b> auf dein Handy und öffne es.",
   "html:cstep2": "Tippe <b>fracturedsmp.datho.st</b> als Adresse und <b>17055</b> als Port ein und starte dann.",
   "html:cstep3": "Öffne auf deiner Konsole Minecraft, geh auf <b>Spielen</b> und öffne den Tab <b>Freunde</b>.",
-  "html:cstep4": "Tritt dem Spiel unter <b>LAN-Spiele</b> bei. Lass die App offen, bis du drin bist."
+  "html:cstep4": "Tritt dem Spiel unter <b>LAN-Spiele</b> bei. Lass die App offen, bis du drin bist.",
+  "html:whitelist": "<b>Whitelist während der Aufnahmen:</b> Während wir Episoden aufnehmen, können nur Spieler auf der Whitelist joinen. Frag im <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>, damit du hinzugefügt wirst."
  }
 }

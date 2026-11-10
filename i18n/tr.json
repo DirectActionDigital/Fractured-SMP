@@ -129,6 +129,7 @@
   "html:cstep1": "Telefonuna <b>BedrockTogether</b>'ı indir ve aç.",
   "html:cstep2": "Adres olarak <b>fracturedsmp.datho.st</b>, port olarak <b>17055</b> yaz, sonra başlat.",
   "html:cstep3": "Konsolunda Minecraft'ı aç, <b>Oyna</b>'ya git ve <b>Arkadaşlar</b> sekmesini aç.",
-  "html:cstep4": "<b>LAN Oyunları</b> altından oyuna katıl. İçeri girene kadar uygulamayı açık tut."
+  "html:cstep4": "<b>LAN Oyunları</b> altından oyuna katıl. İçeri girene kadar uygulamayı açık tut.",
+  "html:whitelist": "<b>Kayıt sırasında whitelist:</b> bölüm kaydederken sadece whitelist'teki oyuncular girebilir. Eklenmek için <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a>'da sor."
  }
 }

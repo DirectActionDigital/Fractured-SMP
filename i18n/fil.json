@@ -129,6 +129,7 @@
   "html:cstep1": "I-download ang <b>BedrockTogether</b> sa phone mo at buksan ito.",
   "html:cstep2": "I-type ang <b>fracturedsmp.datho.st</b> bilang address at <b>17055</b> bilang port, tapos simulan ito.",
   "html:cstep3": "Sa console mo, buksan ang Minecraft, pumunta sa <b>Maglaro</b> at buksan ang tab na <b>Mga Kaibigan</b>.",
-  "html:cstep4": "Sumali sa laro sa ilalim ng <b>Mga LAN Game</b>. Panatilihing bukas ang app hanggang makapasok ka."
+  "html:cstep4": "Sumali sa laro sa ilalim ng <b>Mga LAN Game</b>. Panatilihing bukas ang app hanggang makapasok ka.",
+  "html:whitelist": "<b>Whitelist habang nagre-record:</b> habang nagre-record kami ng episodes, whitelisted players lang ang makakapasok. Magtanong sa <a href=\"https://discord.gg/RD2mYCt4y8\" target=\"_blank\" rel=\"noopener\">Discord</a> para maidagdag ka."
  }
 }
