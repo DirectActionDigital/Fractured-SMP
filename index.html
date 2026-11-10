@@ -1256,7 +1256,7 @@ document.addEventListener('click', async e => {
   const sec = document.getElementById('vote'); if (!sec || !/^https:\/\/[a-z0-9.-]+\.run\.app$/.test(API)) return;
   const POVS = [['acehardware67','AceHardware67','acehardware67'],['prep4cringe','Prep4Cringe','prep4cringe'],['undercard594','UNDERcard594','undercard594'],['vexan22','_Vexan_','_vexan_'],['fireblade-yt','Fireblade_1','fireblade_1'],['h2ozero','h2ozer0','h2ozer0']];
   const T = k => k; /* the page translator rewrites these English strings */
-  const store = { get() { try { const v = JSON.parse(localStorage.getItem('fs-vote') || 'null'); return v && typeof v.pov === 'string' ? v.pov : null; } catch (_) { return null; } }, set(p) { try { localStorage.setItem('fs-vote', JSON.stringify({ pov: p })); } catch (_) {} } };
+  const store = { get() { try { const v = JSON.parse(localStorage.getItem('fs-vote-s2') || 'null'); return v && typeof v.pov === 'string' ? v.pov : null; } catch (_) { return null; } }, set(p) { try { localStorage.setItem('fs-vote-s2', JSON.stringify({ pov: p })); } catch (_) {} } };
   const faces = {};
   const face = (cv, ign) => { const x = cv.getContext('2d'); const draw = im => { x.clearRect(0, 0, 8, 8); x.drawImage(im, 8, 8, 8, 8, 0, 0, 8, 8); x.drawImage(im, 40, 8, 8, 8, 0, 0, 8, 8); };
     if (faces[ign] && faces[ign].complete) return draw(faces[ign]); const im = faces[ign] || (faces[ign] = new Image()); im.addEventListener('load', () => draw(im), { once: true }); if (!im.src) im.src = `img/skin-${ign}.png`; };
