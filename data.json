@@ -26,6 +26,11 @@
   ],
   "@undercard594": [
    {
+    "id": "27i9fTU9YhI",
+    "title": "I Got Hunted by Minecrafts DEADLIEST Bandits",
+    "published": "2026-11-11"
+   },
+   {
     "id": "oNyhbd0kBjQ",
     "title": "October 1, 2026",
     "published": "2026-10-01"
@@ -208,11 +213,16 @@
    "id": "3mwUfyHyX2o",
    "title": "I Found the Black Market on Fractured SMP...",
    "published": "2026-11-06"
+  },
+  {
+   "id": "27i9fTU9YhI",
+   "title": "I Got Hunted by Minecrafts DEADLIEST Bandits",
+   "published": null
   }
  ],
- "members": 129,
- "online": 15,
- "updated": "2026-11-11T15:39Z",
+ "members": 127,
+ "online": 32,
+ "updated": "2026-11-11T22:17Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -291,8 +301,9 @@
   }
  ],
  "last_seen": {
-  "@acehardware67": "2026-11-10T00:27Z",
-  "@prep4cringe": "2026-11-10T00:27Z",
-  "@fireblade-yt": "2026-11-10T20:25Z"
+  "@acehardware67": "2026-11-11T22:17Z",
+  "@prep4cringe": "2026-11-11T22:17Z",
+  "@fireblade-yt": "2026-11-10T20:25Z",
+  "@h2ozero": "2026-11-11T22:17Z"
  }
 }
