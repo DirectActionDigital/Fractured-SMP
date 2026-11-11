@@ -210,9 +210,9 @@
    "published": "2026-11-06"
   }
  ],
- "members": 129,
- "online": 19,
- "updated": "2026-11-10T20:25Z",
+ "members": 128,
+ "online": 27,
+ "updated": "2026-11-11T00:51Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -242,6 +242,38 @@
  },
  "news": [
   {
+   "title": "Marketplace Spotlight: The Sound Effects Edition",
+   "url": "https://www.minecraft.net/en-us/article/marketplace-spotlight-sound-effects",
+   "published": "2026-11-10",
+   "desc": "Discover seven new sound effect packs on Minecraft Marketplace, from retro arcade beats to spooky soundscapes and relaxing audio for your ad",
+   "image": "img/news/8d8e7b72efea9d63.jpg",
+   "tag": "marketplace"
+  },
+  {
+   "title": "New watch time challenge",
+   "url": "https://www.minecraft.net/en-us/article/twitchcon-watch-time-quest",
+   "published": "2026-11-10",
+   "desc": "You don’t have to be at TwitchCon to join the fun! Watch eligible Minecraft streams on Twitch or TikTok from 13–15 November and earn Toying ",
+   "image": "img/news/ffe039b1e2b8184b.jpg",
+   "tag": "news"
+  },
+  {
+   "title": "Minecraft 26.4 Snapshot 8",
+   "url": "https://www.minecraft.net/en-us/article/minecraft-26-4-snapshot-8",
+   "published": "2026-11-10",
+   "desc": "Minecraft 26.4 Snapshot 8",
+   "image": "img/news/9fd61adb5a68ece1.jpg",
+   "tag": "update"
+  },
+  {
+   "title": "Introducing Realms Pro",
+   "url": "https://www.minecraft.net/en-us/article/introducing-realms-pro",
+   "published": "2026-11-09",
+   "desc": "Discover Minecraft Realms Pro for Bedrock Edition: host up to 50 players at once with a dedicated server, advanced admin controls, and more ",
+   "image": "img/news/79963f45c80da977.jpg",
+   "tag": "realms"
+  },
+  {
    "title": "LET’S PLAY: DECOCRAFT: SEASONS AND UGLY SWEATER",
    "url": "https://www.minecraft.net/en-us/article/lets-play-decocraft",
    "published": "2026-11-09",
@@ -256,38 +288,6 @@
    "desc": "Explore November 2026’s Minecraft Marketplace Pass and Realms Plus lineup, featuring SpongeBob Biomes, add-ons, texture packs, and creeper-t",
    "image": "img/news/50f845d25f8edbb7.jpg",
    "tag": "marketplace"
-  },
-  {
-   "title": "Creator Pages arrive on the Marketplace",
-   "url": "https://www.minecraft.net/en-us/article/creator-pages-arrive-on-the-marketplace",
-   "published": "2026-11-03",
-   "desc": "Creator Pages are a new Minecraft Marketplace feature that gives creators a place to showcase their offerings and gives players an easier wa",
-   "image": "img/news/89b337f2525c9a3e.jpg",
-   "tag": "marketplace"
-  },
-  {
-   "title": "Everything you can test from the upcoming game drop",
-   "url": "https://www.minecraft.net/en-us/article/drop-4-2026-testing",
-   "published": "2026-11-03",
-   "desc": "",
-   "image": null,
-   "tag": "news"
-  },
-  {
-   "title": "Minecraft Preview 26.70.23 Changelog",
-   "url": "https://www.minecraft.net/en-us/article/minecraft-preview-26-70-23",
-   "published": "2026-11-03",
-   "desc": "Minecraft Preview 26.70.23 Changelog",
-   "image": "img/news/b9919e4d0398a198.jpg",
-   "tag": "update"
-  },
-  {
-   "title": "Minecraft 26.4 Snapshot 7",
-   "url": "https://www.minecraft.net/en-us/article/minecraft-26-4-snapshot-7",
-   "published": "2026-11-03",
-   "desc": "Minecraft 26.4 Snapshot 7",
-   "image": "img/news/bf27dbaf598cc8bf.jpg",
-   "tag": "update"
   }
  ],
  "last_seen": {
