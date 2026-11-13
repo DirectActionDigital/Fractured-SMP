@@ -9,6 +9,11 @@
   ],
   "@prep4cringe": [
    {
+    "id": "2sYs8TJLHUo",
+    "title": "fractured SMP edit",
+    "published": "2026-11-13"
+   },
+   {
     "id": "ldIBY0gCtIE",
     "title": "Fractured SMP: The Great Rivalry WAR",
     "published": "2026-10-18"
@@ -17,11 +22,6 @@
     "id": "-aDC7w0lzCg",
     "title": "what im actually doing...",
     "published": "2026-10-14"
-   },
-   {
-    "id": "y2wKIfBkfMk",
-    "title": "which is best 🤔",
-    "published": "2026-10-09"
    }
   ],
   "@undercard594": [
@@ -77,18 +77,18 @@
   ],
   "@h2ozero": [
    {
+    "id": "z7xzCfgqEMU",
+    "title": "h2o live",
+    "published": "2026-11-13"
+   },
+   {
+    "id": "SvpMLBkw8tw",
+    "title": "h2o live (Portrait)",
+    "published": "2026-11-13"
+   },
+   {
     "id": "F0DDHx-jby0",
     "title": "h2o live mace (Portrait)",
-    "published": "2026-11-09"
-   },
-   {
-    "id": "WvPESepWAps",
-    "title": "h2o live mace",
-    "published": "2026-11-09"
-   },
-   {
-    "id": "XkKbl60RqU4",
-    "title": "h2o vs fireblabe live (Portrait)",
     "published": "2026-11-09"
    }
   ]
@@ -220,9 +220,9 @@
    "published": null
   }
  ],
- "members": 130,
- "online": 18,
- "updated": "2026-11-13T06:59Z",
+ "members": 131,
+ "online": 11,
+ "updated": "2026-11-13T15:19Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -251,6 +251,14 @@
   }
  },
  "news": [
+  {
+   "title": "Minecraft Parents’ Guide",
+   "url": "https://www.minecraft.net/en-us/article/parents--guide-minecraft",
+   "published": "2026-11-12",
+   "desc": "Bring the fun of Minecraft into your family with this Minecraft Parents’ Guide. Learn about the Minecraft age rating, parental controls, wha",
+   "image": "img/news/528da2bfad37200b.jpg",
+   "tag": "news"
+  },
   {
    "title": "Marketplace Spotlight: The Sound Effects Edition",
    "url": "https://www.minecraft.net/en-us/article/marketplace-spotlight-sound-effects",
@@ -290,14 +298,6 @@
    "desc": "Celebrate every season in Minecraft with Decocraft: Seasons by Razzleberries and Ugly Sweater by Pixel Smile Studios, both available in the ",
    "image": "img/news/77f4ddd1e5365f30.jpg",
    "tag": "news"
-  },
-  {
-   "title": "Marketplace Content: November 2026",
-   "url": "https://www.minecraft.net/en-us/article/marketplace-content-november-2026",
-   "published": "2026-11-04",
-   "desc": "Explore November 2026’s Minecraft Marketplace Pass and Realms Plus lineup, featuring SpongeBob Biomes, add-ons, texture packs, and creeper-t",
-   "image": "img/news/50f845d25f8edbb7.jpg",
-   "tag": "marketplace"
   }
  ],
  "last_seen": {
