@@ -220,9 +220,9 @@
    "published": null
   }
  ],
- "members": 127,
- "online": 27,
- "updated": "2026-11-13T00:18Z",
+ "members": 130,
+ "online": 18,
+ "updated": "2026-11-13T06:59Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -231,7 +231,7 @@
   },
   "@prep4cringe": {
    "name": "Prep4Cringe",
-   "model": "default"
+   "model": "slim"
   },
   "@undercard594": {
    "name": "UNDERcard594",
