@@ -579,11 +579,10 @@ button.ipfield:hover{border-color:var(--accent)}
     </h1>
     <button type="button" class="rod" id="rodBtn" aria-label="Cast the fishing rod" title="Cast"><canvas id="rodCv" width="16" height="16"></canvas></button>
     </div>
-    <p class="lede"><strong>A scripted Minecraft series and server, with rivalries, mace PvP, a black market and builds worth the trip.</strong> Six creators stream and post from inside the world. Join the Discord to get in.</p>
     <div class="hero-actions">
     <div class="cta-row">
         <a class="btn btn-primary" href="https://discord.gg/RD2mYCt4y8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.4A19.6 19.6 0 0 0 15.4 3l-.6 1.3a18 18 0 0 0-5.6 0L8.6 3a19.5 19.5 0 0 0-4.9 1.5C.6 9.1-.3 13.6.1 18.1A19.8 19.8 0 0 0 6.1 21l1.3-2.1c-.7-.3-1.4-.6-2-1l.5-.4a14 14 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2.1a19.7 19.7 0 0 0 6-3c.5-5.2-.9-9.7-3.6-13.6ZM8 15.3c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.4 8 10.4s2.2 1.1 2.2 2.5-1 2.4-2.2 2.4Zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.5 2.2-2.5 2.2 1.1 2.2 2.5-1 2.4-2.2 2.4Z"/></svg>Join the Discord</a>
-        <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=V277dZ8neew&amp;list=PLmzftq-PMGGLPC9Xkheqq36Jjy7xlGWXQ" target="_blank" rel="noopener">Watch episode 1</a>
+        <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=_jp1KMWHp1Y&amp;list=PLmzftq-PMGGLPC9Xkheqq36Jjy7xlGWXQ" target="_blank" rel="noopener">Watch episode 1</a>
       </div>
       <button type="button" class="srvcard" id="srvCard" data-ip="fracturedsmp.datho.st" data-state="loading" aria-label="Copy server address fracturedsmp.datho.st">
         <img class="sc-icon" src="icon-512.png" alt="" width="64" height="64">
@@ -1378,7 +1377,7 @@ document.addEventListener('click', async e => {
 
   /* ---------- carousels ---------- */
   const PL = 'PLmzftq-PMGGLPC9Xkheqq36Jjy7xlGWXQ';
-  let eps = [["V277dZ8neew", "Mar 1", "The Downfall of the Fractured SMP"], ["_jp1KMWHp1Y", "Mar 15", "I Explored a Minecraft Bedrock SMP"], ["I_6ksPZXZt0", "Mar 18", "Fractured SMP: The First War"], ["zysEQMILhAc", "Mar 28", "How I DIED on the Fractured SMP"], ["Qn-_VbVs0cI", "Apr 2", "Fractured SMP: The UNDER Arc"], ["ftrOtC_LgZ0", "Apr 12", "I Got Hunted by a SECRET Minecraft Faction"], ["MHnY_-eXz44", "Apr 25", "I Fought Minecraft's STRONGEST Faction"], ["-QwxeK3xpi4", "May 14", "I Got Stalked by Minecraft's DEADLIEST Faction"], ["wOnrglM11jY", "May 21", "I Betrayed My Best Friend"], ["Al63dn-XPAo", "Jun 6", "I Formed Minecraft's Most POWERFUL Team"], ["OblTlM7rDi4", "Jun 16", "I Obtained Minecraft's Most DANGEROUS Weapon"], ["GAwhUETes-c", "Jun 19", "3 Minecraft Pros Vs. 300 Player Army"], ["4-yWD6YLqYI", "Jul 3", "Fractured SMP: The Vexed Voiders FINALE"], ["QJHElGgSVUA", "Jul 7", "I Joined the Fractured SMP... Again?"], ["0k-LbsDjf9E", "Jul 7", "Searching For My Lost Teammate"]];
+  let eps = [["_jp1KMWHp1Y", "Mar 15", "I Explored a Minecraft Bedrock SMP"], ["I_6ksPZXZt0", "Mar 18", "Fractured SMP: The First War"], ["zysEQMILhAc", "Mar 28", "How I DIED on the Fractured SMP"], ["Qn-_VbVs0cI", "Apr 2", "Fractured SMP: The UNDER Arc"], ["ftrOtC_LgZ0", "Apr 12", "I Got Hunted by a SECRET Minecraft Faction"], ["MHnY_-eXz44", "Apr 25", "I Fought Minecraft's STRONGEST Faction"], ["-QwxeK3xpi4", "May 14", "I Got Stalked by Minecraft's DEADLIEST Faction"], ["wOnrglM11jY", "May 21", "I Betrayed My Best Friend"], ["Al63dn-XPAo", "Jun 6", "I Formed Minecraft's Most POWERFUL Team"], ["OblTlM7rDi4", "Jun 16", "I Obtained Minecraft's Most DANGEROUS Weapon"], ["GAwhUETes-c", "Jun 19", "3 Minecraft Pros Vs. 300 Player Army"], ["4-yWD6YLqYI", "Jul 3", "Fractured SMP: The Vexed Voiders FINALE"], ["QJHElGgSVUA", "Jul 7", "I Joined the Fractured SMP... Again?"], ["0k-LbsDjf9E", "Jul 7", "Searching For My Lost Teammate"]];
   function carousel(key, html, n) {
     const track = document.getElementById('track-'+key), dots = document.getElementById('dots-'+key);
     track.innerHTML = html; dots.innerHTML = Array.from({length:n},()=>'<i></i>').join('');

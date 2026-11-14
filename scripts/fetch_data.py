@@ -48,6 +48,8 @@ def get(url):
 
 
 ID_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
+# Videos the creators asked us not to show on the site (Episode 1, 2026-11-14).
+HIDDEN = {"V277dZ8neew"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
@@ -59,7 +61,7 @@ def clean(title):
 
 
 def valid(v):
-    return bool(v.get("id") and ID_RE.match(v["id"])) and (v.get("published") is None or DATE_RE.match(v["published"] or ""))
+    return bool(v.get("id") and ID_RE.match(v["id"])) and v["id"] not in HIDDEN and (v.get("published") is None or DATE_RE.match(v["published"] or ""))
 
 
 def rss(url):
