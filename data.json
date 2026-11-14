@@ -220,9 +220,9 @@
    "published": null
   }
  ],
- "members": 134,
- "online": 26,
- "updated": "2026-11-14T15:06Z",
+ "members": 133,
+ "online": 34,
+ "updated": "2026-11-14T19:55Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -235,7 +235,7 @@
   },
   "@undercard594": {
    "name": "UNDERcard594",
-   "model": "default"
+   "model": "slim"
   },
   "@vexan22": {
    "name": "_Vexan_",
@@ -301,10 +301,10 @@
   }
  ],
  "last_seen": {
-  "@acehardware67": "2026-11-11T22:17Z",
-  "@prep4cringe": "2026-11-14T15:06Z",
+  "@acehardware67": "2026-11-14T19:55Z",
+  "@prep4cringe": "2026-11-14T19:55Z",
   "@fireblade-yt": "2026-11-10T20:25Z",
-  "@h2ozero": "2026-11-14T15:06Z",
-  "@undercard594": "2026-11-13T21:28Z"
+  "@h2ozero": "2026-11-14T19:55Z",
+  "@undercard594": "2026-11-14T19:55Z"
  }
 }
