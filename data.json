@@ -216,8 +216,8 @@
   }
  ],
  "members": 133,
- "online": 38,
- "updated": "2026-11-14T23:48Z",
+ "online": 28,
+ "updated": "2026-11-15T03:45Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -246,6 +246,14 @@
   }
  },
  "news": [
+  {
+   "title": "TwitchCon reveals the first game drop features of 2027",
+   "url": "https://www.minecraft.net/en-us/article/twitchcon-gamedrop-features",
+   "published": "2026-11-14",
+   "desc": "Minecraft’s first game drop of 2027 will introduce the throwing disc and expanded off-hand support for Bedrock Edition. Revealed at TwitchCo",
+   "image": "img/news/895a3c94054a4ea2.jpg",
+   "tag": "news"
+  },
   {
    "title": "Minecraft Parents’ Guide",
    "url": "https://www.minecraft.net/en-us/article/parents--guide-minecraft",
@@ -285,21 +293,13 @@
    "desc": "Discover Minecraft Realms Pro for Bedrock Edition: host up to 50 players at once with a dedicated server, advanced admin controls, and more ",
    "image": "img/news/79963f45c80da977.jpg",
    "tag": "realms"
-  },
-  {
-   "title": "LET’S PLAY: DECOCRAFT: SEASONS AND UGLY SWEATER",
-   "url": "https://www.minecraft.net/en-us/article/lets-play-decocraft",
-   "published": "2026-11-09",
-   "desc": "Celebrate every season in Minecraft with Decocraft: Seasons by Razzleberries and Ugly Sweater by Pixel Smile Studios, both available in the ",
-   "image": "img/news/77f4ddd1e5365f30.jpg",
-   "tag": "news"
   }
  ],
  "last_seen": {
   "@acehardware67": "2026-11-14T19:55Z",
-  "@prep4cringe": "2026-11-14T19:55Z",
+  "@prep4cringe": "2026-11-15T03:45Z",
   "@fireblade-yt": "2026-11-10T20:25Z",
-  "@h2ozero": "2026-11-14T19:55Z",
+  "@h2ozero": "2026-11-15T03:45Z",
   "@undercard594": "2026-11-14T19:55Z"
  }
 }
