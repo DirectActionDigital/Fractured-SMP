@@ -216,8 +216,8 @@
   }
  ],
  "members": 141,
- "online": 38,
- "updated": "2026-11-15T22:44Z",
+ "online": 31,
+ "updated": "2026-11-16T02:25Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -246,6 +246,22 @@
   }
  },
  "news": [
+  {
+   "title": "Our coldest drop has an even cooler name",
+   "url": "https://www.minecraft.net/en-us/article/twitchcon-gamedrop-name",
+   "published": "2026-11-15",
+   "desc": "Minecraft’s upcoming winter game drop, The Deep Freeze, introduces ice caves, new building materials, and a frozen zombie variant called the",
+   "image": "img/news/2d6f7deec5eea64f.jpg",
+   "tag": "news"
+  },
+  {
+   "title": "The Humblers Awaken",
+   "url": "https://www.minecraft.net/en-us/article/the-humblers-awaken",
+   "published": "2026-11-15",
+   "desc": "",
+   "image": "img/news/bb3ed12ebf37bc20.jpg",
+   "tag": "news"
+  },
   {
    "title": "TwitchCon reveals the first game drop features of 2027",
    "url": "https://www.minecraft.net/en-us/article/twitchcon-gamedrop-features",
@@ -277,22 +293,6 @@
    "desc": "You don’t have to be at TwitchCon to join the fun! Watch eligible Minecraft streams on Twitch or TikTok from 13–15 November and earn Toying ",
    "image": "img/news/ffe039b1e2b8184b.jpg",
    "tag": "news"
-  },
-  {
-   "title": "Minecraft 26.4 Snapshot 8",
-   "url": "https://www.minecraft.net/en-us/article/minecraft-26-4-snapshot-8",
-   "published": "2026-11-10",
-   "desc": "Minecraft 26.4 Snapshot 8",
-   "image": "img/news/9fd61adb5a68ece1.jpg",
-   "tag": "update"
-  },
-  {
-   "title": "Introducing Realms Pro",
-   "url": "https://www.minecraft.net/en-us/article/introducing-realms-pro",
-   "published": "2026-11-09",
-   "desc": "Discover Minecraft Realms Pro for Bedrock Edition: host up to 50 players at once with a dedicated server, advanced admin controls, and more ",
-   "image": "img/news/79963f45c80da977.jpg",
-   "tag": "realms"
   }
  ],
  "last_seen": {
