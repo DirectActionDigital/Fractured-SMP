@@ -9,6 +9,11 @@
   ],
   "@prep4cringe": [
    {
+    "id": "RUarWVcU9-M",
+    "title": "Rate the Duel Gaming Setup 1-10?",
+    "published": "2026-11-17"
+   },
+   {
     "id": "-_CXucd3GH4",
     "title": "www.wearefractured.com",
     "published": "2026-11-15"
@@ -16,11 +21,6 @@
    {
     "id": "bZvDIBY4HvI",
     "title": "btw this is js from ONE of my old BEDROCK accounts.",
-    "published": "2026-11-13"
-   },
-   {
-    "id": "2sYs8TJLHUo",
-    "title": "fractured SMP edit",
     "published": "2026-11-13"
    }
   ],
@@ -216,8 +216,8 @@
   }
  ],
  "members": 141,
- "online": 22,
- "updated": "2026-11-17T20:09Z",
+ "online": 26,
+ "updated": "2026-11-18T02:27Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -246,6 +246,22 @@
   }
  },
  "news": [
+  {
+   "title": "Minecraft 26.4 Snapshot 10",
+   "url": "https://www.minecraft.net/en-us/article/minecraft-26-4-snapshot-9",
+   "published": "2026-11-17",
+   "desc": "Minecraft 26.4 Snapshot 10",
+   "image": "img/news/a0e3b3f93397b65d.jpg",
+   "tag": "update"
+  },
+  {
+   "title": "Minecraft Preview 26.70.26 Changelog",
+   "url": "https://www.minecraft.net/en-us/article/minecraft-preview-26-70-26",
+   "published": "2026-11-17",
+   "desc": "Minecraft Preview 26.70.26 Changelog",
+   "image": "img/news/71053c3d9fd2288c.jpg",
+   "tag": "update"
+  },
   {
    "title": "Our coldest drop has an even cooler name",
    "url": "https://www.minecraft.net/en-us/article/twitchcon-gamedrop-name",
@@ -276,22 +292,6 @@
    "published": "2026-11-12",
    "desc": "Bring the fun of Minecraft into your family with this Minecraft Parents’ Guide. Learn about the Minecraft age rating, parental controls, wha",
    "image": "img/news/528da2bfad37200b.jpg",
-   "tag": "news"
-  },
-  {
-   "title": "Marketplace Spotlight: The Sound Effects Edition",
-   "url": "https://www.minecraft.net/en-us/article/marketplace-spotlight-sound-effects",
-   "published": "2026-11-10",
-   "desc": "Discover seven new sound effect packs on Minecraft Marketplace, from retro arcade beats to spooky soundscapes and relaxing audio for your ad",
-   "image": "img/news/8d8e7b72efea9d63.jpg",
-   "tag": "marketplace"
-  },
-  {
-   "title": "New watch time challenge",
-   "url": "https://www.minecraft.net/en-us/article/twitchcon-watch-time-quest",
-   "published": "2026-11-10",
-   "desc": "You don’t have to be at TwitchCon to join the fun! Watch eligible Minecraft streams on Twitch or TikTok from 13–15 November and earn Toying ",
-   "image": "img/news/ffe039b1e2b8184b.jpg",
    "tag": "news"
   }
  ],
