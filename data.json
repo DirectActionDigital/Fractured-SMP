@@ -105,114 +105,9 @@
  },
  "episodes": [
   {
-   "id": "27i9fTU9YhI",
-   "title": "I Got Hunted by Minecrafts DEADLIEST Bandits",
-   "published": "2026-11-11"
-  },
-  {
-   "id": "3mwUfyHyX2o",
-   "title": "I Discovered the Black Market on Fractured SMP",
-   "published": "2026-11-06"
-  },
-  {
-   "id": "scshrFByMb4",
-   "title": "My First Journey on the Fractured SMP",
-   "published": "2026-10-05"
-  },
-  {
-   "id": "PY9JhuazHE8",
-   "title": "I Joined the Smallest Civilization on the Fractured SMP",
-   "published": "2026-10-09"
-  },
-  {
-   "id": "rsppSR5VCo4",
-   "title": "I Joined Minecraft’s DEADLIEST 3 Life Server",
-   "published": "2026-09-12"
-  },
-  {
-   "id": "ldIBY0gCtIE",
-   "title": "Fractured SMP: The Great Rivalry WAR",
-   "published": "2026-10-18"
-  },
-  {
-   "id": "8h8FIx7L6LE",
-   "title": "I Exposed Minecrafts Biggest FRAUD",
-   "published": "2026-09-26"
-  },
-  {
-   "id": "xDd8RqvPcuk",
-   "title": "I Got Hunted By the Minecraft POLICE FORCE",
-   "published": "2026-08-22"
-  },
-  {
-   "id": "qHUR7-aPMUE",
-   "title": "I Got Hunted by a Minecraft Mace MASTER",
-   "published": "2026-07-20"
-  },
-  {
-   "id": "MyQ7ZG3nQy4",
-   "title": "How I Escaped PRISON on the Fractured SMP",
-   "published": "2026-07-08"
-  },
-  {
-   "id": "0k-LbsDjf9E",
-   "title": "Searching For My Lost Teammate",
-   "published": "2026-07-07"
-  },
-  {
-   "id": "QJHElGgSVUA",
-   "title": "I Joined the Fractured SMP... Again?",
-   "published": "2026-07-07"
-  },
-  {
-   "id": "4-yWD6YLqYI",
-   "title": "Fractured SMP: The Vexed Voiders FINALE",
-   "published": "2026-07-03"
-  },
-  {
-   "id": "GAwhUETes-c",
-   "title": "3 Minecraft Pros Vs. 300 Player Army",
-   "published": "2026-06-19"
-  },
-  {
-   "id": "OblTlM7rDi4",
-   "title": "I Obtained Minecrafts Most DANGEROUS Weapon",
-   "published": "2026-06-16"
-  },
-  {
-   "id": "Al63dn-XPAo",
-   "title": "I Formed Minecrafts Most POWERFUL Team",
-   "published": "2026-06-06"
-  },
-  {
-   "id": "wOnrglM11jY",
-   "title": "I Betrayed My Best Friend",
-   "published": "2026-05-21"
-  },
-  {
-   "id": "-QwxeK3xpi4",
-   "title": "I Got Stalked by Minecrafts DEADLIEST Faction",
-   "published": "2026-05-14"
-  },
-  {
-   "id": "ftrOtC_LgZ0",
-   "title": "I Got Hunted by a SECRET Minecraft Faction",
-   "published": "2026-04-12"
-  },
-  {
-   "id": "MHnY_-eXz44",
-   "title": "I Fought Minecrafts STRONGEST Faction",
-   "published": "2026-04-25"
-  },
-  {
-   "id": "Qn-_VbVs0cI",
-   "title": "Fractured SMP: The UNDER Arc",
-   "published": "2026-04-02"
-  },
-  {
-   "id": "zysEQMILhAc",
-   "title": "How I DIED on the Fractured SMP",
-   "published": "2026-03-28"
+   "id": "_jp1KMWHp1Y",
+   "title": "I Explored a Minecraft Bedrock SMP",
+   "published": "2026-03-15"
   },
   {
    "id": "I_6ksPZXZt0",
@@ -220,14 +115,119 @@
    "published": "2026-03-18"
   },
   {
-   "id": "_jp1KMWHp1Y",
-   "title": "I Explored a Minecraft Bedrock SMP",
-   "published": "2026-03-15"
+   "id": "zysEQMILhAc",
+   "title": "How I DIED on the Fractured SMP",
+   "published": "2026-03-28"
+  },
+  {
+   "id": "Qn-_VbVs0cI",
+   "title": "Fractured SMP: The UNDER Arc",
+   "published": "2026-04-02"
+  },
+  {
+   "id": "MHnY_-eXz44",
+   "title": "I Fought Minecrafts STRONGEST Faction",
+   "published": "2026-04-25"
+  },
+  {
+   "id": "ftrOtC_LgZ0",
+   "title": "I Got Hunted by a SECRET Minecraft Faction",
+   "published": "2026-04-12"
+  },
+  {
+   "id": "-QwxeK3xpi4",
+   "title": "I Got Stalked by Minecrafts DEADLIEST Faction",
+   "published": "2026-05-14"
+  },
+  {
+   "id": "wOnrglM11jY",
+   "title": "I Betrayed My Best Friend",
+   "published": "2026-05-21"
+  },
+  {
+   "id": "Al63dn-XPAo",
+   "title": "I Formed Minecrafts Most POWERFUL Team",
+   "published": "2026-06-06"
+  },
+  {
+   "id": "OblTlM7rDi4",
+   "title": "I Obtained Minecrafts Most DANGEROUS Weapon",
+   "published": "2026-06-16"
+  },
+  {
+   "id": "GAwhUETes-c",
+   "title": "3 Minecraft Pros Vs. 300 Player Army",
+   "published": "2026-06-19"
+  },
+  {
+   "id": "QJHElGgSVUA",
+   "title": "I Joined the Fractured SMP... Again?",
+   "published": "2026-07-07"
+  },
+  {
+   "id": "MyQ7ZG3nQy4",
+   "title": "How I Escaped PRISON on the Fractured SMP",
+   "published": "2026-07-08"
+  },
+  {
+   "id": "qHUR7-aPMUE",
+   "title": "I Got Hunted by a Minecraft Mace MASTER",
+   "published": "2026-07-20"
+  },
+  {
+   "id": "8h8FIx7L6LE",
+   "title": "I Exposed Minecrafts Biggest FRAUD",
+   "published": "2026-09-26"
+  },
+  {
+   "id": "ldIBY0gCtIE",
+   "title": "Fractured SMP: The Great Rivalry WAR",
+   "published": "2026-10-18"
+  },
+  {
+   "id": "rsppSR5VCo4",
+   "title": "I Joined Minecraft’s DEADLIEST 3 Life Server",
+   "published": "2026-09-12"
+  },
+  {
+   "id": "PY9JhuazHE8",
+   "title": "I Joined the Smallest Civilization on the Fractured SMP",
+   "published": "2026-10-09"
+  },
+  {
+   "id": "scshrFByMb4",
+   "title": "My First Journey on the Fractured SMP",
+   "published": "2026-10-05"
+  },
+  {
+   "id": "3mwUfyHyX2o",
+   "title": "I Discovered the Black Market on Fractured SMP",
+   "published": "2026-11-06"
+  },
+  {
+   "id": "27i9fTU9YhI",
+   "title": "I Got Hunted by Minecrafts DEADLIEST Bandits",
+   "published": "2026-11-11"
+  },
+  {
+   "id": "xDd8RqvPcuk",
+   "title": "I Got Hunted By the Minecraft POLICE FORCE",
+   "published": "2026-08-22"
+  },
+  {
+   "id": "0k-LbsDjf9E",
+   "title": "Searching For My Lost Teammate",
+   "published": "2026-07-07"
+  },
+  {
+   "id": "4-yWD6YLqYI",
+   "title": "Fractured SMP: The Vexed Voiders FINALE",
+   "published": "2026-07-03"
   }
  ],
- "members": 151,
- "online": 17,
- "updated": "2026-11-25T08:25Z",
+ "members": 150,
+ "online": 35,
+ "updated": "2026-11-25T18:48Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -310,6 +310,7 @@
   "@prep4cringe": "2026-11-22T03:26Z",
   "@fireblade-yt": "2026-11-10T20:25Z",
   "@h2ozero": "2026-11-22T19:22Z",
-  "@undercard594": "2026-11-22T19:22Z"
+  "@undercard594": "2026-11-22T19:22Z",
+  "@vexan22": "2026-11-25T18:48Z"
  }
 }
