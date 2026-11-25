@@ -226,8 +226,8 @@
   }
  ],
  "members": 151,
- "online": 28,
- "updated": "2026-11-25T00:03Z",
+ "online": 17,
+ "updated": "2026-11-25T08:25Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -256,6 +256,22 @@
   }
  },
  "news": [
+  {
+   "title": "Is it Block Friday yet?",
+   "url": "https://www.minecraft.net/en-us/article/block-friday-2026",
+   "published": "2026-11-24",
+   "desc": "Head’s up, Minecrafters! The Minecraft Block Friday 2026 sale is blazing into Minecraft Marketplace from November 24 at 10 am PT to December",
+   "image": "img/news/d351f0948839a51a.jpg",
+   "tag": "news"
+  },
+  {
+   "title": "Minecraft 26.4 Pre-Release 1",
+   "url": "https://www.minecraft.net/en-us/article/minecraft-26-4-pre-release-1",
+   "published": "2026-11-24",
+   "desc": "Minecraft 26.4 Pre-Release 1",
+   "image": "img/news/4e24f9d90b38f6c2.jpg",
+   "tag": "update"
+  },
   {
    "title": "Minecraft 26.4 Snapshot 10",
    "url": "https://www.minecraft.net/en-us/article/minecraft-26-4-snapshot-9",
@@ -286,22 +302,6 @@
    "published": "2026-11-15",
    "desc": "",
    "image": "img/news/bb3ed12ebf37bc20.jpg",
-   "tag": "news"
-  },
-  {
-   "title": "TwitchCon reveals the first game drop features of 2027",
-   "url": "https://www.minecraft.net/en-us/article/twitchcon-gamedrop-features",
-   "published": "2026-11-14",
-   "desc": "Minecraft’s first game drop of 2027 will introduce the throwing disc and expanded off-hand support for Bedrock Edition. Revealed at TwitchCo",
-   "image": "img/news/895a3c94054a4ea2.jpg",
-   "tag": "news"
-  },
-  {
-   "title": "Minecraft Parents’ Guide",
-   "url": "https://www.minecraft.net/en-us/article/parents--guide-minecraft",
-   "published": "2026-11-12",
-   "desc": "Bring the fun of Minecraft into your family with this Minecraft Parents’ Guide. Learn about the Minecraft age rating, parental controls, wha",
-   "image": "img/news/528da2bfad37200b.jpg",
    "tag": "news"
   }
  ],
