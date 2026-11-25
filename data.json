@@ -2,11 +2,6 @@
  "creators": {
   "@acehardware67": [
    {
-    "id": "QPPm7bbxrb0",
-    "title": "DUH BEAR SQUAD @bearzo",
-    "published": "2026-11-24"
-   },
-   {
     "id": "zunQyF2MTFg",
     "title": "Geometry Dash but if i die, i get boiled alive",
     "published": "2026-11-22"
@@ -15,6 +10,11 @@
     "id": "Tg-Xi7L3eN8",
     "title": "Geometry Dash But If I Die I Get Skinned Alive",
     "published": "2026-11-22"
+   },
+   {
+    "id": "nFGGkunSt9E",
+    "title": "Ace vs Zyro",
+    "published": "2026-10-11"
    }
   ],
   "@prep4cringe": [
@@ -226,8 +226,8 @@
   }
  ],
  "members": 151,
- "online": 20,
- "updated": "2026-11-24T15:26Z",
+ "online": 28,
+ "updated": "2026-11-25T00:03Z",
  "live": {},
  "skins": {
   "@acehardware67": {
