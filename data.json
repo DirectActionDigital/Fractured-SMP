@@ -53,6 +53,11 @@
   ],
   "@vexan22": [
    {
+    "id": "O4GnKZDGVh8",
+    "title": "I Joined The Fractured SMP",
+    "published": "2026-11-25"
+   },
+   {
     "id": "ZVb_gVO2Tgo",
     "title": "I changed my keybinds",
     "published": "2026-11-08"
@@ -61,11 +66,6 @@
     "id": "H5ijTP2adXw",
     "title": "Fastest Mace Match",
     "published": "2026-11-08"
-   },
-   {
-    "id": "UbxcvVTsRgs",
-    "title": "These Games Are Too Short",
-    "published": "2026-11-02"
    }
   ],
   "@fireblade-yt": [
@@ -160,8 +160,18 @@
    "published": "2026-06-19"
   },
   {
+   "id": "4-yWD6YLqYI",
+   "title": "Fractured SMP: The Vexed Voiders FINALE",
+   "published": "2026-07-03"
+  },
+  {
    "id": "QJHElGgSVUA",
    "title": "I Joined the Fractured SMP... Again?",
+   "published": "2026-07-07"
+  },
+  {
+   "id": "0k-LbsDjf9E",
+   "title": "Searching For My Lost Teammate",
    "published": "2026-07-07"
   },
   {
@@ -173,6 +183,11 @@
    "id": "qHUR7-aPMUE",
    "title": "I Got Hunted by a Minecraft Mace MASTER",
    "published": "2026-07-20"
+  },
+  {
+   "id": "xDd8RqvPcuk",
+   "title": "I Got Hunted By the Minecraft POLICE FORCE",
+   "published": "2026-08-22"
   },
   {
    "id": "8h8FIx7L6LE",
@@ -200,6 +215,11 @@
    "published": "2026-10-05"
   },
   {
+   "id": "O4GnKZDGVh8",
+   "title": "I Joined The Fractured SMP",
+   "published": null
+  },
+  {
    "id": "3mwUfyHyX2o",
    "title": "I Discovered the Black Market on Fractured SMP",
    "published": "2026-11-06"
@@ -208,26 +228,11 @@
    "id": "27i9fTU9YhI",
    "title": "I Got Hunted by Minecrafts DEADLIEST Bandits",
    "published": "2026-11-11"
-  },
-  {
-   "id": "xDd8RqvPcuk",
-   "title": "I Got Hunted By the Minecraft POLICE FORCE",
-   "published": "2026-08-22"
-  },
-  {
-   "id": "0k-LbsDjf9E",
-   "title": "Searching For My Lost Teammate",
-   "published": "2026-07-07"
-  },
-  {
-   "id": "4-yWD6YLqYI",
-   "title": "Fractured SMP: The Vexed Voiders FINALE",
-   "published": "2026-07-03"
   }
  ],
- "members": 150,
- "online": 35,
- "updated": "2026-11-25T18:48Z",
+ "members": 149,
+ "online": 26,
+ "updated": "2026-11-26T01:59Z",
  "live": {},
  "skins": {
   "@acehardware67": {
