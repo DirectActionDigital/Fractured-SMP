@@ -235,9 +235,9 @@
    "published": "2026-11-11"
   }
  ],
- "members": 150,
- "online": 36,
- "updated": "2026-11-27T20:15Z",
+ "members": 151,
+ "online": 35,
+ "updated": "2026-11-28T02:49Z",
  "live": {},
  "skins": {
   "@acehardware67": {
@@ -266,6 +266,22 @@
   }
  },
  "news": [
+  {
+   "title": "New on Java Realms: Frankenstein#39;s Map",
+   "url": "https://www.minecraft.net/en-us/article/new-on-java-realms--frankenstein-s-map",
+   "published": "2026-11-27",
+   "desc": "The latest batch of Java Realms maps, delivered November 2026.",
+   "image": "img/news/d573262ea30a8df3.jpg",
+   "tag": "realms"
+  },
+  {
+   "title": "Minecraft 26.4 Pre-Release 2",
+   "url": "https://www.minecraft.net/en-us/article/minecraft-26-4-pre-release-2",
+   "published": "2026-11-27",
+   "desc": "Minecraft 26.4 Pre-Release 2",
+   "image": "img/news/0a928bc6eabaa2f7.jpg",
+   "tag": "update"
+  },
   {
    "title": "Is it Block Friday yet?",
    "url": "https://www.minecraft.net/en-us/article/block-friday-2026",
@@ -297,26 +313,10 @@
    "desc": "Minecraft Preview 26.70.26 Changelog",
    "image": "img/news/71053c3d9fd2288c.jpg",
    "tag": "update"
-  },
-  {
-   "title": "Our coldest drop has an even cooler name",
-   "url": "https://www.minecraft.net/en-us/article/twitchcon-gamedrop-name",
-   "published": "2026-11-15",
-   "desc": "Minecraft’s upcoming winter game drop, The Deep Freeze, introduces ice caves, new building materials, and a frozen zombie variant called the",
-   "image": "img/news/2d6f7deec5eea64f.jpg",
-   "tag": "news"
-  },
-  {
-   "title": "The Humblers Awaken",
-   "url": "https://www.minecraft.net/en-us/article/the-humblers-awaken",
-   "published": "2026-11-15",
-   "desc": "",
-   "image": "img/news/bb3ed12ebf37bc20.jpg",
-   "tag": "news"
   }
  ],
  "last_seen": {
-  "@acehardware67": "2026-11-21T18:17Z",
+  "@acehardware67": "2026-11-28T02:49Z",
   "@prep4cringe": "2026-11-26T19:52Z",
   "@fireblade-yt": "2026-11-10T20:25Z",
   "@h2ozero": "2026-11-22T19:22Z",
